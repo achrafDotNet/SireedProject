@@ -209,3 +209,103 @@ body {
     height: 200px;*/ /* Hauteur fixe pour les images */
     /*object-fit: cover;*/ /* Assure que l'image couvre l'espace sans déformation */
 /*}*/
+
+/*CSS POUR LES AUTRES ETAPES*/
+/* Global styles for a clean, modern look */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Card container to ensure proper spacing and alignment */
+.card-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for individual cards */
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Card body styling */
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Styling for blockquotes inside cards */
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #007bff;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+    blockquote.footer {
+        font-size: 0.875rem;
+        color: #6c757d;
+    }
+
+/* Text color for blockquote footer */
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Style for primary colored card */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-columns {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .card-columns {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+}

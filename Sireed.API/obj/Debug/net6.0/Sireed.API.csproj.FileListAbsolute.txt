@@ -277,3 +277,4 @@ C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.pdb
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.genruntimeconfig.cache
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\ref\Sireed.API.dll
+C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.sourcelink.json

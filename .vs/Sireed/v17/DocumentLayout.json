@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\lenovo\\onedrive\\bureau\\sireed project\\sireed\\sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\lenovo\\onedrive\\bureau\\sireed project\\sireed\\sireed.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\lenovo\\onedrive\\bureau\\sireed project\\sireed\\sireed.api\\views\\home\\sireedhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\views\\home\\sireedhome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\lenovo\\onedrive\\bureau\\sireed project\\sireed\\sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\lenovo\\onedrive\\bureau\\sireed project\\sireed\\sireed.api\\views\\documents\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -129,17 +129,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Main.css",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Main.css",
               "RelativeDocumentMoniker": "Sireed.API\\wwwroot\\css\\Main.css",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Main.css",
               "RelativeToolTip": "Sireed.API\\wwwroot\\css\\Main.css",
-              "ViewState": "AgIAALkAAAAAAAAAAAAwwDYBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-30T10:00:36.394Z",
               "EditorCaption": ""
@@ -159,13 +167,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SireedHome.cshtml",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\Views\\Home\\SireedHome.cshtml",
               "RelativeDocumentMoniker": "Sireed.API\\Views\\Home\\SireedHome.cshtml",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\Views\\Home\\SireedHome.cshtml",
               "RelativeToolTip": "Sireed.API\\Views\\Home\\SireedHome.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-27T09:00:41.119Z",
               "EditorCaption": ""
@@ -211,13 +219,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Sireed.API\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Bureau\\SIREED PROJECT\\Sireed\\Sireed.API\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Sireed.API\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAQwGkBAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAADgBAAAAAAAAAAAQwFcBAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-27T07:52:12.904Z",
               "EditorCaption": ""

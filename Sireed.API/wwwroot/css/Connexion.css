@@ -1,0 +1,289 @@
+﻿/* Inline your CSS for easier updates and visibility */
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.company__info {
+    background-color: #5fb95f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.company__logo {
+    font-size: 4rem;
+}
+
+.login_form {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form__input {
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .form__input:focus {
+        border-color: #5fb95f;
+        box-shadow: 0 0 5px rgba(0, 95, 95, 0.4);
+    }
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #5fb95f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #4CAF50;
+    }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-siredd {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #4CAF50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.location {
+    font-weight: bold;
+    color: #777;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .company__info {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .login_form {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .login_form {
+        padding: 1.5rem;
+    }
+}*/
+
+/* Inline your CSS for easier updates and visibility */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    margin: 5em auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.company__info {
+    background-color: #5fb95f;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.company__logo {
+    font-size: 4rem;
+}
+
+.login_form {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Aligner le contenu au centre */
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__input {
+    width: 80%; /* Réduire un peu la largeur pour centrer */
+    padding: 0.8em;
+    margin-bottom: 1.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .form__input:focus {
+        border-color: #5fb95f;
+        box-shadow: 0 0 5px rgba(0, 95, 95, 0.4);
+    }
+
+    .form__input[type="checkbox"] {
+        width: auto; /* Ajustement de la largeur du checkbox */
+        margin-right: 10px; /* Espacement avec le label */
+    }
+
+.btn {
+    width: 80%; /* Adapter la largeur du bouton pour être centré */
+    padding: 1rem;
+    background-color: #5fb95f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #4CAF50;
+    }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-siredd {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #4CAF50;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.location {
+    font-weight: bold;
+    color: #777;
+}
+
+/* Ajustement du Remember Me */
+.form__input.checkbox-container {
+    display: flex;
+    align-items: center;
+    width: 80%; /* Alignement avec les autres champs */
+    justify-content: flex-start; /* Placer le contenu au début */
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .company__info {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .login_form {
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-content {
+        width: 100%;
+    }
+
+    .login_form {
+        padding: 1.5rem;
+    }
+}

@@ -1,0 +1,68 @@
+﻿body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+.map1 svg {
+    margin-left: 25%;
+    WIDTH: 60%;
+    margin-top: -250px;
+}
+
+.map1 path {
+    fill: #05993e;
+    stroke: #fff;
+    stroke-width: 1px;
+    transition: fill 0.5s;
+}
+
+    .map1 path:hover {
+        fill: #f4524d;
+    }
+
+
+h2 {
+    color: #05993e;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+img {
+    display: inline-block;
+    margin: 0 auto 8px;
+    max-width: 50%;
+    height: auto;
+}
+
+.map1 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    width: 100%;
+    height: auto;
+}
+
+/* Styles spécifiques pour mobile */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .map1 {
+        padding: 0 10px;
+    }
+}
+    
+/* Conteneur de la carte */
+/* Conteneur de la carte */
+/* Conteneur de la carte */
+
+

@@ -1,7 +1,7 @@
 ﻿
 
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     html {
         font-size: 16px;
         position: relative;
@@ -15,10 +15,6 @@ body {
 }
 
 
-
-
-
-
 .header {
     background-color: whitesmoke;
     padding: 20px;
@@ -30,8 +26,8 @@ body {
     }
 
 #logoNav {
-    max-width: 100px; /* Ajustez la taille de l'image si nécessaire */
-    height: auto;
+    max-width: 100px;*/ /* Ajustez la taille de l'image si nécessaire */
+    /*height: auto;
 }
 
 
@@ -53,29 +49,26 @@ body {
 
     .navbar-nav .nav-link:hover {
         background-color: #61bb61;
-        color: white !important; /* Texte blanc au survol */
-    }
+        color: white !important;*/ /* Texte blanc au survol */
+    /*}*/
 
 /* Show dropdown on hover */
-.navbar .dropdown:hover .dropdown-menu {
+/*.navbar .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; /* Ensures the dropdown appears right under the item */
-}
+    margin-top: 0;*/ /* Ensures the dropdown appears right under the item */
+/*}*/
 
 /* Center navbar content */
-.navbar {
+/*.navbar {
     width: 100%;
-}
+}*/
 
 /* Custom toggler button alignment */
-.navbar-toggler {
-    margin: auto;
-}
+
+
 
 /* Optional: Centered content with padding */
-.navbar-nav {
-    padding: 10px 0;
-}
+
 
 /* /* Optional: Adjust the background color on hover */
 /* .navbar .dropdown:hover .nav-link {
@@ -90,54 +83,54 @@ body {
 }
 
 /* Style pour le bouton d'agrandissement */
-.btn-zoom {
+/*.btn-zoom {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
-}
+}*/
 
 /* La modale est cachée par défaut */
-.modal {
-    display: none; /* Cachée par défaut */
-    position: fixed;
+/*.modal {
+    display: none;*/ /* Cachée par défaut */
+    /*position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Arrière-plan semi-transparent */
-}
+    background-color: rgba(0, 0, 0, 0.5);*/ /* Arrière-plan semi-transparent */
+/*}*/
 
 /* Contenu de la modale */
-.modal-content {
+/*.modal-content {
     position: relative;
     margin: auto;
     padding: 20px;
     width: 80%;
     height: 80%;
-    background-color: transparent; /* Fond transparent pour le contenu */
-    border-radius: 10px;
+    background-color: transparent;*/ /* Fond transparent pour le contenu */
+    /*border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
     /* Le SVG prend tout l'espace dans la modale */
-    .modal-content svg {
+    /*.modal-content svg {
         width: 100%;
         height: 100%;
-    }
+    }*/
 
 /* Bouton pour fermer la modale */
-.close {
+/*.close {
     position: absolute;
     top: 10px;
     right: 20px;
-    color: white; /* Blanc pour être visible sur le fond transparent */
-    font-size: 28px;
+    color: white;*/ /* Blanc pour être visible sur le fond transparent */
+    /*font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -147,17 +140,17 @@ body {
         color: #ddd;
         text-decoration: none;
         cursor: pointer;
-    }
+    }*/
 
 
 
-.modal {
-    z-index: 2000; /* Augmentez la valeur du z-index */
-}
+/*.modal {
+    z-index: 2000;*/ /* Augmentez la valeur du z-index */
+/*}
 
 .modal-content {
-    transition: none; /* Disable transitions temporarily */
-}
+    transition: none;*/ /* Disable transitions temporarily */
+/*}
 
 .map1 path {
     fill: #05993e;
@@ -171,53 +164,16 @@ body {
     }
 
 #MA-06 path {
-    /*fill: #f4524d;*/
+    fill: #f4524d;
 }
 
-/*.card-group {
-    display: flex;
-    flex-wrap: wrap;*/ /* Permet aux cartes de se déplacer à la ligne suivante si l'espace est insuffisant */
-    /*justify-content: space-between;*/ /* Espace entre les cartes */
-    /*margin: 0 auto;*/ /* Centre le groupe de cartes */
-/*}
 
-.card {
-    flex: 1 1 30%;*/ /* Permet une largeur de 30%, s'ajuste pour les écrans plus petits */
-    /*margin: 15px;*/ /* Espacement entre les cartes */
-    /*transition: transform 0.2s;*/ /* Transition pour l'effet de hover */
-/*}*/
-
-/* Réduire la taille des cartes sur les écrans plus petits */
-/*@media (max-width: 768px) {
-    .card {
-        flex: 1 1 45%;*/ /* Chaque carte occupera autour de 45% de la largeur */
-    /*}
-}
-
-@media (max-width: 480px) {
-    .card {
-        flex: 1 1 100%;*/ /* Chaque carte occupera 100% de la largeur */
-    /*}
-}*/
-
-/* Effet de survol pour les cartes */
-/*.card:hover {
-    transform: scale(1.05);*/ /* Légère augmentation de la taille au survol */
-/*}
-
-.card-img-top {
-    height: 200px;*/ /* Hauteur fixe pour les images */
-    /*object-fit: cover;*/ /* Assure que l'image couvre l'espace sans déformation */
-/*}*/
-
-/*CSS POUR LES AUTRES ETAPES*/
-/* Global styles for a clean, modern look */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding :0;
-}
+}*/
 
 /* Card container to ensure proper spacing and alignment */
 .card-columns {
@@ -308,4 +264,46 @@ blockquote {
     .card {
         margin-bottom: 1.5rem;
     }
+}
+
+/*NAVBAR*/
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: flex-end; /* Aligns content (including the toggler) to the right */
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: flex-end; /* Ensures the navbar links are aligned to the right on larger screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-toggler {
+        float: right;
+        margin-left: auto; /* Ensure it's aligned to the right on small screens */
+    }
+
+    .navbar-nav {
+        text-align: center; /* Center the nav items on smaller screens */
+        width: 100%;
+    }
+}
+/*NAVBAR  FIX*/
+#logoNav {
+    max-width: 150px; /* Try increasing the size */
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* Ensures the logo and menu items are spaced properly */
+    }
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }

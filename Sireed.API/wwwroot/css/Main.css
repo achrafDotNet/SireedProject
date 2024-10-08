@@ -291,19 +291,84 @@ blockquote {
     }
 }
 /*NAVBAR  FIX*/
-#logoNav {
-    max-width: 150px; /* Try increasing the size */
-    height: auto;
+/*#logoNav {
+    max-width: 150px;*/ /* Try increasing the size */
+    /*height: auto;
 }
 
 @media (min-width: 768px) {
     .navbar {
         display: flex;
-        justify-content: space-between; /* Ensures the logo and menu items are spaced properly */
-    }
+        justify-content: space-between;*/ /* Ensures the logo and menu items are spaced properly */
+    /*}
 }
 
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+}*/
+
+/* Navbar Styles */
+
+/* On larger screens, make sure the logo and menu are properly spaced */
+/*@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}*/
+
+/* On smaller screens, align the toggle button to the right */
+/*@media (max-width: 767px) {
+    .navbar-toggler {
+        margin-left: auto;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        width: 100%;
+    }*/
+
+    /* Fix the collapse issue for small screens */
+    /*.navbar-collapse {
+        text-align: center;
+    }
+}*/
+
+/* Fixing any remaining dropdown alignment issues */
+/*.navbar .dropdown-menu {
+    margin-top: 0;
+}*/
+
+/* Ensure the navbar-toggler stays at the top-right */
+
+.navbar-toggler {
+    position: relative; /* Remove absolute positioning */
+    margin-left: auto; /* This pushes it to the far right inside the flexbox container */
+    margin-right: 10px; /* Adds a bit of spacing from the edge */
+    top: 0; /* Ensures it stays at the top */
+}
+
+/* For larger screens, the default behavior of the navbar can be managed here */
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        position: relative; /* Keeps the toggler in place in flex */
+        margin-right: 10px; /* Adjust if necessary */
+    }
+}
+
+/* For smaller screens, we ensure the toggle button is correctly aligned */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        margin-left: auto;
+        margin-right: 10px; /* Optional to fine-tune the spacing */
+        top: 0; /* Ensures it stays at the top */
+    }
 }

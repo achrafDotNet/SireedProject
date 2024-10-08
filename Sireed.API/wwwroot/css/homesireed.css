@@ -66,3 +66,29 @@ svg {
 /* Conteneur de la carte */
 
 
+.navbar-toggler {
+    background-color: #007bff; /* Couleur de fond */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    color: white; /* Couleur du texte */
+    padding: 10px 15px; /* Espacement intérieur */
+    font-size: 16px; /* Taille de la police */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour les effets */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour effet 3D */
+}
+
+    .navbar-toggler:hover {
+        background-color: #0056b3; /* Couleur de fond au survol */
+        transform: scale(1.05); /* Agrandissement léger au survol */
+    }
+
+    .navbar-toggler:focus {
+        outline: none; /* Suppression de l'outline */
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); /* Ombre autour du bouton au focus */
+    }
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="white" stroke-width="3" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E'); /* Utilisation d'une image SVG pour l'icône */
+    width: 30px; /* Largeur de l'icône */
+    height: 30px; /* Hauteur de l'icône */
+}

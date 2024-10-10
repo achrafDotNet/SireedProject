@@ -1,79 +1,63 @@
-﻿@model IEnumerable<Sireed.API.Models.Indicateur>
+﻿@model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Indicateurs par Région";
 }
 
-<!DOCTYPE html>
+<!-- Inclure les fichiers CSS et JavaScript de DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<h2>@ViewData["Title"]</h2>
+
+<!-- Table HTML pour DataTables -->
+<table id="indicateursTable" class="table table-striped">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nom)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Valeur)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Annee)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Type)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Unite)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Region)
-            </th>
-            <th></th>
+            <th>Nom de la Région</th>
+            <th>Nom de l'Indicateur</th>
+            <th>Description de l'Indicateur</th>
+            <th>Superficie</th>
+            <th>Population</th>
+            <th>Description de la Région</th>
+            <th>Valeur</th>
+            <th>Type</th>
+            <th>Unité</th>
+            <th>Année</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Valeur)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Annee)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Type)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Unite)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Region.Id)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RegionNomDTO</td>
+                <td>@item.IndicateurNomDTO</td>
+                <td>@item.IndicateurDescriptionDTO</td>
+                <td>@item.SuperficieDTO</td>
+                <td>@item.PopulationDTO</td>
+                <td>@item.RegionDescriptionDTO</td>
+                <td>@item.ValeurDTO</td>
+                <td>@item.TypeDTO</td>
+                <td>@item.UniteDTO</td>
+                <td>@item.AnneeDTO</td>
+            </tr>
+        }
     </tbody>
 </table>
-</body>
-</html>
+
+<!-- Script pour initialiser DataTables -->
+<script>
+    $(document).ready(function() {
+        $('#indicateursTable').DataTable({
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/French.json"
+            },
+            "paging": true,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "lengthChange": true
+        });
+    });
+</script>

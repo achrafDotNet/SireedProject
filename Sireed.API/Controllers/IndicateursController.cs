@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
 using Sireed.API.Models;
+using Sireed.APPLICATION.DTO;
 
 namespace Sireed.API.Controllers
 {
@@ -22,8 +23,27 @@ namespace Sireed.API.Controllers
         // GET: Indicateurs
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.indicateurs.Include(i => i.Region);
-            return View(await appDbContext.ToListAsync());
+            var regionIndicateurs = await _context.indicateurs
+                                   .Join(_context.Regions,
+                                         i => i.RegionId,
+                                         r => r.Id,
+                                         (i, r) => new IndicateurDTO
+                                         {
+                                             RegionNomDTO = r.Nom,
+                                             IndicateurNomDTO = i.Nom,
+                                             IndicateurDescriptionDTO = i.Description,
+                                             SuperficieDTO = r.Superficie,
+                                             PopulationDTO = r.Population,
+                                             RegionDescriptionDTO = r.Description,
+                                             ValeurDTO = (decimal)i.Valeur,
+                                             TypeDTO = i.Type,
+                                             UniteDTO = i.Unite,
+                                             AnneeDTO = i.Annee
+                                         })
+                                   .ToListAsync();
+            return View(regionIndicateurs);
+            //var appDbContext = _context.indicateurs.Include(i => i.Region.Id).Where(i=>i.);
+            //return View(await appDbContext.ToListAsync());
         }
 
         // GET: Indicateurs/Details/5

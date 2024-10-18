@@ -1,0 +1,169 @@
+﻿/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styles */
+header {
+    background-color: white;
+    color: #333;
+    padding: 4rem;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Prend la place disponible */
+    justify-content: center; /* Centrer le logo */
+}
+
+    .header-logo img {
+        width: 50px;
+        margin-right: 1rem;
+    }
+
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Toggle button for mobile */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+    .toggle-button div {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 3px 0;
+    }
+
+/* Navigation menu */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-button {
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .toggle-button {
+        display: flex; /* Affiche le toggle */
+    }
+
+    .nav-menu {
+        display: none; /* Masque le menu par défaut */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajuste la position du menu */
+        left: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .nav-menu.active {
+            display: flex; /* Affiche le menu quand actif */
+        }
+
+    .header-logo {
+        justify-content: center; /* Centre le logo */
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    .login-button {
+        width: 100%; /* Bouton plein largeur sur mobile */
+        margin-top: 1rem;
+    }
+}
+
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    padding: 0;
+}*/
+
+.details {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+    .details:hover {
+        background: #f1f1f1;
+        border-color: #888;
+    }
+
+.summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background: #F9F6EE; /* Couleur modifiée */
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.3s;
+}
+
+    .summary:hover {
+        background: #99c39f; /* Couleur au survol */
+        color: white;
+    }
+
+.icon {
+    font-size: 1.2em;
+    transition: transform 0.3s; /* Animation de rotation */
+}
+
+.details.open .icon {
+    transform: rotate(45deg); /* Rotation de l'icône lorsqu'ouvert */
+}
+
+@media (max-width: 600px) {
+    .details {
+        padding: 5px;
+    }
+
+    .summary {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+

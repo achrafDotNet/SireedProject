@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tK/InQ/VmOo4teAWPzIU3lc4nMFRshWDQ+ERbyEihhI=",
+  "Hash": "LpBLGeyVb2RrJJimP+A6MDykkq2wu9iG2dGfO0/yrio=",
   "Source": "Sireed.API",
   "BasePath": "_content/Sireed.API",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homesireed.css"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Indicateur\\Index.css",
+      "SourceId": "Sireed.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\",
+      "BasePath": "_content/Sireed.API",
+      "RelativePath": "css/Indicateur/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Indicateur\\Index.css"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Main.css",

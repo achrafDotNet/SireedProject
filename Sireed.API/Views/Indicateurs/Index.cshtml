@@ -4,70 +4,6 @@
     ViewData["Title"] = "Indicateurs par Région";
     Layout = null;
 }
-@* 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-
-    <!-- Inclure DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-</head>
-<body>
-    <h2>@ViewData["Title"]</h2>
-
-    <!-- Table HTML pour DataTables -->
-    <!-- Table HTML pour DataTables -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-offset-1 col-md-10">
-                <table id="indicateursTable" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Nom de la Région</th>
-                            <th>Nom de l'Indicateur</th>
-                            <th>Description de l'Indicateur</th>
-                            <th>Superficie</th>
-                            <th>Population</th>
-                            <th>Description de la Région</th>
-                            <th>Valeur</th>
-                            <th>Type</th>
-                            <th>Unité</th>
-                            <th>Année</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @if (Model != null && Model.Any())
-                        {
-                            foreach (var item in Model)
-                            {
-                                <tr>
-                                    <td>@item.RegionNomDTO</td>
-                                    <td>@item.IndicateurNomDTO</td>
-                                    <td>@item.IndicateurDescriptionDTO</td>
-                                    <td>@item.SuperficieDTO</td>
-                                    <td>@item.PopulationDTO</td>
-                                    <td>@item.RegionDescriptionDTO</td>
-                                    <td>@item.ValeurDTO</td>
-                                    <td>@item.TypeDTO</td>
-                                    <td>@item.UniteDTO</td>
-                                    <td>@item.AnneeDTO</td>
-                                </tr>
-                            }
-                        }
-                        else
-                        {
-                            <tr>
-                                <td colspan="10">Aucun indicateur disponible.</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table> 
-            </div>
-        </div>
-    </div> *@
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -76,67 +12,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau des Indicateurs</title>
     <!-- Bootstrap CSS -->
+    <link href="~/css/indicateur/index.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+/* Reset some default styles */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+background-color: white;
+color: #333;
+padding: 1rem;
+}
+
+.header-container {
+display: flex;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.header-logo {
+display: flex;
+align-items: center;
+}
+
+.header-logo img {
+width: 50px;
+margin-right: 1rem;
+}
+
+.header-title {
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+/* Responsive styles */
+/* media (max-width: 767px) {
+.header-container {
+flex-direction: column;
+}
+
+.header-logo {
+margin-bottom: 1rem;
+}
+} */
+</style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="bg-dark text-white py-3">
-        <div class="container">
-            <h1 class="text-center"><img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" alt="Alternate Text" /></h1>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="header-logo">
+                <img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" alt="Logo" />
+                <span class="header-title">SIREDD</span>
+            </div>
+            <div class="toggle-button" id="toggle-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#" class="login-button">Login</a>
+            </div>
         </div>
     </header>
 
-    <!-- Main Body -->
-    <main class="container my-5">
-        <div class="table-responsive">
-            <table id="indicateursTable" class="table table-striped table-bordered">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Nom de la Région</th>
-                        <th>Nom de l'Indicateur</th>
-                        <th>Description de l'Indicateur</th>
-                        <th>Superficie</th>
-                        <th>Population</th>
-                        <th>Description de la Région</th>
-                        <th>Valeur</th>
-                        <th>Type</th>
-                        <th>Unité</th>
-                        <th>Année</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @if (Model != null && Model.Any())
-                    {
-                        foreach (var item in Model)
-                        {
-                            <tr>
-                                <td>@item.RegionNomDTO</td>
-                                <td>@item.IndicateurNomDTO</td>
-                                <td>@item.IndicateurDescriptionDTO</td>
-                                <td>@item.SuperficieDTO</td>
-                                <td>@item.PopulationDTO</td>
-                                <td>@item.RegionDescriptionDTO</td>
-                                <td>@item.ValeurDTO</td>
-                                <td>@item.TypeDTO</td>
-                                <td>@item.UniteDTO</td>
-                                <td>@item.AnneeDTO</td>
-                            </tr>
-                        }
-                    }
-                    else
-                    {
-                        <tr>
-                            <td colspan="10" class="text-center">Aucun indicateur disponible.</td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
+@*     <!-- Header -->
+    <header class="bg-white text-dark py-3">
+        <!-- Modifié bg-dark en bg-white -->
+        <div class="container">
+            <h1 class="text-center">
+                <img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" alt="Alternate Text" style="width:50px;" />
+            </h1>
         </div>
-    </main>
+    </header> *@
+
+    <!-- Main Body -->
+    <div class="details">
+  <div class="summary" onclick="toggleDetails(this)">
+      Tous les indicateurs
+      <span class="icon">➕</span>
+  </div>
+  <div class="content" style="display: none;">
+      <!-- Contenu détaillé -->
+            <main class="container my-5">
+                <div class="table-responsive">
+                    <table id="indicateursTable" class="table table-striped table-bordered">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Nom de la Région</th>
+                                <th>Nom de l'Indicateur</th>
+                                <th>Description de l'Indicateur</th>
+                                <th>Superficie</th>
+                                <th>Population</th>
+                                <th>Description de la Région</th>
+                                <th>Valeur</th>
+                                <th>Type</th>
+                                <th>Unité</th>
+                                <th>Année</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.RegionNomDTO</td>
+                                        <td>@item.IndicateurNomDTO</td>
+                                        <td>@item.IndicateurDescriptionDTO</td>
+                                        <td>@item.SuperficieDTO</td>
+                                        <td>@item.PopulationDTO</td>
+                                        <td>@item.RegionDescriptionDTO</td>
+                                        <td>@item.ValeurDTO</td>
+                                        <td>@item.TypeDTO</td>
+                                        <td>@item.UniteDTO</td>
+                                        <td>@item.AnneeDTO</td>
+                                        <td></td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="10" class="text-center">Aucun indicateur disponible.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+  </div>
+</div>
+
+
+    
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-success text-white text-center py-3">
+        <!-- Modifié bg-dark en bg-success (vert) -->
         <div class="container">
             <p>&copy; 2024 - Tous droits réservés</p>
         </div>
@@ -147,120 +170,108 @@
 </body>
 </html>
 
+<style>
 
-    <style>
+
+    .dataTables_paginate .paginate_button {
+        /* border-radius: 4px; */
+        border-radius: 15px;
+    }
+
+
+
     /* En-tête de la table */
     table#indicateursTable thead {
         background-color: #28a745; /* Couleur verte pour l'en-tête */
         color: white;
     }
 
+    /* Table avec DataTables */
+    table#indicateursTable {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 8px;
+        overflow: hidden;
+    }
 
-        /* Table avec DataTables */
-        table#indicateursTable {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-            border-radius: 8px;
-            overflow: hidden;
+        /* En-tête de la table */
+        table#indicateursTable thead {
+            background-color: #3A7D44; /* Couleur de fond de l'en-tête */
+            color: white;
         }
 
-            /* En-tête de la table */
-            table#indicateursTable thead {
-                background-color: #3A7D44; /* Couleur de fond de l'en-tête */
-                color: white;
-            }
-
-                table#indicateursTable thead th {
-                    padding: 12px;
-                    text-align: left;
-                    text-transform: uppercase;
-                    font-size: 14px;
-                    font-weight: 600;
-                    letter-spacing: 0.03em;
-                    border-bottom: 2px solid #e0e0e0;
-                }
-
-            /* Corps de la table */
-            table#indicateursTable tbody td {
-                padding: 10px;
-                font-size: 14px;
-                color: #555;
+            table#indicateursTable thead th {
+                padding: 12px;
                 text-align: left;
-                vertical-align: middle;
-                border-bottom: 1px solid #f0f0f0;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0.03em;
+                border-bottom: 2px solid #e0e0e0;
             }
 
-            /* Ligne de hover */
-            table#indicateursTable tbody tr:hover {
-                background-color: #f9f9f9;
-                transition: background-color 0.2s ease;
-            }
-
-            /* Style pour les données manquantes */
-            table#indicateursTable tbody td[colspan="10"] {
-                text-align: center;
-                font-style: italic;
-                color: #999;
-            }
-
-        /* DataTables Styling */
-        .dataTables_wrapper {
-            padding: 10px 0;
+        /* Corps de la table */
+        table#indicateursTable tbody td {
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+            text-align: left;
+            vertical-align: middle;
+            border-bottom: 1px solid #f0f0f0;
         }
 
-        .dataTables_length,
-        .dataTables_filter {
-            margin-bottom: 15px;
+        /* Ligne de hover */
+        table#indicateursTable tbody tr:hover {
+            background-color: #f9f9f9;
+            transition: background-color 0.2s ease;
         }
 
-            .dataTables_length select,
-            .dataTables_filter input {
-                padding: 5px;
-                border-radius: 4px;
-                border: 1px solid #ccc;
-            }
-
-        .dataTables_paginate {
-            margin-top: 10px;
+        /* Style pour les données manquantes */
+        table#indicateursTable tbody td[colspan="10"] {
+            text-align: center;
+            font-style: italic;
+            color: #999;
         }
 
-            .dataTables_paginate .paginate_button {
-                padding: 5px 10px;
-                margin: 0 2px;
-                background-color: #3A7D44;
-                color: white;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
+    /* DataTables Styling */
+    .dataTables_wrapper {
+        padding: 10px 0;
+    }
+
+    .dataTables_length,
+    .dataTables_filter {
+        margin-bottom: 15px;
+    }
+
+        .dataTables_length select,
+        .dataTables_filter input {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+
+        }
+
+    .dataTables_paginate {
+        margin-top: 10px;
+    }
+
+        .dataTables_paginate .paginate_button {
+            padding: 5px 10px;
+            margin: 0 2px;
+            background-color: #3A7D44;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .dataTables_paginate .paginate_button:hover {
+                background-color: #2F6240;
             }
+</style>
 
-                .dataTables_paginate .paginate_button:hover {
-                    background-color: #2F6240;
-                }
-
-        /* Responsive styles */
-
-    .bg-dark {
-        /* background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important; */
-        background-color: rgb(91, 176, 53) !important;
-    }
-
-
-    :root, [data-bs-theme="light"] {
-        /* --bs-green: #198754; */
-        --bs-green: #3a7d44;
-    }
-
-    .table-dark {
-        /* --bs-table-bg: #212529; */
-        --bs-table-bg: #3a7d44;
-    }
-
-
-
-    </style>
 
 
     <!-- Inclure jQuery -->
@@ -273,6 +284,7 @@
         $(document).ready(function () {
             console.log($.fn.DataTable); // Vérification si DataTables est chargé
             $('#indicateursTable').DataTable({
+            "pageLength": 7, // Affiche 7 lignes par page
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/fr_fr.json"
                 }
@@ -280,6 +292,28 @@
         });
     </script>
 
+    <script>
+    const toggleButton = document.getElementById('toggle-button');
+    const navMenu = document.getElementById('nav-menu');
+
+    toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+    </script>
 
 
+<script>
+    function toggleDetails(element) {
+        const details = element.parentElement;
+        const content = details.querySelector('.content');
+        const icon = details.querySelector('.icon');
 
+        if (content.style.display === "none") {
+            content.style.display = "block";
+            details.classList.add('open');
+        } else {
+            content.style.display = "none";
+            details.classList.remove('open');
+        }
+    }
+</script>

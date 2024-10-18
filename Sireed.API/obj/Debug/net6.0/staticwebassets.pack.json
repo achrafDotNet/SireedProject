@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\Connexion.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Indicateur\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Indicateur\\Index.css"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Main.css",
       "PackagePath": "staticwebassets\\css\\Main.css"
     },

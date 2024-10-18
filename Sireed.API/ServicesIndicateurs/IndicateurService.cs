@@ -10,7 +10,7 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
 {
     public class IndicateurService : IServicesIndicateur
     {
-        private readonly  IServicesIndicateur _servicesIndicateur;
+        private readonly IServicesIndicateur _servicesIndicateur;
         public IndicateurService(IServicesIndicateur appDb) {
         
           _servicesIndicateur = appDb;

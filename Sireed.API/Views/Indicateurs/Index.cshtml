@@ -1,9 +1,10 @@
-﻿  @model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
+﻿   @model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
 
 @{
     ViewData["Title"] = "Indicateurs par Région";
+    Layout = null;
 }
-
+@* 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,48 +19,249 @@
     <h2>@ViewData["Title"]</h2>
 
     <!-- Table HTML pour DataTables -->
-    <table id="indicateursTable" class="table table-striped">
-        <thead>
-            <tr>
-                <th>Nom de la Région</th>
-                <th>Nom de l'Indicateur</th>
-                <th>Description de l'Indicateur</th>
-                <th>Superficie</th>
-                <th>Population</th>
-                <th>Description de la Région</th>
-                <th>Valeur</th>
-                <th>Type</th>
-                <th>Unité</th>
-                <th>Année</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                foreach (var item in Model)
-                {
+    <!-- Table HTML pour DataTables -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+                <table id="indicateursTable" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nom de la Région</th>
+                            <th>Nom de l'Indicateur</th>
+                            <th>Description de l'Indicateur</th>
+                            <th>Superficie</th>
+                            <th>Population</th>
+                            <th>Description de la Région</th>
+                            <th>Valeur</th>
+                            <th>Type</th>
+                            <th>Unité</th>
+                            <th>Année</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.RegionNomDTO</td>
+                                    <td>@item.IndicateurNomDTO</td>
+                                    <td>@item.IndicateurDescriptionDTO</td>
+                                    <td>@item.SuperficieDTO</td>
+                                    <td>@item.PopulationDTO</td>
+                                    <td>@item.RegionDescriptionDTO</td>
+                                    <td>@item.ValeurDTO</td>
+                                    <td>@item.TypeDTO</td>
+                                    <td>@item.UniteDTO</td>
+                                    <td>@item.AnneeDTO</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="10">Aucun indicateur disponible.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table> 
+            </div>
+        </div>
+    </div> *@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Indicateurs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="text-center"><img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" alt="Alternate Text" /></h1>
+        </div>
+    </header>
+
+    <!-- Main Body -->
+    <main class="container my-5">
+        <div class="table-responsive">
+            <table id="indicateursTable" class="table table-striped table-bordered">
+                <thead class="table-dark">
                     <tr>
-                        <td>@item.RegionNomDTO</td>
-                        <td>@item.IndicateurNomDTO</td>
-                        <td>@item.IndicateurDescriptionDTO</td>
-                        <td>@item.SuperficieDTO</td>
-                        <td>@item.PopulationDTO</td>
-                        <td>@item.RegionDescriptionDTO</td>
-                        <td>@item.ValeurDTO</td>
-                        <td>@item.TypeDTO</td>
-                        <td>@item.UniteDTO</td>
-                        <td>@item.AnneeDTO</td>
+                        <th>Nom de la Région</th>
+                        <th>Nom de l'Indicateur</th>
+                        <th>Description de l'Indicateur</th>
+                        <th>Superficie</th>
+                        <th>Population</th>
+                        <th>Description de la Région</th>
+                        <th>Valeur</th>
+                        <th>Type</th>
+                        <th>Unité</th>
+                        <th>Année</th>
                     </tr>
+                </thead>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.RegionNomDTO</td>
+                                <td>@item.IndicateurNomDTO</td>
+                                <td>@item.IndicateurDescriptionDTO</td>
+                                <td>@item.SuperficieDTO</td>
+                                <td>@item.PopulationDTO</td>
+                                <td>@item.RegionDescriptionDTO</td>
+                                <td>@item.ValeurDTO</td>
+                                <td>@item.TypeDTO</td>
+                                <td>@item.UniteDTO</td>
+                                <td>@item.AnneeDTO</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="10" class="text-center">Aucun indicateur disponible.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+    <style>
+    /* En-tête de la table */
+    table#indicateursTable thead {
+        background-color: #28a745; /* Couleur verte pour l'en-tête */
+        color: white;
+    }
+
+
+        /* Table avec DataTables */
+        table#indicateursTable {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+            /* En-tête de la table */
+            table#indicateursTable thead {
+                background-color: #3A7D44; /* Couleur de fond de l'en-tête */
+                color: white;
+            }
+
+                table#indicateursTable thead th {
+                    padding: 12px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 0.03em;
+                    border-bottom: 2px solid #e0e0e0;
                 }
+
+            /* Corps de la table */
+            table#indicateursTable tbody td {
+                padding: 10px;
+                font-size: 14px;
+                color: #555;
+                text-align: left;
+                vertical-align: middle;
+                border-bottom: 1px solid #f0f0f0;
             }
-            else
-            {
-                <tr>
-                    <td colspan="10">Aucun indicateur disponible.</td>
-                </tr>
+
+            /* Ligne de hover */
+            table#indicateursTable tbody tr:hover {
+                background-color: #f9f9f9;
+                transition: background-color 0.2s ease;
             }
-        </tbody>
-    </table>
+
+            /* Style pour les données manquantes */
+            table#indicateursTable tbody td[colspan="10"] {
+                text-align: center;
+                font-style: italic;
+                color: #999;
+            }
+
+        /* DataTables Styling */
+        .dataTables_wrapper {
+            padding: 10px 0;
+        }
+
+        .dataTables_length,
+        .dataTables_filter {
+            margin-bottom: 15px;
+        }
+
+            .dataTables_length select,
+            .dataTables_filter input {
+                padding: 5px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+
+        .dataTables_paginate {
+            margin-top: 10px;
+        }
+
+            .dataTables_paginate .paginate_button {
+                padding: 5px 10px;
+                margin: 0 2px;
+                background-color: #3A7D44;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                .dataTables_paginate .paginate_button:hover {
+                    background-color: #2F6240;
+                }
+
+        /* Responsive styles */
+
+    .bg-dark {
+        /* background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important; */
+        background-color: rgb(91, 176, 53) !important;
+    }
+
+
+    :root, [data-bs-theme="light"] {
+        /* --bs-green: #198754; */
+        --bs-green: #3a7d44;
+    }
+
+    .table-dark {
+        /* --bs-table-bg: #212529; */
+        --bs-table-bg: #3a7d44;
+    }
+
+
+
+    </style>
+
 
     <!-- Inclure jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -77,110 +279,7 @@
             });
         });
     </script>
-</body>
-
-<style>
-    /* Styles généraux pour la page */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-/* Table avec DataTables */
-table#indicateursTable {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-/* En-tête de la table */
-table#indicateursTable thead {
-    background-color: #3A7D44; /* Couleur de fond de l'en-tête */
-    color: white;
-}
-
-table#indicateursTable thead th {
-    padding: 12px;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    border-bottom: 2px solid #e0e0e0;
-}
-
-/* Corps de la table */
-table#indicateursTable tbody td {
-    padding: 10px;
-    font-size: 14px;
-    color: #555;
-    text-align: left;
-    vertical-align: middle;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-/* Ligne de hover */
-table#indicateursTable tbody tr:hover {
-    background-color: #f9f9f9;
-    transition: background-color 0.2s ease;
-}
-
-/* Style pour les données manquantes */
-table#indicateursTable tbody td[colspan="10"] {
-    text-align: center;
-    font-style: italic;
-    color: #999;
-}
-
-/* DataTables Styling */
-.dataTables_wrapper {
-    padding: 10px 0;
-}
-
-.dataTables_length,
-.dataTables_filter {
-    margin-bottom: 15px;
-}
-
-.dataTables_length select,
-.dataTables_filter input {
-    padding: 5px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.dataTables_paginate {
-    margin-top: 10px;
-}
-
-.dataTables_paginate .paginate_button {
-    padding: 5px 10px;
-    margin: 0 2px;
-    background-color: #3A7D44;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.dataTables_paginate .paginate_button:hover {
-    background-color: #2F6240;
-}
-
-/* Responsive styles */
 
 
-</style>
 
-</html>
+

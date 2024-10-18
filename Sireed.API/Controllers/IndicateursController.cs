@@ -9,18 +9,21 @@ using Sireed.API.Data;
 using Sireed.API.Models;
 using Sireed.APPLICATION.DTO;
 using Sireed.APPLICATION.ServicesIndicateurs;
+using Sireed.INFRASTRUCTURE.RepositoryIndicateurs;
 
 namespace Sireed.API.Controllers
 {
     public class IndicateursController : Controller
     {
         private readonly AppDbContext _context;
-        private readonly IndicateurService _serviceiNDICATEUR;
+        //public readonly IndicateurService _serviceiNDICATEUR;
+        private readonly IRepositoryIndicateurs _repositoryIndicateurs;
 
-        public IndicateursController(AppDbContext context,IndicateurService indicateurService)
+        public IndicateursController(AppDbContext context/*,IndicateurService indicateurService*/,IRepositoryIndicateurs repositoryIndicateurs)
         {
             _context = context;
-            _serviceiNDICATEUR = indicateurService;
+            //_serviceiNDICATEUR = indicateurService;
+            _repositoryIndicateurs = repositoryIndicateurs;
         }
 
         // GET: Indicateurs
@@ -28,7 +31,7 @@ namespace Sireed.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _serviceiNDICATEUR.GetAsynciNDICATEUR());
+            return View(await _repositoryIndicateurs.GetIndicateursAsync());
             //var regionIndicateurs = await _context.indicateurs
             //                          .Join(_context.Regions,
             //                                i => i.RegionId,

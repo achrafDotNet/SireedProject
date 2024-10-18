@@ -10,8 +10,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(); // Add Razor Pages services.
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
 
-builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
+//builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
 builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
+
 
 var app = builder.Build();
 

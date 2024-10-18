@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sireed.APPLICATION\Sireed.APPLICATION.csproj" />
-    <ProjectReference Include="..\Sireed.DOMAIN\Sireed.DOMAIN.csproj" />
     <ProjectReference Include="..\Sireed.INFRASTRUCTURE\Sireed.INFRASTRUCTURE.csproj" />
   </ItemGroup>
 

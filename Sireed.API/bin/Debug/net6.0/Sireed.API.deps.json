@@ -16,7 +16,6 @@
           "Microsoft.EntityFrameworkCore.Tools": "6.0.33",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.18",
           "Sireed.APPLICATION": "1.0.0",
-          "Sireed.DOMAIN": "1.0.0",
           "Sireed.INFRASTRUCTURE": "1.0.0"
         },
         "runtime": {
@@ -2645,6 +2644,9 @@
       "Sireed.INFRASTRUCTURE/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.33",
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.33",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
+          "Sireed.APPLICATION": "1.0.0",
           "Sireed.DOMAIN": "1.0.0"
         },
         "runtime": {

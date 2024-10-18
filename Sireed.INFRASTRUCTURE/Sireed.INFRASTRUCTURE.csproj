@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,9 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.33" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Sireed.APPLICATION\Sireed.APPLICATION.csproj" />
     <ProjectReference Include="..\Sireed.DOMAIN\Sireed.DOMAIN.csproj" />
   </ItemGroup>
 

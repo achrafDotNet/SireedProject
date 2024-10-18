@@ -1,63 +1,186 @@
-﻿@model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
+﻿  @model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
 
 @{
     ViewData["Title"] = "Indicateurs par Région";
 }
 
-<!-- Inclure les fichiers CSS et JavaScript de DataTables -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
 
-<h2>@ViewData["Title"]</h2>
+    <!-- Inclure DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h2>@ViewData["Title"]</h2>
 
-<!-- Table HTML pour DataTables -->
-<table id="indicateursTable" class="table table-striped">
-    <thead>
-        <tr>
-            <th>Nom de la Région</th>
-            <th>Nom de l'Indicateur</th>
-            <th>Description de l'Indicateur</th>
-            <th>Superficie</th>
-            <th>Population</th>
-            <th>Description de la Région</th>
-            <th>Valeur</th>
-            <th>Type</th>
-            <th>Unité</th>
-            <th>Année</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <!-- Table HTML pour DataTables -->
+    <table id="indicateursTable" class="table table-striped">
+        <thead>
             <tr>
-                <td>@item.RegionNomDTO</td>
-                <td>@item.IndicateurNomDTO</td>
-                <td>@item.IndicateurDescriptionDTO</td>
-                <td>@item.SuperficieDTO</td>
-                <td>@item.PopulationDTO</td>
-                <td>@item.RegionDescriptionDTO</td>
-                <td>@item.ValeurDTO</td>
-                <td>@item.TypeDTO</td>
-                <td>@item.UniteDTO</td>
-                <td>@item.AnneeDTO</td>
+                <th>Nom de la Région</th>
+                <th>Nom de l'Indicateur</th>
+                <th>Description de l'Indicateur</th>
+                <th>Superficie</th>
+                <th>Population</th>
+                <th>Description de la Région</th>
+                <th>Valeur</th>
+                <th>Type</th>
+                <th>Unité</th>
+                <th>Année</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.RegionNomDTO</td>
+                        <td>@item.IndicateurNomDTO</td>
+                        <td>@item.IndicateurDescriptionDTO</td>
+                        <td>@item.SuperficieDTO</td>
+                        <td>@item.PopulationDTO</td>
+                        <td>@item.RegionDescriptionDTO</td>
+                        <td>@item.ValeurDTO</td>
+                        <td>@item.TypeDTO</td>
+                        <td>@item.UniteDTO</td>
+                        <td>@item.AnneeDTO</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="10">Aucun indicateur disponible.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-<!-- Script pour initialiser DataTables -->
-<script>
-    $(document).ready(function() {
-        $('#indicateursTable').DataTable({
-            "language": {
-                "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/French.json"
-            },
-            "paging": true,
-            "searching": true,
-            "ordering": true,
-            "info": true,
-            "lengthChange": true
+    <!-- Inclure jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Inclure DataTables JS -->
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+    <!-- Initialiser DataTables sur la table -->
+    <script>
+        $(document).ready(function () {
+            console.log($.fn.DataTable); // Vérification si DataTables est chargé
+            $('#indicateursTable').DataTable({
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/1.11.5/i18n/fr_fr.json"
+                }
+            });
         });
-    });
-</script>
+    </script>
+</body>
+
+<style>
+    /* Styles généraux pour la page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table avec DataTables */
+table#indicateursTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* En-tête de la table */
+table#indicateursTable thead {
+    background-color: #3A7D44; /* Couleur de fond de l'en-tête */
+    color: white;
+}
+
+table#indicateursTable thead th {
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Corps de la table */
+table#indicateursTable tbody td {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Ligne de hover */
+table#indicateursTable tbody tr:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.2s ease;
+}
+
+/* Style pour les données manquantes */
+table#indicateursTable tbody td[colspan="10"] {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+/* DataTables Styling */
+.dataTables_wrapper {
+    padding: 10px 0;
+}
+
+.dataTables_length,
+.dataTables_filter {
+    margin-bottom: 15px;
+}
+
+.dataTables_length select,
+.dataTables_filter input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.dataTables_paginate {
+    margin-top: 10px;
+}
+
+.dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 0 2px;
+    background-color: #3A7D44;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background-color: #2F6240;
+}
+
+/* Responsive styles */
+
+
+</style>
+
+</html>

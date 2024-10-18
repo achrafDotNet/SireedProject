@@ -8,43 +8,56 @@ using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
 using Sireed.API.Models;
 using Sireed.APPLICATION.DTO;
+using Sireed.APPLICATION.ServicesIndicateurs;
 
 namespace Sireed.API.Controllers
 {
     public class IndicateursController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly IndicateurService _serviceiNDICATEUR;
 
-        public IndicateursController(AppDbContext context)
+        public IndicateursController(AppDbContext context,IndicateurService indicateurService)
         {
             _context = context;
+            _serviceiNDICATEUR = indicateurService;
         }
 
         // GET: Indicateurs
+        // GET: Indicateurs
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var regionIndicateurs = await _context.indicateurs
-                                   .Join(_context.Regions,
-                                         i => i.RegionId,
-                                         r => r.Id,
-                                         (i, r) => new IndicateurDTO
-                                         {
-                                             RegionNomDTO = r.Nom,
-                                             IndicateurNomDTO = i.Nom,
-                                             IndicateurDescriptionDTO = i.Description,
-                                             SuperficieDTO = r.Superficie,
-                                             PopulationDTO = r.Population,
-                                             RegionDescriptionDTO = r.Description,
-                                             ValeurDTO = (decimal)i.Valeur,
-                                             TypeDTO = i.Type,
-                                             UniteDTO = i.Unite,
-                                             AnneeDTO = i.Annee
-                                         })
-                                   .ToListAsync();
-            return View(regionIndicateurs);
-            //var appDbContext = _context.indicateurs.Include(i => i.Region.Id).Where(i=>i.);
-            //return View(await appDbContext.ToListAsync());
+            return View(await _serviceiNDICATEUR.GetAsynciNDICATEUR());
+            //var regionIndicateurs = await _context.indicateurs
+            //                          .Join(_context.Regions,
+            //                                i => i.RegionId,
+            //                                r => r.Id,
+            //                                (i, r) => new IndicateurDTO
+            //                                {
+            //                                    RegionNomDTO = r.Nom,
+            //                                    IndicateurNomDTO = i.Nom,
+            //                                    IndicateurDescriptionDTO = i.Description,
+            //                                    SuperficieDTO = r.Superficie,
+            //                                    PopulationDTO = r.Population,
+            //                                    RegionDescriptionDTO = r.Description,
+            //                                    ValeurDTO = (decimal)i.Valeur,
+            //                                    TypeDTO = i.Type,
+            //                                    UniteDTO = i.Unite,
+            //                                    AnneeDTO = i.Annee
+            //                                })
+            //                          .ToListAsync();
+
+            //// Vérifiez si le modèle est vide pour déboguer
+            //if (!regionIndicateurs.Any())
+            //{
+            //    // Logique pour gérer le cas où il n'y a pas d'indicateurs
+            //    // Par exemple, vous pourriez vouloir retourner une vue avec un message d'erreur
+            //}
+
+            //return View(regionIndicateurs);
         }
+
 
         // GET: Indicateurs/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -70,6 +83,37 @@ namespace Sireed.API.Controllers
         {
             ViewData["RegionId"] = new SelectList(_context.Regions, "Id", "Id");
             return View();
+        }
+
+        public async Task<IActionResult> ListIndicateurs()
+        {
+            var regionIndicateurs = await _context.indicateurs
+                                     .Join(_context.Regions,
+                                           i => i.RegionId,
+                                           r => r.Id,
+                                           (i, r) => new IndicateurDTO
+                                           {
+                                               RegionNomDTO = r.Nom,
+                                               IndicateurNomDTO = i.Nom,
+                                               IndicateurDescriptionDTO = i.Description,
+                                               SuperficieDTO = r.Superficie,
+                                               PopulationDTO = r.Population,
+                                               RegionDescriptionDTO = r.Description,
+                                               ValeurDTO = (decimal)i.Valeur,
+                                               TypeDTO = i.Type,
+                                               UniteDTO = i.Unite,
+                                               AnneeDTO = i.Annee
+                                           })
+                                     .ToListAsync();
+
+            // Vérifiez si le modèle est vide pour déboguer
+            if (!regionIndicateurs.Any())
+            {
+                // Logique pour gérer le cas où il n'y a pas d'indicateurs
+                // Par exemple, vous pourriez vouloir retourner une vue avec un message d'erreur
+            }
+
+            return View(regionIndicateurs);
         }
 
         // POST: Indicateurs/Create

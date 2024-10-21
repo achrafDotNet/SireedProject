@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\hp\\desktop\\sireed\\sireedproject\\sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\hp\\desktop\\sireed\\sireedproject\\sireed.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\hp\\desktop\\sireed\\sireedproject\\sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|solutionrelative:sireed.api\\wwwroot\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5743F73B-02F7-4F95-980F-1C93D1DC8F93}|Sireed.API\\Sireed.API.csproj|c:\\users\\hp\\desktop\\sireed\\sireedproject\\sireed.api\\views\\regions\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -171,11 +171,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -205,18 +209,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Actualites\\Index.cshtml",
-              "RelativeDocumentMoniker": "Sireed.API\\Views\\Actualites\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Actualites\\Index.cshtml",
-              "RelativeToolTip": "Sireed.API\\Views\\Actualites\\Index.cshtml",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T21:04:35.918Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "IndicateurDTO.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\DTO\\IndicateurDTO.cs",
@@ -226,6 +218,31 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAjwBEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T21:03:18.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sireed.API\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Home\\Index.cshtml*",
+              "RelativeToolTip": "Sireed.API\\Views\\Home\\Index.cshtml*",
+              "ViewState": "AgIAABsCAAAAAAAAAAAqwEMCAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T21:03:18.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Actualites\\Index.cshtml",
+              "RelativeDocumentMoniker": "Sireed.API\\Views\\Actualites\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Actualites\\Index.cshtml",
+              "RelativeToolTip": "Sireed.API\\Views\\Actualites\\Index.cshtml",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-21T21:04:35.918Z"
             },
             {
               "$type": "Document",
@@ -242,19 +259,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Sireed.API\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Sireed.API\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T21:03:18.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Main.css",
               "DocumentMoniker": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\wwwroot\\css\\Main.css",
               "RelativeDocumentMoniker": "Sireed.API\\wwwroot\\css\\Main.css",
@@ -264,10 +268,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-21T21:03:18.892Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",

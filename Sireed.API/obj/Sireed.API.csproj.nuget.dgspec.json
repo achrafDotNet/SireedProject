@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\Sireed.API.csproj": {}
+    "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Sireed.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\Sireed.API.csproj": {
+    "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Sireed.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\Sireed.API.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Sireed.API.csproj",
         "projectName": "Sireed.API",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\Sireed.API.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\Sireed.API.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,11 +29,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj"
+              "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj"
+              "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj"
               }
             }
           }
@@ -109,17 +109,17 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
+    "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj",
         "projectName": "Sireed.APPLICATION",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -170,17 +170,17 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj": {
+    "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj",
         "projectName": "Sireed.DOMAIN",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -231,17 +231,17 @@
         }
       }
     },
-    "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj": {
+    "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj",
         "projectName": "Sireed.INFRASTRUCTURE",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\obj\\",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\Sireed.INFRASTRUCTURE.csproj",
+        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.INFRASTRUCTURE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -256,11 +256,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj"
+              "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.APPLICATION\\Sireed.APPLICATION.csproj"
               },
-              "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj": {
-                "projectPath": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj"
+              "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj": {
+                "projectPath": "C:\\Users\\hp\\Desktop\\Sireed\\SireedProject\\Sireed.DOMAIN\\Sireed.DOMAIN.csproj"
               }
             }
           }

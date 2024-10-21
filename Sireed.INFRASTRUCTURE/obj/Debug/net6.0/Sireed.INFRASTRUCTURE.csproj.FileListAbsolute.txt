@@ -32,3 +32,21 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\refint\Sireed.INFRASTRUCTURE.dll
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\ref\Sireed.INFRASTRUCTURE.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.deps.json
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.APPLICATION.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.DOMAIN.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.APPLICATION.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.DOMAIN.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.AssemblyInfo.cs
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.sourcelink.json
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.I.EE51D628.Up2Date
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\refint\Sireed.INFRASTRUCTURE.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\ref\Sireed.INFRASTRUCTURE.dll

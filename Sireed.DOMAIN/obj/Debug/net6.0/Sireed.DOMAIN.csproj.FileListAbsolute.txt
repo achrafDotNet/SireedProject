@@ -22,3 +22,15 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.DOMAIN\obj\Debug\net6.0\refint\Sireed.DOMAIN.dll
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.DOMAIN\obj\Debug\net6.0\ref\Sireed.DOMAIN.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\bin\Debug\net6.0\Sireed.DOMAIN.deps.json
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\bin\Debug\net6.0\Sireed.DOMAIN.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\bin\Debug\net6.0\Sireed.DOMAIN.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.AssemblyInfo.cs
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.sourcelink.json
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\refint\Sireed.DOMAIN.dll
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\Sireed.DOMAIN.pdb
+C:\Users\hp\Desktop\Sireed\SireedProject\Sireed.DOMAIN\obj\Debug\net6.0\ref\Sireed.DOMAIN.dll

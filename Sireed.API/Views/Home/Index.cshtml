@@ -11,10 +11,26 @@
 
     <link rel="stylesheet" href="~/css/Main.css" />
     <!-- Bootstrap CSS from CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+@*     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> *@
+
+    <!-- CSS Bootstrap -->
+
+<!-- Ajoutez ceci dans votre fichier _Layout.cshtml ou Index.cshtml -->
+<!-- CSS Bootstrap -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
 
 
 
@@ -502,7 +518,7 @@
   </div>
 </div>
 
-    <div class="py-5 draggable">
+   @*  <div class="py-5 draggable">
         <div class="container">
             <div class="row">
                 <div class="col-8 mx-auto text-center">
@@ -531,31 +547,68 @@
                 </div>
             </div>
         </div>
+    </div> *@
+    <div class="py-5 draggable">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 mx-auto text-center">
+                <h6 class="opacity-5">Partenaires</h6>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <!-- Repeating structure for logos -->
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/aurs_logo.jpg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/t%C3%A9l%C3%A9chargement.png" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/1607815572564.jpg" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/t%C3%A9l%C3%A9chargement%20(2).jfif" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/t%C3%A9l%C3%A9chargement.jfif" alt="logo">
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <img class="partner-logo" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/logoOrganisme/download.png" alt="logo">
+            </div>
+        </div>
     </div>
+</div>
+
+<style>
+    .partner-logo {
+    width: 100px; /* Largeur uniforme */
+    height: 100px; /* Hauteur uniforme */
+    object-fit: contain; /* Pour que l'image garde ses proportions et soit entièrement visible */
+}
+
+</style>
+
     </body>
 
     <!-- START MAP -->
 
+
 <!DOCTYPE html>
 
-<html lang="fr">
-<head>
-    <meta content="" charset="utf-8" />
-    <title>SIREDD - Rabat Sale Kenitra</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GN7KEHNRNX"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'G-GN7KEHNRNX');
+      gtag('config', 'G-GN7KEHNRNX');
     </script>
     <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+
     <!--
     <script src="http://code.jquery.com/jquery-1.3.2.min.js" type="text/javascript"></script>
          -->
@@ -725,14 +778,14 @@
             margin-top: 35px;
         }
 
-        span.region {
-            position: absolute;
-            font-size: 1.062rem;
-            margin: 0px;
-            float: left;
-            letter-spacing: 0.211em;
-            margin: 0 0px 0px 10px;
-        }
+          span.region {
+    position: absolute;
+    font-size: 1.062rem;
+    margin: 0px;
+    float: left;
+    letter-spacing: 0.211em;
+    margin: 0 0px 0px 10px;
+}
 
         span.linelogo {
             letter-spacing: 2.99px;
@@ -756,507 +809,508 @@
 
 
 
-    <link href="/Rabat-Sale-Kenitra/Content/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/flexslider.css" type="text/css"
-          media="screen">
-    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/parallax-slider.css"
-          type="text/css">
-    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/font-awesome-4.0.3/css/font-awesome.min.css"
-          type="text/css">
-    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/style.css" type="text/css"
-          media="all">
-    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/bootslider.css" type="text/css"
-          media="all">
-    <!-- Custom styles for this template -->
-    <link href="/Rabat-Sale-Kenitra/Content/assets/custom/css/business-plate.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/Rabat-Sale-Kenitra/Content/assets/custom/ico/favicon.ico">
-    <script src="js/cufon-yui.js" type="text/javascript"></script>
-    <script src="js/Aller.font.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        Cufon.replace('ul.oe_menu div a', { hover: true });
-        Cufon.replace('h1,h2,.oe_heading');
-    </script>
-    <!-- JS Global Compulsory -->
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/modernizr.custom.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/bootstrap/js/bootstrap.min.js"></script>
-    <!-- JS Implementing Plugins -->
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/modernizr.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.cslider.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/back-to-top.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.sticky.js"></script>
-    <!-- JS Page Level -->
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/app.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/index.js"></script>
-    <!-- <div class="page-container row-fluid full-width-page"> -->
-    <!-- Bootstrap responsive -->
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <!-- Bootslider -->
-    <link href="/Rabat-Sale-Kenitra/Content/carousel/css/style.css" rel="stylesheet">
-    <link href="/Rabat-Sale-Kenitra/Content/assets/custom/css/bootslider.css" rel="stylesheet" />
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/carousel/js/jquery.flexisel.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/bootslider.js"></script>
-    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/jquery-easy-ticker-master/jquery.easy-ticker.min.js"></script>
-    <style type="text/css">
-        .col-md-3 {
-            /*width: 20%;*/
-        }
+<link href="/Rabat-Sale-Kenitra/Content/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS Implementing Plugins -->
+<link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/flexslider.css" type="text/css"
+      media="screen">
+<link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/parallax-slider.css"
+      type="text/css">
+<link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/font-awesome-4.0.3/css/font-awesome.min.css"
+      type="text/css">
+<link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/style.css" type="text/css"
+      media="all">
+<link rel="stylesheet" href="/Rabat-Sale-Kenitra/Content/assets/custom/css/bootslider.css" type="text/css"
+      media="all">
+<!-- Custom styles for this template -->
+<link href="/Rabat-Sale-Kenitra/Content/assets/custom/css/business-plate.css" rel="stylesheet">
+<link rel="shortcut icon" href="/Rabat-Sale-Kenitra/Content/assets/custom/ico/favicon.ico">
+<script src="js/cufon-yui.js" type="text/javascript"></script>
+<script src="js/Aller.font.js" type="text/javascript"></script>
+<script type="text/javascript">
+    Cufon.replace('ul.oe_menu div a', { hover: true });
+    Cufon.replace('h1,h2,.oe_heading');
+</script>
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/modernizr.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/back-to-top.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/jquery.sticky.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/app.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/index.js"></script>
+<!-- <div class="page-container row-fluid full-width-page"> -->
+<!-- Bootstrap responsive -->
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+<!-- Bootslider -->
+<link href="/Rabat-Sale-Kenitra/Content/carousel/css/style.css" rel="stylesheet">
+<link href="/Rabat-Sale-Kenitra/Content/assets/custom/css/bootslider.css" rel="stylesheet" />
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/carousel/js/jquery.flexisel.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/assets/custom/js/bootslider.js"></script>
+<script type="text/javascript" src="/Rabat-Sale-Kenitra/Content/jquery-easy-ticker-master/jquery.easy-ticker.min.js"></script>
+<style type="text/css">
+    .col-md-3 {
+        /*width: 20%;*/
+    }
 
-        li {
-            /*border: 1px solid #CCCCCC;*/
-        }
-
-
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-        }
-
-        /* Modal Content (image) */
-        .modal-content {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-        }
-
-        /* Caption of Modal Image */
-        #caption {
-            margin: auto;
-            display: block;
-            width: 80%;
-            max-width: 700px;
-            text-align: center;
-            color: #ccc;
-            padding: 10px 0;
-            height: 150px;
-        }
-
-        /* Add Animation */
-        .modal-content, #caption {
-            -webkit-animation-name: zoom;
-            -webkit-animation-duration: 0.6s;
-            animation-name: zoom;
-            animation-duration: 0.6s;
-        }
+    li {
+        /*border: 1px solid #CCCCCC;*/
+    }
 
 
-        /* The Close Button */
-        .close {
-            position: absolute;
-            top: 15px;
-            right: 35px;
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    }
+
+    /* Modal Content (image) */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+    }
+
+    /* Caption of Modal Image */
+    #caption {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+    }
+
+    /* Add Animation */
+    .modal-content, #caption {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #FFF;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+        .close:hover,
+        .close:focus {
             color: #FFF;
-            font-size: 40px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-            .close:hover,
-            .close:focus {
-                color: #FFF;
-                text-decoration: none;
-                cursor: pointer;
-            }
-
-        .post-date {
-            float: left;
-            margin-right: 7px;
-            margin-left: 7px;
-            text-align: center;
-            width: 60px;
-            height: 165px;
-        }
-
-            .post-date .day {
-                color: #05993e;
-                background: #f4f4f4;
-            }
-
-            .post-date .day {
-                display: block;
-                font-size: 14px;
-                font-weight: 500;
-                font-weight: bold;
-                padding: 10px 0;
-            }
-
-            .post-date .month {
-                box-shadow: 0 -1px 0 0 rgba(0,0,0,0.07) inset;
-                color: #FFF;
-                font-size: 14px;
-                padding: 0 0 10px;
-                display: block;
-                background-color: #05993e;
-            }
-
-
-        .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-            display: block;
-            height: auto;
-            max-width: 100%;
-            max-height: 100% !important;
-            height: 450px;
-            line-height: 1;
-        }
-
-        .carousel-inner {
-            height: 450px;
-        }
-
-            .carousel-inner img {
-                width: 100%;
-                height: auto;
-            }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- START MAP -->
-    <style>
-        .nbs-flexisel-inner {
-            background: #ffffff;
-        }
-
-        #viewDiv {
-            padding: 0;
-            margin: 0;
-            height: 550px;
-            width: 100%;
-        }
-
-            #viewDiv .title {
-                margin-bottom: 0 !important;
-            }
-
-        #toSIG {
-            transition: 0.5s;
-            bottom: 550px;
-            float: right;
-            position: relative;
-            height: 40px;
-            padding: 10px;
-            color: #ffffff;
-            background-color: #35aa47;
             text-decoration: none;
-            border: solid 1px transparent;
-            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    .post-date {
+        float: left;
+        margin-right: 7px;
+        margin-left:7px;
+        text-align: center;
+        width: 60px;
+        height: 165px;
+    }
+
+        .post-date .day {
+            color: #05993e;
+            background: #f4f4f4;
+        }
+
+        .post-date .day {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
             font-weight: bold;
-            margin: 5px;
-            box-shadow: 0px 0px 15px #000;
-            margin-bottom: -45px;
+            padding: 10px 0;
         }
 
-            #toSIG:hover {
-                color: #35aa47;
-                border-color: currentColor;
-                background-color: white;
-            }
-
-            #toSIG:focus {
-                outline: none;
-                box-shadow: 0 0 0 3px rgba(0, 105, 0, 0.5), 0 0 0 1.5px rgba(0, 105, 0, 0.5);
-            }
-
-        .esri-ui-inner-container .esri-attribution {
+        .post-date .month {
+            box-shadow: 0 -1px 0 0 rgba(0,0,0,0.07) inset;
+            color: #FFF;
+            font-size: 14px;
+            padding: 0 0 10px;
+            display: block;
+            background-color: #05993e;
         }
 
-        #search {
-            bottom: 550px;
-            float: left;
-            position: relative;
-            height: 40px;
-            padding: 10px;
-            font-weight: bold;
-            margin-top: 10px;
-            margin-bottom: -50px;
-            margin-left: 55px;
+
+    .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        max-height: 100% !important;
+        height: 450px;
+        line-height: 1;
+    }
+
+    .carousel-inner {
+        height: 450px;
+    }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
         }
+</style>
 
-        .simpleGeocoder .esriGeocoder input {
-            width: 200px !important;
-            font-weight: normal;
-        }
 
-        .simpleGeocoder .esriGeocoderContainer {
-            width: 260px !important;
-        }
 
-        .esriControlsBR {
-            display: none;
-        }
-    </style>
 
-    <link rel="stylesheet" href="https://js.arcgis.com/3.29/esri/css/esri.css">
-    <script src="https://js.arcgis.com/3.29/"></script>
 
-    <script>
-        //require(["esri/Map", "esri/views/MapView"], function (Map, MapView) {
-        //    var map = new Map({
-        //        basemap: "hybrid"
-        //    });
 
-        //    var view = new MapView({
-        //        container: "viewDiv",
-        //        map: map,
-        //        zoom: 8,
-        //        center: [-3.4, 31.7] // longitude, latitude
-        //    });
 
-        //    view.on("mouse-wheel", function (event) {
-        //        // disable mouse wheel scroll zooming on the view
-        //        event.stopPropagation();
-        //    });
-        //});
 
-        dojo.require("esri.map");
-        dojo.require("esri.dijit.Geocoder");
 
-        var map, geocoder;
 
-        dojo.ready(function () {
-            // create the map
-            map = new esri.Map("viewDiv", {
-                basemap: "hybrid",
-                center: [-6.83349609375, 34.025347738147936], // long, lat  2311162.217155
-                zoom: 8
-            });
 
-            // add a graphics layer for geocoding results
-            map.addLayer(new esri.layers.GraphicsLayer({
-                id: "results"
-            }));
 
-            // create the geocoder
-            geocoder = new esri.dijit.Geocoder({
-                autoNavigate: false, // do not zoom to best result
-                maxLocations: 100, // increase number of results returned
-                map: map,
-                arcgisGeocoder: {
-                    url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
-                    name: "Esri World Geocoder",
-                    placeholder: "Rechercher un emplacement",
-                    sourceCountry: "Morocco" // limit search to a country
+
+            <!-- START MAP -->
+            <style>
+                .nbs-flexisel-inner {
+                    background: #ffffff;
+
                 }
-            }, "search");
-            geocoder.startup();
-            //geocoder.focus();
+                #viewDiv {
+                    padding: 0;
+                    margin: 0;
+                    height: 550px;
+                    width: 100%;
+                }
 
-            var symbol = new esri.symbol.PictureMarkerSymbol({
-                "angle": 0,
-                "xoffset": 0,
-                "yoffset": 10,
-                "type": "esriPMS",
-                "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
-                "contentType": "image/png",
-                "width": 24,
-                "height": 24
-            });
-            var template = new esri.InfoTemplate("${name}", "${*}");
+                    #viewDiv .title {
+                        margin-bottom: 0 !important;
+                    }
 
+                #toSIG {
+                    transition: 0.5s;
+                    bottom: 550px;
+                    float: right;
+                    position: relative;
+                    height: 40px;
+                    padding: 10px;
+                    color: #ffffff;
+                    background-color: #35aa47;
+                    text-decoration: none;
+                    border: solid 1px transparent;
+                    border-radius: 4px;
+                    font-weight: bold;
+                    margin: 5px;
+                    box-shadow: 0px 0px 15px #000;
+                    margin-bottom: -45px;
+                }
 
-            dojo.connect(geocoder, "onFindResults", function (response) {
-                console.log("find results: ", response);
-                var l = map.getLayer("results");
-                l.clear();
-                map.infoWindow.hide();
-                // Clear the ul before appending new results
-                $('.simpleGeocoder').find('.Ulmenu').remove();
-                var Ulmenu = $('<ul>').addClass('Ulmenu');
-                // Remove the Ulmenu <ul> element
+                    #toSIG:hover {
+                        color: #35aa47;
+                        border-color: currentColor;
+                        background-color: white;
+                    }
 
-                dojo.forEach(response.results, function (r) {
-                    r.feature.attributes.name = r.name;
-                    r.feature.setSymbol(symbol);
-                    r.feature.setInfoTemplate(template);
-                    l.add(r.feature);
+                    #toSIG:focus {
+                        outline: none;
+                        box-shadow: 0 0 0 3px rgba(0, 105, 0, 0.5), 0 0 0 1.5px rgba(0, 105, 0, 0.5);
+                    }
 
-                    // Create a new li element for each result
-                    var li = document.createElement("li");
-                    li.textContent = r.name;
+                .esri-ui-inner-container .esri-attribution {
+                }
 
-                    // Add a click event listener to zoom to the selected position
-                    li.addEventListener("click", function () {
-                        //console.log(r.feature._extent);
-                        var extent = r.feature._extent;
+                #search {
+                    bottom: 550px;
+                    float: left;
+                    position: relative;
+                    height: 40px;
+                    padding: 10px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    margin-bottom: -50px;
+                    margin-left: 55px;
+                }
 
-                        if (extent) {
-                            map.setExtent(extent.expand(1.5));
-                        }
+                .simpleGeocoder .esriGeocoder input {
+                    width: 200px !important;
+                    font-weight: normal;
+                }
+
+                .simpleGeocoder .esriGeocoderContainer {
+                    width: 260px !important;
+                }
+
+                .esriControlsBR {
+                    display: none;
+                }
+            </style>
+
+            <link rel="stylesheet" href="https://js.arcgis.com/3.29/esri/css/esri.css">
+            <script src="https://js.arcgis.com/3.29/"></script>
+
+            <script>
+                //require(["esri/Map", "esri/views/MapView"], function (Map, MapView) {
+                //    var map = new Map({
+                //        basemap: "hybrid"
+                //    });
+
+                //    var view = new MapView({
+                //        container: "viewDiv",
+                //        map: map,
+                //        zoom: 8,
+                //        center: [-3.4, 31.7] // longitude, latitude
+                //    });
+
+                //    view.on("mouse-wheel", function (event) {
+                //        // disable mouse wheel scroll zooming on the view
+                //        event.stopPropagation();
+                //    });
+                //});
+
+                dojo.require("esri.map");
+                dojo.require("esri.dijit.Geocoder");
+
+                var map, geocoder;
+
+                dojo.ready(function () {
+                    // create the map
+                    map = new esri.Map("viewDiv", {
+                        basemap: "hybrid",
+                        center: [-6.83349609375, 34.025347738147936], // long, lat  2311162.217155
+                        zoom: 8
                     });
 
-                    // Append the li to the ul
-                    Ulmenu.append(li);
+                    // add a graphics layer for geocoding results
+                    map.addLayer(new esri.layers.GraphicsLayer({
+                        id: "results"
+                    }));
+
+                    // create the geocoder
+                    geocoder = new esri.dijit.Geocoder({
+                        autoNavigate: false, // do not zoom to best result
+                        maxLocations: 100, // increase number of results returned
+                        map: map,
+                        arcgisGeocoder: {
+                            url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+                            name: "Esri World Geocoder",
+                            placeholder: "Rechercher un emplacement",
+                            sourceCountry: "Morocco" // limit search to a country
+                        }
+                    }, "search");
+                    geocoder.startup();
+                    //geocoder.focus();
+
+                    var symbol = new esri.symbol.PictureMarkerSymbol({
+                        "angle": 0,
+                        "xoffset": 0,
+                        "yoffset": 10,
+                        "type": "esriPMS",
+                        "url": "https://static.arcgis.com/images/Symbols/Shapes/BluePin1LargeB.png",
+                        "contentType": "image/png",
+                        "width": 24,
+                        "height": 24
+                    });
+                    var template = new esri.InfoTemplate("${name}", "${*}");
 
 
+                    dojo.connect(geocoder, "onFindResults", function (response) {
+                         console.log("find results: ", response);
+                         var l = map.getLayer("results");
+                         l.clear();
+                         map.infoWindow.hide();
+                        // Clear the ul before appending new results
+                        $('.simpleGeocoder').find('.Ulmenu').remove();
+                        var Ulmenu = $('<ul>').addClass('Ulmenu');
+                        // Remove the Ulmenu <ul> element
+
+                         dojo.forEach(response.results, function (r) {
+                             r.feature.attributes.name = r.name;
+                             r.feature.setSymbol(symbol);
+                             r.feature.setInfoTemplate(template);
+                             l.add(r.feature);
+
+                            // Create a new li element for each result
+                            var li = document.createElement("li");
+                            li.textContent = r.name;
+
+                            // Add a click event listener to zoom to the selected position
+                            li.addEventListener("click", function() {
+                             //console.log(r.feature._extent);
+                              var extent = r.feature._extent;
+
+                              if (extent) {
+                                map.setExtent(extent.expand(1.5));
+                              }
+                            });
+
+                            // Append the li to the ul
+                            Ulmenu.append(li);
+
+
+                         });
+                        $('.simpleGeocoder').append(Ulmenu);
+
+                     });
                 });
-                $('.simpleGeocoder').append(Ulmenu);
 
-            });
+            </script>
+            <style>
+  ul.Ulmenu {
+    width: 93%;
+    list-style: none;
+    z-index: 99999999999999999999999999999999999;
+    margin-top: 0;
+    position: absolute;
+    color: #d5d5d5;
+  }
+
+  ul.Ulmenu li {
+    padding: 10px;
+    background-color: #243d4778;
+    border-bottom: 1px solid #383434;
+    cursor:pointer;
+  }
+
+  ul.Ulmenu li:hover {
+    background-color: #2a576878;
+    cursor:pointer;
+  }
+</style>
+
+            <div id="viewDiv"></div>
+            <div id="search"></div>
+            <a id="toSIG" href="/Rabat-Sale-Kenitra/SIG/SigIndex"><i class="fa fa-share-square-o" aria-hidden="true"></i> Accéder au SIG</a>
+            <!-- END MAP -->
+            <!-- BEGIN PAGE CONTAINER-->
+            <!-- <div class="container" style="margin-bottom:20px;margin-top:10px;"> -->
+
+            <div id="dialog" title="Éditer" style="top: 1px; overflow: hidden;">
+            </div>
+        </div>
+<script type="text/javascript" language="javascript">
+                $(document).ready(function () {
+                $("#viewDiv").on("click", function() { $('.simpleGeocoder').find('.Ulmenu').remove(); });
+                    $('#dialog').dialog({
+                        autoOpen: false,
+                        height: 356.633,
+                        width: 700.633,
+                        maxHeight: 736.633,
+                        maxWidth: 948.633,
+                        resizable: false,
+                        closeOnEscape: true,
+                        modal: true
+                    });
+                });
+
+    function suite(zon, txt) {
+                    //alert(1)
+                    // url de l'ancienne image
+                    imgUrl = txt.substring(txt.indexOf('src="') + 5, txt.indexOf('" class'));
+                    // l'ancien text
+                    textCont = txt.substring(txt.indexOf('<br />') + 6, txt.indexOf(' ...</p><a'));
+
+                    //alert(2)    
+        $.ajax({
+            url: '/Rabat-Sale-Kenitra/Home/ModifierAccueil?Zonne=' + zon + '&img=' + imgUrl + '&txt=' + textCont,
+                        type: 'POST',
+                        success: function (result) {
+                            $("#dialog").html(result);
+                            0619941854
+
+                            $("#dialog").dialog("open");
+                        },
+                        error: function (err) {
+
+                            alert("Erreur lors du chargement de la page de Modification !");
+                            console.log("error : \n" + JSON.stringify(err))
+                        }
+                    });
+                };
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#list_photos").flexisel({
+            visibleItems: 4,
+            animationSpeed: 500,
+            autoPlay: true,
+            autoPlaySpeed: 1000,
+            pauseOnHover: true,
+            clone: true,
+            enableResponsiveBreakpoints: true
+            //            responsiveBreakpoints: {
+            //                portrait: {
+            //                    changePoint: 480,
+            //                    visibleItems: 1
+            //                },
+            //                landscape: {
+            //                    changePoint: 640,
+            //                    visibleItems: 2
+            //                },
+            //                tablet: {
+            //                    changePoint: 768,
+            //                    visibleItems: 3
+            //                }
+            //            }
         });
 
-    </script>
-    <style>
-        ul.Ulmenu {
-            width: 93%;
-            list-style: none;
-            z-index: 99999999999999999999999999999999999;
-            margin-top: 0;
-            position: absolute;
-            color: #d5d5d5;
-        }
 
-            ul.Ulmenu li {
-                padding: 10px;
-                background-color: #243d4778;
-                border-bottom: 1px solid #383434;
-                cursor: pointer;
+        $('.ticker1').easyTicker({
+            direction: 'up',
+            easing: 'swing',
+            speed: 'slow',
+            interval: 3000,
+            height: '305px',
+            visible: 3,
+            mousePause: 1,
+            controls: {
+                up: '',
+                down: '',
+                toggle: '',
+                playText: 'Play',
+                stopText: 'Stop'
             }
-
-                ul.Ulmenu li:hover {
-                    background-color: #2a576878;
-                    cursor: pointer;
-                }
-    </style>
-
-    <div id="viewDiv"></div>
-    <div id="search"></div>
-    <a id="toSIG" href="/Rabat-Sale-Kenitra/SIG/SigIndex"><i class="fa fa-share-square-o" aria-hidden="true"></i> Accéder au SIG</a>
-    <!-- END MAP -->
-    <!-- BEGIN PAGE CONTAINER-->
-    <!-- <div class="container" style="margin-bottom:20px;margin-top:10px;"> -->
-
-    <div id="dialog" title="Éditer" style="top: 1px; overflow: hidden;">
-    </div>
-    </div>
-    <script type="text/javascript" language="javascript">
-        $(document).ready(function () {
-            $("#viewDiv").on("click", function () { $('.simpleGeocoder').find('.Ulmenu').remove(); });
-            $('#dialog').dialog({
-                autoOpen: false,
-                height: 356.633,
-                width: 700.633,
-                maxHeight: 736.633,
-                maxWidth: 948.633,
-                resizable: false,
-                closeOnEscape: true,
-                modal: true
-            });
         });
+    });
+</script>
 
-        function suite(zon, txt) {
-            //alert(1)
-            // url de l'ancienne image
-            imgUrl = txt.substring(txt.indexOf('src="') + 5, txt.indexOf('" class'));
-            // l'ancien text
-            textCont = txt.substring(txt.indexOf('<br />') + 6, txt.indexOf(' ...</p><a'));
-
-            //alert(2)
-            $.ajax({
-                url: '/Rabat-Sale-Kenitra/Home/ModifierAccueil?Zonne=' + zon + '&img=' + imgUrl + '&txt=' + textCont,
-                type: 'POST',
-                success: function (result) {
-                    $("#dialog").html(result);
-                                    0619941854
-
-                    $("#dialog").dialog("open");
-                },
-                error: function (err) {
-
-                    alert("Erreur lors du chargement de la page de Modification !");
-                    console.log("error : \n" + JSON.stringify(err))
-                }
-            });
-        };
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $("#list_photos").flexisel({
-                visibleItems: 4,
-                animationSpeed: 500,
-                autoPlay: true,
-                autoPlaySpeed: 1000,
-                pauseOnHover: true,
-                clone: true,
-                enableResponsiveBreakpoints: true
-                //            responsiveBreakpoints: {
-                //                portrait: {
-                //                    changePoint: 480,
-                //                    visibleItems: 1
-                //                },
-                //                landscape: {
-                //                    changePoint: 640,
-                //                    visibleItems: 2
-                //                },
-                //                tablet: {
-                //                    changePoint: 768,
-                //                    visibleItems: 3
-                //                }
-                //            }
-            });
-
-
-            $('.ticker1').easyTicker({
-                direction: 'up',
-                easing: 'swing',
-                speed: 'slow',
-                interval: 3000,
-                height: '305px',
-                visible: 3,
-                mousePause: 1,
-                controls: {
-                    up: '',
-                    down: '',
-                    toggle: '',
-                    playText: 'Play',
-                    stopText: 'Stop'
-                }
-            });
+<script>
+    $(function () {
+        $(".demo1").bootstrapNews({
+            newsPerPage: 3,
+            autoplay: true,
+            pauseOnHover: true,
+            direction: 'up',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
         });
-    </script>
+    });
+</script>
 
-    <script>
-        $(function () {
-            $(".demo1").bootstrapNews({
-                newsPerPage: 3,
-                autoplay: true,
-                pauseOnHover: true,
-                direction: 'up',
-                newsTickerInterval: 4000,
-                onToDo: function () {
-                    //console.log(this);
-                }
-            });
-        });
-    </script>
+<!-- END PAGE -->
 
-    <!-- END PAGE -->
-    </div>
-    </div>
+            </div>
+        </div>
     </header>
     <div class="container" style="width: 100%; padding: 0;background: #fff;">
 
@@ -1264,6 +1318,7 @@
             <div class="page-container row-fluid full-width-page">
                 <div class="page-content">
                     <section class="content-wrapper main-content clear-fix">
+
                     </section>
                 </div>
             </div>
@@ -1315,7 +1370,6 @@
     <script src="/Rabat-Sale-Kenitra/Scripts/main.js"></script>
 
     <script src='../../Content/assets/js/dependent-selects.js'></script>
-    <!- CSS -->
 
     <script src="/Rabat-Sale-Kenitra/Scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/Rabat-Sale-Kenitra/Scripts/wow.min.js"></script>
@@ -1363,12 +1417,12 @@
         if (isiPad) $('#menu ul').addClass('no-transition');
 
         $(".dropdown").hover(
-            function () {
-                $('.dropdown-menu', this).stop(true, true).fadeIn();
-            },
-            function () {
-                $('.dropdown-menu', this).stop(true, true).fadeOut();
-            });
+  function () {
+      $('.dropdown-menu', this).stop(true, true).fadeIn();
+  },
+  function () {
+      $('.dropdown-menu', this).stop(true, true).fadeOut();
+  });
     </script>
     <script>
 
@@ -1401,63 +1455,11 @@
 
 
 
+    
 
-    </body>
-</html>
+  
 
-
-  </html>
-
- <script>
-
-    // Obtenir les éléments
-    var modal = document.getElementById("mapModal");
-    var btn = document.getElementById("openModal");
-    var closeBtn = document.getElementById("closeModal");
-
-    // btn.onclick = function () {
-    //     modal.style.display = "block"; // Afficher la modale
-    //     setTimeout(function () {
-    //         // Assurez-vous que la carte est redessinée correctement
-    //         if (typeof map !== 'undefined') {
-    //             map.invalidateSize();
-    //         }
-    //     }, 300); // Delay for rendering
-    // }
-    btn.onclick = function () {
-        modal.style.display = "block"; // Afficher la modale
-
-        // Re-applique les styles directement via JavaScript
-        setTimeout(function () {
-            var paths = document.querySelectorAll('.map1 path');
-            paths.forEach(function (path) {
-                path.style.fill = '#05993e';  // Style de remplissage
-                path.style.stroke = '#fff';   // Couleur de la bordure
-                path.style.strokeWidth = '1px';  // Épaisseur de la bordure
-            });
-
-            // Si vous utilisez une bibliothèque comme Leaflet, appelez invalidateSize() ici
-            if (typeof map !== 'undefined') {
-                map.invalidateSize();
-            }
-        }, 300); // Délai pour que la modale soit complètement visible avant d'appliquer les styles
-    };
+    </html>
 
 
-
-
-    // Quand l'utilisateur clique sur la croix de fermeture
-    closeBtn.onclick = function () {
-        modal.style.display = "none"; // Masquer la modale
-    }
-
-    // Fermer la modale si l'utilisateur clique en dehors de la carte
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
-
-
- </script>
 

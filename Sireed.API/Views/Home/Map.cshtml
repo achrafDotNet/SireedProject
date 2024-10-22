@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Election Map";
+}
+
+<h2>Moroccan Election Results</h2>
+<div id="map" style="height: 600px;"></div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmF2ZWVucmFtdTEzMDMiLCJhIjoiY2prdjRhajhpMDg2bjNxb2JkYmp3NWtzbyJ9.BEvnlrDKLXSHGRoLfWto0g'; // Remplacez par votre clé Mapbox
+    const map = new mapboxgl.Map({
+        container: 'map', // ID de l'élément conteneur
+        style: 'mapbox://styles/mapbox/streets-v11', // URL du style
+        center: [-6.2761, 31.8465], // Coordonnées du centre [lng, lat] (ici pour le Maroc)
+        zoom: 5
+    });
+
+    // Couleurs des partis
+    const partyColors = {
+        "Party A": "#FF5733",
+        "Party B": "#33FF57",
+        "Party C": "#3357FF"
+    };
+
+    // Charger les résultats des élections depuis le contrôleur
+    fetch('/Election/Map')
+        .then(response => response.json())
+        .then(data => {
+            // Ajouter la source GeoJSON à la carte
+            map.addSource('districts', {
+                'type': 'geojson',
+                'data': data
+            });
+
+            // Ajouter les districts avec les couleurs en fonction des partis gagnants
+            map.addLayer({
+                'id': 'districts-layer',
+                'type': 'fill',
+                'source': 'districts',
+                'paint': {
+                    'fill-color': [
+                        'match',
+                        ['get', 'winner'], // Match basé sur le gagnant
+                        'Party A', partyColors['Party A'],
+                        'Party B', partyColors['Party B'],
+                        'Party C', partyColors['Party C'],
+                        '#888888' // Couleur par défaut
+                    ],
+                    'fill-opacity': 0.6
+                }
+            });
+
+            // Ajouter les bordures des districts
+            map.addLayer({
+                'id': 'districts-borders',
+                'type': 'line',
+                'source': 'districts',
+                'layout': {},
+                'paint': {
+                    'line-color': '#000000',
+                    'line-width': 1
+                }
+            });
+
+            // Ajouter une interaction pour afficher les détails au clic
+            map.on('click', 'districts-layer', function (e) {
+                const district = e.features[0].properties.district;
+                const winner = e.features[0].properties.winner;
+                const votes = e.features[0].properties.votes;
+                new mapboxgl.Popup()
+                    .setLngLat(e.lngLat)
+                    .setHTML(`<h3>${district}</h3><p><strong>Winner:</strong> ${winner}</p><p><strong>Votes:</strong> ${votes}</p>`)
+                    .addTo(map);
+            });
+
+            // Changer le curseur en mode pointer au survol
+            map.on('mouseenter', 'districts-layer', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+            map.on('mouseleave', 'districts-layer', function () {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+</script>

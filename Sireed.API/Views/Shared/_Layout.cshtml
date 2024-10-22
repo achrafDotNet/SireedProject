@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPEhtml>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -16,6 +16,14 @@
 
     <!-- Lien CDN pour Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- MAPBOX-->
+
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet'/>
+
+
 
 
     <style>
@@ -120,9 +128,52 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <style>
+        /* Style pour la carte */
+        #map {
+            height: 500px; /* Hauteur de la carte */
+            width: 100%; /* Largeur de la carte */
+        }
+    </style>
 </body>
+
 </html>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
 
+<script>
+    // Initialiser la carte
+    var map = L.map('map').setView([51.505, -0.09], 13); // Coordonnées initiales et niveau de zoom
+
+    // Ajouter une couche de tuiles (tiles)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Exemple de propriétés à afficher sur la carte
+    var properties = [
+        {
+            id: 1,
+            name: "COCO",
+            price: 205.50,
+            lat: 51.505,
+            lon: -0.09
+        },
+        {
+            id: 2,
+            name: "Maison de Plage",
+            price: 350.00,
+            lat: 51.51,
+            lon: -0.1
+        }
+        // Ajoutez d'autres propriétés ici...
+    ];
+
+    // Afficher les propriétés sur la carte
+    properties.forEach(function (prop) {
+        L.marker([prop.lat, prop.lon]).addTo(map)
+            .bindPopup(`<b>${prop.name}</b><br>Price: $${prop.price}`);
+    });
+</script>

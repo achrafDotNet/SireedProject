@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
 using Sireed.APPLICATION.ServicesIndicateurs;
 using Sireed.INFRASTRUCTURE.RepositoryIndicateurs;
+using Newtonsoft.Json;
+using NuGet.Protocol;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +15,15 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 
 //builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
 builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
+
+// Add services to the container.
+
+// Add services to the container.
+builder.Services.AddControllersWithViews() // Configure Controllers with Views
+    .AddNewtonsoftJson(options =>
+    {
+        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+    });
 
 
 var app = builder.Build();

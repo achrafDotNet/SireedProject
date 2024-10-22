@@ -160,3 +160,11 @@ blockquote {
         top: 0; /* Ensures it stays at the top */
     }
 }
+
+/*STYLES PARTENAIRE*/
+
+.partner-logo {
+    width: 100px; /* Largeur uniforme */
+    height: 100px; /* Hauteur uniforme */
+    object-fit: contain; /* Pour que l'image garde ses proportions et soit entièrement visible */
+}

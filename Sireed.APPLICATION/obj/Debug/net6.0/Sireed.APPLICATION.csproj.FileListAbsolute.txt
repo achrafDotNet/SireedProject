@@ -10,15 +10,3 @@ C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Deb
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\refint\Sireed.APPLICATION.dll
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.pdb
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\ref\Sireed.APPLICATION.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\bin\Debug\net6.0\Sireed.APPLICATION.deps.json
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\bin\Debug\net6.0\Sireed.APPLICATION.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\bin\Debug\net6.0\Sireed.APPLICATION.pdb
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.AssemblyInfoInputs.cache
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.AssemblyInfo.cs
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.sourcelink.json
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\refint\Sireed.APPLICATION.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\Sireed.APPLICATION.pdb
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.APPLICATION\obj\Debug\net6.0\ref\Sireed.APPLICATION.dll

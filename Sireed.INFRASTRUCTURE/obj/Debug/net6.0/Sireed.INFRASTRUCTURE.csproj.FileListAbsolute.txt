@@ -14,3 +14,21 @@ C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\refint\Sireed.INFRASTRUCTURE.dll
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
 C:\Users\lenovo\OneDrive\Bureau\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\ref\Sireed.INFRASTRUCTURE.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.deps.json
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.APPLICATION.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.DOMAIN.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.APPLICATION.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\bin\Debug\net6.0\Sireed.DOMAIN.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.sourcelink.json
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.I.EE51D628.Up2Date
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\refint\Sireed.INFRASTRUCTURE.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.INFRASTRUCTURE\obj\Debug\net6.0\ref\Sireed.INFRASTRUCTURE.dll

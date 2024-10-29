@@ -541,6 +541,83 @@
         div.dataTables_filter {
             float: right;
         }
+
+        /*BUTTON DE EXPORTATION*/
+        /* Style général pour tous les boutons */
+        .custom-excel-button, .custom-pdf-button, .custom-print-button {
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Style pour le bouton Excel */
+        .custom-excel-button {
+            background-color: #28a745;
+        }
+
+            .custom-excel-button:hover {
+                background-color: #218838;
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3);
+            }
+
+        /* Style pour le bouton PDF */
+        .custom-pdf-button {
+            background-color: #dc3545;
+        }
+
+            .custom-pdf-button:hover {
+                background-color: #c82333;
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
+            }
+
+        /* Style pour le bouton Imprimer */
+        .custom-print-button {
+            background-color: #007bff;
+        }
+
+            .custom-print-button:hover {
+                background-color: #0069d9;
+                transform: translateY(-2px);
+                box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+            }
+
+            /* Effet de focus pour tous les boutons */
+            .custom-excel-button:focus, .custom-pdf-button:focus, .custom-print-button:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+            }
+
+        /* Effet de hover pour le bouton Excel */
+        .custom-excel-button:hover {
+            background-color: #218838; /* Vert foncé */
+            transform: translateY(-2px); /* Léger effet de décalage */
+            box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3); /* Ombre pour profondeur */
+        }
+
+        /* Effet de hover pour le bouton PDF */
+        .custom-pdf-button:hover {
+            background-color: #c82333; /* Rouge foncé */
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
+        }
+
+        /* Effet de hover pour le bouton Imprimer */
+        .custom-print-button:hover {
+            background-color: #0069d9; /* Bleu foncé */
+            transform: translateY(-2px);
+            box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -554,17 +631,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Portfolio</a>
+                <a class="navbar-brand" href="/Home/index">SIREED</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Indicateurs</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="/Utilisateurs/Connexion"><span class="glyphicon glyphicon-user"></span>Connexion</a></li>
                 </ul>
             </div>
         </div>
@@ -575,13 +652,15 @@
         <div class="container">
            @*  <h1>My Portfolio</h1>
             <p>Some text that represents "Me"...</p> *@
+           @*  <img src="/Images/Logo Carte MWD.png" style="width:100px"> *@
+            
         </div>
     </div>
 
+
     <!-- Tableau DataTables -->
-    <div class="container-fluid">
-        @* <h3 class="text-center">Some of my Work</h3><br> *@
-        <table id="example" class="display">
+    <div class="container-fluid" style="border-radius:10px">
+        <table id="example" class="display" style="border-radius:10px">
             <thead>
                 <tr>
                     <th>Nom de la Région</th>
@@ -614,8 +693,20 @@
                             <td>@item.UniteDTO</td>
                             <td>@item.AnneeDTO</td>
                             <td>
-                                <a href="#" class="btn btn-light"><i class="fas fa-edit"></i></a>
-                                <a href="#" class="btn btn-light"><i class="fas fa-trash"></i></a>
+                                <a href="#" class="btn btn-light"><i class="fa-solid fa-map-location-dot"></i></a>
+                                <a href="#" class="btn btn-light">
+                                    <div style="margin-bottom: 15px;">
+                                        <label>@item.IndicateurNomDTO</label>
+                                        <div style="position: relative; height: 5px; width: 50%; background-color: #e0e0e0; border-radius: 5px;">
+                                            <div style="height: 100%; width: @item.ProgressPercentage%; background-color: #4caf50; border-radius: 5px;"
+                                                 title="Année: @item.AnneeDTO | Région: @item.RegionNomDTO">
+                                                <span style="position: absolute; right: 10px; color: white;">
+                                                    @item.ProgressPercentage%
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </td>
                         </tr>
                     }
@@ -624,6 +715,9 @@
         </table>
     </div>
 
+    
+
+  
     <!-- Footer -->
     <footer class="container-fluid text-center">
         <p>Footer Text</p>
@@ -631,6 +725,36 @@
 
     <!-- Initialisation de DataTables -->
     <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "dom": 'Bfrtip',
+                "paging": true,
+                "autoWidth": true,
+                "buttons": [
+                    {
+                        extend: 'excelHtml5',
+                        text: '<i class="fas fa-file-excel"></i> Exporter Excel',
+                        titleAttr: 'Exporter en Excel',
+                        className: 'custom-excel-button'  // Ajout d'une classe personnalisée
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf"></i> Exporter PDF',
+                        titleAttr: 'Exporter en PDF',
+                        className: 'custom-pdf-button'    // Ajout d'une classe personnalisée
+                    },
+                    {
+                        extend: 'print',
+                        text: '<i class="fas fa-print"></i> Imprimer',
+                        titleAttr: 'Imprimer',
+                        className: 'custom-print-button'  // Ajout d'une classe personnalisée
+                    }
+                ]
+            });
+        });
+    </script>
+
+   @*  <script>
         $(document).ready(function () {
             $('#example').DataTable({
                 "dom": 'Bfrtip',
@@ -655,7 +779,7 @@
                 ]
             });
         });
-    </script>
+    </script> *@
 
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

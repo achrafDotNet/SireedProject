@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LpBLGeyVb2RrJJimP+A6MDykkq2wu9iG2dGfO0/yrio=",
+  "Hash": "bBABHz7Sv+GOboGN0LabW7lLpiLhYkpDOnSflvgV4tA=",
   "Source": "Sireed.API",
   "BasePath": "_content/Sireed.API",
   "Mode": "Default",
@@ -1003,6 +1003,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\documentation.png"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\Logo Carte MWD.png",
+      "SourceId": "Sireed.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\",
+      "BasePath": "_content/Sireed.API",
+      "RelativePath": "Images/Logo Carte MWD.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Logo Carte MWD.png"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\logo-1.gif",

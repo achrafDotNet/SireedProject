@@ -18,5 +18,8 @@ namespace Sireed.APPLICATION.DTO
         public string TypeDTO { get; set; }
         public string UniteDTO { get; set; }
         public int AnneeDTO { get; set; }
+
+        // Calcul du pourcentage de la barre de progression
+        public int ProgressPercentage => (int)(ValeurDTO * 100 / PopulationDTO); // Ex. basé sur Population
     }
 }

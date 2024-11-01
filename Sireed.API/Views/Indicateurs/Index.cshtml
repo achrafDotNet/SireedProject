@@ -503,8 +503,8 @@
         }
 
             table.dataTable thead th {
-                background-color: #4CAF50;
-                color: white;
+                background-color: transparent;
+                color: black;
                 padding: 12px 15px;
                 text-align: left;
                 font-weight: bold;
@@ -525,7 +525,7 @@
             }
 
         /* Style des boutons DataTables */
-        .dt-button {
+       /*  .dt-button {
             background-color: #4CAF50;
             color: white;
             border-radius: 4px;
@@ -535,7 +535,7 @@
 
             .dt-button:hover {
                 background-color: #45a049;
-            }
+            } */
 
         /* Alignement du filtre de recherche */
         div.dataTables_filter {
@@ -544,7 +544,7 @@
 
         /*BUTTON DE EXPORTATION*/
         /* Style général pour tous les boutons */
-        .custom-excel-button, .custom-pdf-button, .custom-print-button {
+    /*     .custom-excel-button, .custom-pdf-button, .custom-print-button {
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 14px;
@@ -554,10 +554,10 @@
             cursor: pointer;
             margin: 0 5px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
+        } */
 
         /* Style pour le bouton Excel */
-        .custom-excel-button {
+      /*   .custom-excel-button {
             background-color: #28a745;
         }
 
@@ -565,10 +565,10 @@
                 background-color: #218838;
                 transform: translateY(-2px);
                 box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3);
-            }
+            } */
 
         /* Style pour le bouton PDF */
-        .custom-pdf-button {
+    /*     .custom-pdf-button {
             background-color: #dc3545;
         }
 
@@ -576,10 +576,10 @@
                 background-color: #c82333;
                 transform: translateY(-2px);
                 box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
-            }
+            } */
 
         /* Style pour le bouton Imprimer */
-        .custom-print-button {
+       /*  .custom-print-button {
             background-color: #007bff;
         }
 
@@ -587,36 +587,220 @@
                 background-color: #0069d9;
                 transform: translateY(-2px);
                 box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-            }
+            } */
 
             /* Effet de focus pour tous les boutons */
-            .custom-excel-button:focus, .custom-pdf-button:focus, .custom-print-button:focus {
+        /*     .custom-excel-button:focus, .custom-pdf-button:focus, .custom-print-button:focus {
                 outline: none;
                 box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-            }
+            } */
 
         /* Effet de hover pour le bouton Excel */
-        .custom-excel-button:hover {
-            background-color: #218838; /* Vert foncé */
-            transform: translateY(-2px); /* Léger effet de décalage */
-            box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3); /* Ombre pour profondeur */
-        }
+        /* .custom-excel-button:hover {
+            background-color: #218838; 
+            transform: translateY(-2px); 
+            box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3); 
+        } */
 
         /* Effet de hover pour le bouton PDF */
-        .custom-pdf-button:hover {
-            background-color: #c82333; /* Rouge foncé */
+        /* .custom-pdf-button:hover {
+            background-color: #c82333;
             transform: translateY(-2px);
             box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
-        }
+        } */
 
         /* Effet de hover pour le bouton Imprimer */
-        .custom-print-button:hover {
-            background-color: #0069d9; /* Bleu foncé */
+       /*  .custom-print-button:hover {
+            background-color: #0069d9; 
             transform: translateY(-2px);
             box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
+        } */
+
+ 
+        /* Base styling for icons */
+
+        /* Styles généraux pour le corps et la section */
+.content-body {
+    background-color: #f4f5f7;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+            background-color: #2b8a3e;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 6px 6px 0 0;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.heading-elements {
+    display: flex;
+    align-items: center;
+}
+
+.heading-elements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.heading-elements ul li {
+    margin-left: 10px;
+}
+
+.heading-elements a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.heading-elements a:hover {
+    color: #e9ecef;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.height-400,
+.height-500 {
+    position: relative;
+    height: 400px;
+}
+
+.height-500 {
+    height: 500px;
+}
+
+/* Style pour les canvas des graphiques */
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
+
+/* Responsive */
+/* media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .heading-elements ul {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+ */
+
+        /* Style général de la carte */
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
         }
 
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #018749;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
 
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* Boutons d'actions alignés à droite */
+        .heading-elements {
+            display: flex;
+            align-items: center;
+        }
+
+            .heading-elements ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+                .heading-elements ul li {
+                    margin-left: 10px;
+                }
+
+            .heading-elements a {
+                color: #ffffff;
+                font-size: 1rem;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+                .heading-elements a:hover {
+                    color: #e9ecef;
+                }
+
+        /* Style du contenu */
+        .card-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        /* Zones pour les graphiques */
+        .height-400,
+        .height-500 {
+            position: relative;
+            height: 400px;
+        }
+
+        /* Cache le contenu quand la carte est réduite */
+        .card-content.collapse {
+            display: none;
+        }
+
+        /* Style pour agrandir la carte */
+        .card.expanded {
+            position: fixed;
+            top: 10%;
+            left: 10%;
+            width: 80%;
+            height: 80%;
+            z-index: 1000;
+        }
+
+        /* Style du spinner pour l'effet de rechargement */
+        .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #018749;
+        }
 
     </style>
 </head>
@@ -658,62 +842,90 @@
     </div>
 
 
-    <!-- Tableau DataTables -->
-    <div class="container-fluid" style="border-radius:10px">
-        <table id="example" class="display" style="border-radius:10px">
-            <thead>
-                <tr>
-                    <th>Nom de la Région</th>
-                    <th>Nom de l'Indicateur</th>
-                    <th>Description de l'Indicateur</th>
-                    <th>Superficie</th>
-                    <th>Population</th>
-                    <th>Description de la Région</th>
-                    <th>Valeur</th>
-                    <th>Type</th>
-                    <th>Unité</th>
-                    <th>Année</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if (Model != null && Model.Any())
-                {
-                    foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>@item.RegionNomDTO</td>
-                            <td>@item.IndicateurNomDTO</td>
-                            <td>@item.IndicateurDescriptionDTO</td>
-                            <td>@item.SuperficieDTO</td>
-                            <td>@item.PopulationDTO</td>
-                            <td>@item.RegionDescriptionDTO</td>
-                            <td>@item.ValeurDTO</td>
-                            <td>@item.TypeDTO</td>
-                            <td>@item.UniteDTO</td>
-                            <td>@item.AnneeDTO</td>
-                            <td>
-                                <a href="#" class="btn btn-light" data-toggle="modal" data-target="#maModal"><i class="fa-solid fa-map-location-dot"></i></a>
-                                <a href="#" class="btn btn-light">
-                                    <div style="margin-bottom: 15px;">
-                                        <label>@item.IndicateurNomDTO</label>
-                                        <div style="position: relative; height: 5px; width: 50%; background-color: #e0e0e0; border-radius: 5px;">
-                                            <div style="height: 100%; width: @item.ProgressPercentage%; background-color: #4caf50; border-radius: 5px;"
-                                                 title="Année: @item.AnneeDTO | Région: @item.RegionNomDTO">
-                                                <span style="position: absolute; right: 10px; color:forestgreen;">
-                                                    @item.ProgressPercentage%
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </td>
-                        </tr>
-                    }
-                }
-            </tbody>
-        </table>
+
+    <!-- Exemples de cartes -->
+    <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Indicateurs</h4>
+            <div class="heading-elements">
+                <ul class="list-inline mb-0">
+                    <li><a data-action="collapse"><i class="ft-minus"><i class="fa-regular fa-window-minimize"></i></i></a></li>
+                    <li><a data-action="reload"><i class="ft-rotate-cw"><i class="fa-duotone fa-solid fa-rotate-right fa-spin"></i></i></a></li>
+                    <li><a data-action="expand"><i class="ft-maximize">⛶</i></a></li>
+                    <li><a data-action="close"><i class="ft-x"><i class="fa-duotone fa-solid fa-rectangle-xmark fa-fade"></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-content">
+            <div class="height-400">
+                <!-- Contenu de la carte -->
+                <!-- Tableau DataTables -->
+                <!-- Tableau DataTables -->
+                <div class="container-fluid" style="border-radius:10px">
+                    <table id="example" class="display" style="border-radius:10px">
+                        <thead>
+                            <tr>
+                                <th>Nom de la Région</th>
+                                <th>Nom de l'Indicateur</th>
+                                <th>Description de l'Indicateur</th>
+                                <th>Superficie</th>
+                                <th>Population</th>
+                                <th>Description de la Région</th>
+                                <th>Valeur</th>
+                                <th>Type</th>
+                                <th>Unité</th>
+                                <th>Année</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.RegionNomDTO</td>
+                                        <td>@item.IndicateurNomDTO</td>
+                                        <td>@item.IndicateurDescriptionDTO</td>
+                                        <td>@item.SuperficieDTO</td>
+                                        <td>@item.PopulationDTO</td>
+                                        <td>@item.RegionDescriptionDTO</td>
+                                        <td>@item.ValeurDTO</td>
+                                        <td>@item.TypeDTO</td>
+                                        <td>@item.UniteDTO</td>
+                                        <td>@item.AnneeDTO</td>
+                                        <td>
+                                            <a href="#" class="btn btn-light" data-toggle="modal" data-target="#maModal"><i class="fa-solid fa-map-location-dot"></i></a>
+                                            <a href="#" class="btn btn-light">
+                                                <div style="margin-bottom: 15px;">
+                                                    <label>@item.IndicateurNomDTO</label>
+                                                    <div style="position: relative; height: 5px; width: 50%; background-color: #e0e0e0; border-radius: 5px;">
+                                                        <div style="height: 100%; width: @item.ProgressPercentage%; background-color: #4caf50; border-radius: 5px;"
+                                                             title="Année: @item.AnneeDTO | Région: @item.RegionNomDTO">
+                                                            <span style="position: absolute; right: 10px; color:forestgreen;">
+                                                                @item.ProgressPercentage%
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Contenu de la carte -->
+                <canvas id="column-chart" style="width: 100%; height: 100%;">
+                  
+                </canvas>
+            </div>
+        </div>
     </div>
+
+
+    
 
 
     <!-- Fenêtre Modale -->
@@ -799,19 +1011,19 @@
                 "buttons": [
                     {
                         extend: 'excelHtml5',
-                        text: '<i class="fas fa-file-excel"></i> Exporter Excel',
+                        text: '<i class="fas fa-file-excel"></i>',
                         titleAttr: 'Exporter en Excel',
                         className: 'custom-excel-button'  // Ajout d'une classe personnalisée
                     },
                     {
                         extend: 'pdfHtml5',
-                        text: '<i class="fas fa-file-pdf"></i> Exporter PDF',
+                        text: '<i class="fas fa-file-pdf"></i>',
                         titleAttr: 'Exporter en PDF',
                         className: 'custom-pdf-button'    // Ajout d'une classe personnalisée
                     },
                     {
                         extend: 'print',
-                        text: '<i class="fas fa-print"></i> Imprimer',
+                        text: '<i class="fas fa-print"></i>',
                         titleAttr: 'Imprimer',
                         className: 'custom-print-button'  // Ajout d'une classe personnalisée
                     }
@@ -850,5 +1062,55 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <!-- SCRIPT CARTE -->
+    <script>
+        // Sélectionner toutes les cartes et leurs boutons d'action
+        document.querySelectorAll('.card').forEach(card => {
+            const collapseBtn = card.querySelector('[data-action="collapse"]');
+            const reloadBtn = card.querySelector('[data-action="reload"]');
+            const expandBtn = card.querySelector('[data-action="expand"]');
+            const closeBtn = card.querySelector('[data-action="close"]');
+
+            // Fonction de réduction de la carte
+            collapseBtn.addEventListener('click', () => {
+                const content = card.querySelector('.card-content');
+                if (content.classList.contains('collapse')) {
+                    content.classList.remove('collapse');
+                    collapseBtn.querySelector('i').innerHTML = '<i class="fa-regular fa-window-minimize"></i>';
+                } else {
+                    content.classList.add('collapse');
+                    collapseBtn.querySelector('i').textContent = '+';
+                }
+            });
+
+            // Fonction de rechargement (simulé avec un spinner temporaire)
+            reloadBtn.addEventListener('click', () => {
+                const spinner = document.createElement('div');
+                spinner.className = 'spinner';
+                spinner.innerHTML = '<i class="fa-duotone fa-solid fa-spinner fa-spin"></i>';
+                card.appendChild(spinner);
+
+                setTimeout(() => {
+                    card.removeChild(spinner); // Supprimer le spinner après 2 secondes
+                }, 2000);
+            });
+
+            // Fonction pour agrandir ou réduire la carte
+            expandBtn.addEventListener('click', () => {
+                if (card.classList.contains('expanded')) {
+                    card.classList.remove('expanded');
+                    expandBtn.querySelector('i').innerHTML = '<i class="fa-duotone fa-solid fa-window-maximize"></i>';
+                } else {
+                    card.classList.add('expanded');
+                    expandBtn.querySelector('i').textContent = '❐';
+                }
+            });
+
+            // Fonction pour fermer la carte
+            closeBtn.addEventListener('click', () => {
+                card.style.display = 'none';
+            });
+        });
+    </script>
 </body>
 </html>

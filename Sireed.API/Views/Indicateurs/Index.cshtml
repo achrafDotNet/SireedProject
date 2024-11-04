@@ -462,6 +462,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
 
+
     <!-- Bootstrap CSS (Version 3.4.1 ou plus récente) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -542,6 +543,10 @@
             float: right;
         }
 
+        .jumbotron {
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
         /*BUTTON DE EXPORTATION*/
         /* Style général pour tous les boutons */
     /*     .custom-excel-button, .custom-pdf-button, .custom-print-button {
@@ -802,6 +807,15 @@ canvas {
             color: #018749;
         }
 
+        .element {
+            transform: scale(1.2); /* Adjust scale as needed */
+            transform-origin: 0 0; /* Adjust the origin point as needed */
+        }
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -836,7 +850,7 @@ canvas {
         <div class="container">
            @*  <h1>My Portfolio</h1>
             <p>Some text that represents "Me"...</p> *@
-           @*  <img src="/Images/Logo Carte MWD.png" style="width:100px"> *@
+            <img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" style="width:80px">
             
         </div>
     </div>
@@ -895,7 +909,7 @@ canvas {
                                         <td>@item.UniteDTO</td>
                                         <td>@item.AnneeDTO</td>
                                         <td>
-                                            <a href="#" class="btn btn-light" data-toggle="modal" data-target="#maModal"><i class="fa-solid fa-map-location-dot"></i></a>
+                                            <a href="#" class="btn btn-light" data-toggle="modal" data-target="#maModal" data-region="@item.RegionNomDTO"><i class="fa-solid fa-map-location-dot"></i></a>
                                             <a href="#" class="btn btn-light">
                                                 <div style="margin-bottom: 15px;">
                                                     <label>@item.IndicateurNomDTO</label>
@@ -923,9 +937,6 @@ canvas {
             </div>
         </div>
     </div>
-
-
-    
 
 
     <!-- Fenêtre Modale -->
@@ -995,11 +1006,109 @@ canvas {
     </div>
 
 
+    <!-- Modal pour afficher le graphique -->
+@*     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Détails de l'Indicateur</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <canvas id="chartCanvas" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div> *@
+
+
+    
+
   
     <!-- Footer -->
     <footer class="container-fluid text-center">
         <p>Footer Text</p>
     </footer>
+
+    <!-- Bootstrap and jQuery JS -->
+@*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
+
+
+
+    <script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+            let chart; // Global variable for the chart
+
+            // Function to create the chart with dynamic data
+            function createChart(labels, data) {
+            const ctx = document.getElementById('chartCanvas').getContext('2d');
+
+            if (chart) {
+                chart.destroy(); // Destroy the old chart if it exists
+            }
+
+            chart = new Chart(ctx, {
+                type: 'bar',
+            data: {
+                labels: labels, // Labels (may be years, regions, etc.)
+            datasets: [{
+                label: 'Valeur de l\'indicateur',
+            data: data, // Data values
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+                    }]
+                },
+            options: {
+                responsive: true,
+            scales: {
+                y: {
+                beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+            // Trigger when the modal is shown
+            $('#maModal').on('shown.bs.modal', function (event) {
+            const button = $(event.relatedTarget);
+            const regionNom = button.data('region').trim().toLowerCase(); // Name of the region
+
+            // Fetch data via AJAX
+            $.ajax({
+                url: '/Indicateurs/GetIndicateursData', // Place your action URL here
+            method: 'GET',
+            success: function (data) {
+                console.log("Données récupérées:", data); // Log the complete data
+
+                    const filteredData = data.filter(item => item.RegionNomDTO && item.RegionNomDTO.trim().toLowerCase() === regionNom);
+
+            if (filteredData.length === 0) {
+                console.warn("Aucune donnée trouvée pour la région:", regionNom);
+            return; // Do not continue if no data
+                    }
+
+                    // Prepare labels and values for the chart
+                    const labels = filteredData.map(item => item.AnneeDTO);
+                    const values = filteredData.map(item => item.ValeurDTO);
+
+            // Create the chart with actual data
+            createChart(labels, values);
+                },
+            error: function (err) {
+                console.error("Erreur lors du chargement des données:", err);
+                }
+            });
+        });
+
+
+    </script>
+
 
     <!-- Initialisation de DataTables -->
     <script>

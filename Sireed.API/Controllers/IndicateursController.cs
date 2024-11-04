@@ -32,34 +32,15 @@ namespace Sireed.API.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _repositoryIndicateurs.GetIndicateursAsync());
-            //var regionIndicateurs = await _context.indicateurs
-            //                          .Join(_context.Regions,
-            //                                i => i.RegionId,
-            //                                r => r.Id,
-            //                                (i, r) => new IndicateurDTO
-            //                                {
-            //                                    RegionNomDTO = r.Nom,
-            //                                    IndicateurNomDTO = i.Nom,
-            //                                    IndicateurDescriptionDTO = i.Description,
-            //                                    SuperficieDTO = r.Superficie,
-            //                                    PopulationDTO = r.Population,
-            //                                    RegionDescriptionDTO = r.Description,
-            //                                    ValeurDTO = (decimal)i.Valeur,
-            //                                    TypeDTO = i.Type,
-            //                                    UniteDTO = i.Unite,
-            //                                    AnneeDTO = i.Annee
-            //                                })
-            //                          .ToListAsync();
-
-            //// Vérifiez si le modèle est vide pour déboguer
-            //if (!regionIndicateurs.Any())
-            //{
-            //    // Logique pour gérer le cas où il n'y a pas d'indicateurs
-            //    // Par exemple, vous pourriez vouloir retourner une vue avec un message d'erreur
-            //}
-
-            //return View(regionIndicateurs);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetIndicateursData()
+        {
+            var indicateurs = await _repositoryIndicateurs.GetIndicateursAsync();
+            return Json(indicateurs);
+        }
+
 
 
         // GET: Indicateurs/Details/5

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Sireed.API.Models;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Sireed.API.Data
 {
@@ -7,7 +8,7 @@ namespace Sireed.API.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
         {
-            
+          
         }
         public DbSet<Actualite> Actualites { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
@@ -16,5 +17,6 @@ namespace Sireed.API.Data
         public DbSet<Document> Documents { get; set; } 
         public DbSet<Region> Regions { get; set; }
         public DbSet<ProjetRecherche> ProjetRecherches { get; set; }
+        
     }
 }

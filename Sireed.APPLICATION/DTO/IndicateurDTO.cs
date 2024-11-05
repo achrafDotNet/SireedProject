@@ -14,17 +14,17 @@ namespace Sireed.APPLICATION.DTO
         public double SuperficieDTO { get; set; }
         public int PopulationDTO { get; set; }
         public string RegionDescriptionDTO { get; set; }
-        public decimal ValeurDTO { get; set; }
+        public double ValeurDTO { get; set; }
         public string TypeDTO { get; set; }
         public string UniteDTO { get; set; }
         public int AnneeDTO { get; set; }
 
         // existing properties
-        public decimal PercentageDTO { get; set; }
+        public double PercentageDTO { get; set; }
 
         //VALEUR CIBLE 
 
-        public decimal ValeurCibleDTO { get; set; }
+        public int ValeurCibleDTO { get;  set; } 
 
     }
 }

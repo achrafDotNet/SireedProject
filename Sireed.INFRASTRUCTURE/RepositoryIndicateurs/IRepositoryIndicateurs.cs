@@ -10,6 +10,8 @@ namespace Sireed.INFRASTRUCTURE.RepositoryIndicateurs
     public interface IRepositoryIndicateurs
     {
         Task<List<IndicateurDTO>> GetIndicateursAsync();
+        Task<int> GetnombreINdicateurs(); 
+
     }
 }
 

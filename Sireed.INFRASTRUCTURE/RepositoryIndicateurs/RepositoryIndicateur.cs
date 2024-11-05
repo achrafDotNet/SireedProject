@@ -30,12 +30,17 @@ namespace Sireed.INFRASTRUCTURE.RepositoryIndicateurs
                        SuperficieDTO = r.Superficie,
                        PopulationDTO = r.Population,
                        RegionDescriptionDTO = r.Description,
-                       ValeurDTO = (decimal)i.Valeur,
+                       ValeurDTO = (int)i.Valeur,
                        TypeDTO = i.Type,
                        UniteDTO = i.Unite,
                        AnneeDTO = i.Annee
                    })
              .ToListAsync();
+        }
+
+        public Task<int> GetnombreINdicateurs()
+        {
+            return _context.indicateurs.CountAsync();
         }
     }
 }

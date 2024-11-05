@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
@@ -26,19 +28,79 @@ namespace Sireed.API.Controllers
             _repositoryIndicateurs = repositoryIndicateurs;
         }
 
+
         // GET: Indicateurs
-        // GET: Indicateurs
+        //[HttpGet]
+        //public async Task<IActionResult> Index()
+        //{
+        //    // Define the total number of years and regions for your calculations
+        //    var totalYears = await GetTotalYears(); // Get the total number of years
+        //    var totalRegions = await GetTotalRegions(); // Get the total number of regions
+
+        //    // Await the task to get the actual list of IndicateurDTO
+        //    List<IndicateurDTO> indicateurs = await _serviceiNDICATEUR.GetAsynciNDICATEUR();
+        //    List<IndicateurDTO> perc = await _serviceiNDICATEUR.CalculateAnnualPercentages(indicateurs, totalYears, totalRegions);
+
+        //    // Pass the list to the view
+        //    return View(perc);
+        //}
+
+
+        // Action pour afficher les indicateurs pour une année donnée
         [HttpGet]
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(int annee)
         {
-            // Await the task to get the actual list of IndicateurDTO
-            List<IndicateurDTO> indicateurs = await _serviceiNDICATEUR.GetAsynciNDICATEUR();
+            // Récupérer tous les indicateurs avec leurs régions associées
+            var indicateurs = _context.indicateurs.Include(i => i.Region).ToList();
 
-            // Pass the list to the view
-            return View(indicateurs);
+            // Calculer les pourcentages pour chaque indicateur
+            var indicateurDTOs = await _serviceiNDICATEUR.CalculerIndicateursAnnuellement(indicateurs, annee: 0); // annee: 0 pour ignorer le filtrage par année
 
-            //return View(await _repositoryIndicateurs.GetIndicateursAsync());
+            // Passer les données à la vue
+            return View(indicateurDTOs);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetNombreIndic()
+        {
+            var nmbrIndic = await _serviceiNDICATEUR.GetNombre();
+            return Json(nmbrIndic);
+        }
+
+        //private async Task<List<Region>> GetTotalRegionsAsync()
+
+        //{
+
+        //    // Remplacez cette logique par celle qui correspond à vos besoins
+
+        //    return await _context.Regions.ToListAsync(); // Retourner toutes les régions
+
+        //}
+
+
+
+        // GET: Indicateurs
+        private async Task<int> GetTotalYears()
+        {
+            // Replace this with your actual logic to get the total number of years
+            // Assuming you have a property that indicates a year for each indicator
+            return await _context.indicateurs.Select(i => i.Annee).Distinct().CountAsync();
+        }
+
+        private async Task<List<Region>> GetTotalRegionsAsync()
+        {
+            return await _context.Regions.Include(r => r.Indicateurs).ToListAsync(); // Inclut les indicateurs dans la requête
+        }
+
+
+        //private async Task<IActionResult> GetTotalRegions()
+        //{
+        //    // Replace this with your actual logic to get the total number of regions
+        //    return Ok( await _context.Regions.CountAsync());
+        //}
+
+
 
         [HttpGet]
         public async Task<IActionResult> GetIndicateursData()
@@ -89,7 +151,7 @@ namespace Sireed.API.Controllers
                                                SuperficieDTO = r.Superficie,
                                                PopulationDTO = r.Population,
                                                RegionDescriptionDTO = r.Description,
-                                               ValeurDTO = (decimal)i.Valeur,
+                                               ValeurDTO = (int)i.Valeur,
                                                TypeDTO = i.Type,
                                                UniteDTO = i.Unite,
                                                AnneeDTO = i.Annee

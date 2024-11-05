@@ -16,13 +16,13 @@ namespace Sireed.API.Controllers
     public class IndicateursController : Controller
     {
         private readonly AppDbContext _context;
-        //public readonly IndicateurService _serviceiNDICATEUR;
+        public readonly IServicesIndicateur _serviceiNDICATEUR;
         private readonly IRepositoryIndicateurs _repositoryIndicateurs;
 
-        public IndicateursController(AppDbContext context/*,IndicateurService indicateurService*/,IRepositoryIndicateurs repositoryIndicateurs)
+        public IndicateursController(AppDbContext context, IServicesIndicateur indicateurService, IRepositoryIndicateurs repositoryIndicateurs)
         {
             _context = context;
-            //_serviceiNDICATEUR = indicateurService;
+            _serviceiNDICATEUR = indicateurService;
             _repositoryIndicateurs = repositoryIndicateurs;
         }
 
@@ -31,7 +31,13 @@ namespace Sireed.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View(await _repositoryIndicateurs.GetIndicateursAsync());
+            // Await the task to get the actual list of IndicateurDTO
+            List<IndicateurDTO> indicateurs = await _serviceiNDICATEUR.GetAsynciNDICATEUR();
+
+            // Pass the list to the view
+            return View(indicateurs);
+
+            //return View(await _repositoryIndicateurs.GetIndicateursAsync());
         }
 
         [HttpGet]

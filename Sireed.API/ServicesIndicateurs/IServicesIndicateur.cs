@@ -10,5 +10,6 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
     public interface IServicesIndicateur
     {
         Task<List<IndicateurDTO>> GetAsynciNDICATEUR();
+        Task<List<IndicateurDTO>> CalculateAnnualPercentages(List<IndicateurDTO> indicators);
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sireed.APPLICATION")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28a7cd96132986fdbe136f1a969b39cdbd031310")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db3713010d83ceb4b2ab4653946d9b16d1f7e357")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sireed.APPLICATION")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sireed.APPLICATION")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

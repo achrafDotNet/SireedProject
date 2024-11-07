@@ -3,458 +3,6 @@
     ViewData["Title"] = "Indicateurs par Région";
     Layout = null;
 }
-
-@*  @model IEnumerable<Sireed.APPLICATION.DTO.IndicateurDTO>
-
-@{
-    ViewData["Title"] = "Indicateurs par Région";
-    Layout = null;
-}
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple DataTable</title>
-    <link rel="stylesheet" href="/css/Indicateur/Index.css" />
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- DataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-
-    <!-- DataTables Buttons -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.colVis.min.js"></script>
-
-    <!-- JSZip (pour Excel) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-
-    <!-- pdfmake (pour PDF) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-</head>
-<body>
-    <table id="example" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>Nom de la Région</th>
-                <th>Nom de l'Indicateur</th>
-                <th>Description de l'Indicateur</th>
-                <th>Superficie</th>
-                <th>Population</th>
-                <th>Description de la Région</th>
-                <th>Valeur</th>
-                <th>Type</th>
-                <th>Unité</th>
-                <th>Année</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Contenu de tableau -->
-            @if (Model != null && Model.Any())
-            {
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.RegionNomDTO</td>
-                        <td>@item.IndicateurNomDTO</td>
-                        <td>@item.IndicateurDescriptionDTO</td>
-                        <td>@item.SuperficieDTO</td>
-                        <td>@item.PopulationDTO</td>
-                        <td>@item.RegionDescriptionDTO</td>
-                        <td>@item.ValeurDTO</td>
-                        <td>@item.TypeDTO</td>
-                        <td>@item.UniteDTO</td>
-                        <td>@item.AnneeDTO</td>
-                        <td></td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-
-    <script>
-        $(document).ready(function () {
-            document.title = 'Simple DataTable';
-            $('#example').DataTable({
-                "dom": '<"dt-buttons"Bf><"clear">lirtp',
-                "paging": true,
-                "autoWidth": true,
-                "buttons": [
-                    'colvis',
-                    'copyHtml5',
-                    'csvHtml5',
-                    'excelHtml5',
-                    'pdfHtml5',
-                    'print'
-                ]
-            });
-        });
-    </script>
-</body>
-</html>
- *@
-
-@* <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataTables Template</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- CSS de DataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
-
-    <!-- jQuery et DataTables JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-
-    <style>
-        /* Personnalisation du style du tableau */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f7f6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-
-        table.dataTable {
-            border-collapse: collapse !important;
-        }
-
-        /* Alignement de la barre de recherche à droite */
-        div.dataTables_filter {
-            float: right;
-        }
-
-
-        /* Personnalisation du style du tableau */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f7f6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-
-        table.dataTable {
-            border-collapse: collapse !important;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-            table.dataTable thead th {
-                background-color: #4CAF50; /* Couleur de fond */
-                color: white; /* Couleur du texte */
-                padding: 12px 15px; /* Espacement interne */
-                text-align: left; /* Alignement du texte */
-                font-weight: bold; /* Gras pour les en-têtes */
-                border-bottom: 2px solid #ddd; /* Bordure inférieure */
-            }
-
-            table.dataTable tbody tr {
-                transition: background-color 0.3s; /* Transition pour l'effet au survol */
-            }
-
-                table.dataTable tbody tr:nth-child(even) {
-                    background-color: white; /* Couleur de fond pour les lignes paires */
-                }
-
-                table.dataTable tbody tr:hover {
-                    background-color: #e0e0e0; /* Couleur au survol */
-                }
-
-            table.dataTable td {
-                padding: 12px 15px; /* Espacement interne */
-                border-bottom: 1px solid #ddd; /* Bordure inférieure */
-            }
-
-        div.dataTables_filter {
-            float: right;
-            margin-bottom: 20px; /* Espacement en bas */
-        }
-
-        /* Styles pour les boutons de pagination */
-        .dataTables_wrapper .dataTables_paginate .paginate_button {
-            padding: 5px 8px; /* Réduit l'espacement pour les boutons de pagination */
-            margin: 0 2px; /* Espacement entre les boutons */
-            border-radius: 5px; /* Coins arrondis */
-            background: ##2b8a3e; /* Couleur de fond */
-            color: white; /* Couleur du texte */
-            font-size: 12px; /* Taille de police réduite */
-        }
-
-            .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-                background: #45a049; /* Couleur de fond au survol */
-            }
-
-            .dataTables_wrapper .dataTables_paginate .paginate_button.current {
-                background: #388E3C; /* Couleur pour le bouton actif */
-            }
-
-        /* Styles pour la sélection de longueur */
-        .dataTables_wrapper .dataTables_length select {
-            border: 1px solid #ccc; /* Bordure */
-            border-radius: 5px; /* Coins arrondis pour le select */
-            padding: 5px; /* Espacement interne */
-            margin-right: 10px; /* Espacement à droite */
-            font-size: 12px; /* Taille de police réduite pour le select */
-        }
-
-        /* Style pour les boutons radio */
-        .dataTables_wrapper .dataTables_length label {
-            border-radius: 5px; /* Coins arrondis pour les labels */
-            font-size: 12px; /* Taille de police réduite pour les labels */
-        }
-
-    </style>
-</head>
-<body>
-
-    <table id="example" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>Nom de la Région</th>
-                <th>Nom de l'Indicateur</th>
-                <th>Description de l'Indicateur</th>
-                <th>Superficie</th>
-                <th>Population</th>
-                <th>Description de la Région</th>
-                <th>Valeur</th>
-                <th>Type</th>
-                <th>Unité</th>
-                <th>Année</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Contenu de tableau -->
-            @if (Model != null && Model.Any())
-            {
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.RegionNomDTO</td>
-                        <td>@item.IndicateurNomDTO</td>
-                        <td>@item.IndicateurDescriptionDTO</td>
-                        <td>@item.SuperficieDTO</td>
-                        <td>@item.PopulationDTO</td>
-                        <td>@item.RegionDescriptionDTO</td>
-                        <td>@item.ValeurDTO</td>
-                        <td>@item.TypeDTO</td>
-                        <td>@item.UniteDTO</td>
-                        <td>@item.AnneeDTO</td>
-                        <td></td>
-                    </tr>
-                }
-            }
-            <!-- Autres lignes -->
-        </tbody>
-    </table>
-
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable({
-                "dom": 'Bfrtip',  // Définit la position des éléments de contrôle
-                "paging": true,    // Activer la pagination
-                "autoWidth": true, // Ajuster la largeur automatiquement
-                "buttons": [       // Boutons d'exportation
-                    // Exporter en CSV
-                    'colvis',
-                    'excelHtml5',   // Exporter en Excel
-                    'pdfHtml5',     // Exporter en PDF
-                    'print'         // Imprimer
-                ]
-            });
-        });
-
-    </script>
-
-</body>
-</html> *@
-
-
-@* <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewData["Title"]</title>
-
-    <!-- Inclure Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <!-- CSS de DataTables -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
-
-    <!-- jQuery et DataTables JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-
-    <style>
-        /* Customisation des styles pour le DataTable */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f5f7f6;
-            margin: 0;
-            padding: 20px;
-        }
-
-        table.dataTable {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse !important;
-        }
-
-        table.dataTable thead th {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 15px;
-            text-align: left;
-            font-weight: bold;
-            border-bottom: 2px solid #ddd;
-        }
-
-        table.dataTable tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        table.dataTable tbody tr:hover {
-            background-color: #e0e0e0;
-        }
-
-        table.dataTable td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        div.dt-buttons {
-            margin-bottom: 20px;
-        }
-
-        /* Style des boutons DataTables */
-        .dt-button {
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 4px;
-            padding: 5px 10px;
-            margin-right: 5px;
-        }
-
-        .dt-button:hover {
-            background-color: #45a049;
-        }
-
-        /* Alignement du filtre de recherche */
-        div.dataTables_filter {
-            float: right;
-        }
-
-    </style>
-</head>
-<body>
-
-    <table id="example" class="display">
-        <thead>
-            <tr>
-                <th>Nom de la Région</th>
-                <th>Nom de l'Indicateur</th>
-                <th>Description de l'Indicateur</th>
-                <th>Superficie</th>
-                <th>Population</th>
-                <th>Description de la Région</th>
-                <th>Valeur</th>
-                <th>Type</th>
-                <th>Unité</th>
-                <th>Année</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@item.RegionNomDTO</td>
-                        <td>@item.IndicateurNomDTO</td>
-                        <td>@item.IndicateurDescriptionDTO</td>
-                        <td>@item.SuperficieDTO</td>
-                        <td>@item.PopulationDTO</td>
-                        <td>@item.RegionDescriptionDTO</td>
-                        <td>@item.ValeurDTO</td>
-                        <td>@item.TypeDTO</td>
-                        <td>@item.UniteDTO</td>
-                        <td>@item.AnneeDTO</td>
-                        <td>
-                            <!-- Actions avec icônes (exemple : édition et suppression) -->
-                            <a href="#" class="btn btn-light"><i class="fas fa-edit"></i></a>
-                            <a href="#" class="btn btn-light"><i class="fas fa-trash"></i></a>
-                        </td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-
-    <script>
-        $(document).ready(function () {
-            $('#example').DataTable({
-                "dom": 'Bfrtip',  // Placement des boutons
-                "paging": true,    // Activer la pagination
-                "autoWidth": true, // Largeur automatique
-                "buttons": [       // Boutons d'exportation avec icônes Font Awesome
-                    {
-                        extend: 'excelHtml5',
-                        text: '<i class="fas fa-file-excel"></i>',
-                        titleAttr: 'Exporter en Excel'
-                    },
-                    {
-                        extend: 'pdfHtml5',
-                        text: '<i class="fas fa-file-pdf"></i>',
-                        titleAttr: 'Exporter en PDF'
-                    },
-                    {
-                        extend: 'print',
-                        text: '<i class="fas fa-print"></i>',
-                        titleAttr: 'Imprimer'
-                    }
-                ]
-            });
-        });
-    </script>
-
-</body>
-</html>
-
- *@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -462,7 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
 
-
+     <link href="~/css/indicateur/navbar.css" rel="stylesheet" />
+ 
     <!-- Bootstrap CSS (Version 3.4.1 ou plus récente) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -485,11 +34,11 @@
 
     <style>
         /* Suppression de la marge par défaut et bordure arrondie de la navbar */
-        .navbar {
+/*         .navbar {
             margin-bottom: 0;
             border-radius: 0;
         }
-
+ */
         /* Footer avec fond gris et padding */
         footer {
             background-color: #f2f2f2;
@@ -525,20 +74,6 @@
                 border-bottom: 1px solid #ddd;
             }
 
-        /* Style des boutons DataTables */
-       /*  .dt-button {
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 4px;
-            padding: 5px 10px;
-            margin-right: 5px;
-        }
-
-            .dt-button:hover {
-                background-color: #45a049;
-            } */
-
-        /* Alignement du filtre de recherche */
         div.dataTables_filter {
             float: right;
         }
@@ -547,82 +82,7 @@
             padding-top: 7px;
             padding-bottom: 7px;
         }
-        /*BUTTON DE EXPORTATION*/
-        /* Style général pour tous les boutons */
-    /*     .custom-excel-button, .custom-pdf-button, .custom-print-button {
-            padding: 10px 15px;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            margin: 0 5px;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        } */
-
-        /* Style pour le bouton Excel */
-      /*   .custom-excel-button {
-            background-color: #28a745;
-        }
-
-            .custom-excel-button:hover {
-                background-color: #218838;
-                transform: translateY(-2px);
-                box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3);
-            } */
-
-        /* Style pour le bouton PDF */
-    /*     .custom-pdf-button {
-            background-color: #dc3545;
-        }
-
-            .custom-pdf-button:hover {
-                background-color: #c82333;
-                transform: translateY(-2px);
-                box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
-            } */
-
-        /* Style pour le bouton Imprimer */
-       /*  .custom-print-button {
-            background-color: #007bff;
-        }
-
-            .custom-print-button:hover {
-                background-color: #0069d9;
-                transform: translateY(-2px);
-                box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-            } */
-
-            /* Effet de focus pour tous les boutons */
-        /*     .custom-excel-button:focus, .custom-pdf-button:focus, .custom-print-button:focus {
-                outline: none;
-                box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
-            } */
-
-        /* Effet de hover pour le bouton Excel */
-        /* .custom-excel-button:hover {
-            background-color: #218838; 
-            transform: translateY(-2px); 
-            box-shadow: 0px 4px 8px rgba(40, 167, 69, 0.3); 
-        } */
-
-        /* Effet de hover pour le bouton PDF */
-        /* .custom-pdf-button:hover {
-            background-color: #c82333;
-            transform: translateY(-2px);
-            box-shadow: 0px 4px 8px rgba(220, 53, 69, 0.3);
-        } */
-
-        /* Effet de hover pour le bouton Imprimer */
-       /*  .custom-print-button:hover {
-            background-color: #0069d9; 
-            transform: translateY(-2px);
-            box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.3);
-        } */
-
- 
-        /* Base styling for icons */
+    
 
         /* Styles généraux pour le corps et la section */
 .content-body {
@@ -812,37 +272,80 @@ canvas {
             transform-origin: 0 0; /* Adjust the origin point as needed */
         }
 
-       
+
+
+       /*STYLE POUR PAGINATION DATATABLE*/
+
+        .dataTables_paginate .paginate_button {
+            border-radius: 10px !important;
+            background-color: white !important;
+            border: 1px solid #007bff !important;
+            color: #007bff !important;
+            padding: 0.5em 1em !important;
+            margin-right: 5px !important;
+            transition: background-color 0.3s, color 0.3s !important;
+        }
+
+            .dataTables_paginate .paginate_button:hover {
+                background-color: green !important;
+                color: white !important;
+            }
+
+            .dataTables_paginate .paginate_button.current {
+                background-color: #007bff !important;
+                color: white !important;
+                
+            }
+
+            .dataTables_paginate .paginate_button.disabled {
+                color: #ccc !important;
+                pointer-events: none !important;
+                background-color: white !important;
+                border: 1px solid #ccc !important;
+            }
+
+            /*NAVBAR*/
+
+      
+
 
     </style>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/Home/index">SIREED</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Privacy</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Indicateurs</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/Utilisateurs/Connexion"><span class="glyphicon glyphicon-user"></span>&#160 Connexion</a></li>
-                </ul>
+            <div class="navbar-right">
+                <a href="#" class="nav-link login-button">Connexion</a>
             </div>
+            <div class="toggle" id="toggle-btn">&#9776;</div>
         </div>
     </nav>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const toggleBtn = document.getElementById("toggle-btn");
+
+            const navbarContainer = document.querySelector(".navbar-container");
+
+
+            toggleBtn.addEventListener("click", function () {
+
+                navbarContainer.classList.toggle("active");
+
+            });
+
+        });
+    </script>
+
+
+     
     <!-- Jumbotron -->
     <div class="jumbotron text-center">
         <div class="container">
@@ -1152,9 +655,6 @@ canvas {
     <!-- Bootstrap and jQuery JS -->
 @*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
 
-
-
-    <script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
 

@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\css\\Indicateur\\Index.css"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Indicateur\\NavBar.css",
+      "PackagePath": "staticwebassets\\css\\Indicateur\\NavBar.css"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\css\\Main.css",
       "PackagePath": "staticwebassets\\css\\Main.css"
     },
@@ -463,6 +467,1630 @@
     {
       "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\enums.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\enums.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\enums.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\cjs\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\cjs\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\createpopper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\createpopper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\createpopper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\createpopper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\contains.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\contains.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\contains.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\contains.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getboundingclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getboundingclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getboundingclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getboundingclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getclippingrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getclippingrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getclippingrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getclippingrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcompositerect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcompositerect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcompositerect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcompositerect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcomputedstyle.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcomputedstyle.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcomputedstyle.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getcomputedstyle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentelement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentelement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getdocumentrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\gethtmlelementscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\gethtmlelementscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\gethtmlelementscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\gethtmlelementscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getlayoutrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getlayoutrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getlayoutrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getlayoutrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodename.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodename.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodename.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodename.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodescroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodescroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodescroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getnodescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getoffsetparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getoffsetparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getoffsetparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getoffsetparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getparentnode.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getparentnode.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getparentnode.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getparentnode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getviewportrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getviewportrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getviewportrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getviewportrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscrollbarx.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscrollbarx.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscrollbarx.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\getwindowscrollbarx.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\instanceof.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\instanceof.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\instanceof.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\instanceof.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\islayoutviewport.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\islayoutviewport.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\islayoutviewport.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\islayoutviewport.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\isscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\isscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\isscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\isscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\istableelement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\istableelement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\istableelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\istableelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\listscrollparents.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\listscrollparents.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\listscrollparents.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\dom-utils\\listscrollparents.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\applystyles.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\applystyles.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\applystyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\applystyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\arrow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\arrow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\arrow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\arrow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\computestyles.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\computestyles.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\computestyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\computestyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\eventlisteners.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\eventlisteners.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\eventlisteners.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\eventlisteners.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\flip.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\flip.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\flip.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\flip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\hide.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\hide.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\hide.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\hide.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\offset.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\offset.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\offset.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\offset.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\popperoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\popperoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\popperoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\popperoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\preventoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\preventoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\modifiers\\preventoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\modifiers\\preventoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\types.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\types.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\types.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\types.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\computeautoplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\computeautoplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\computeautoplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\computeautoplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\computeoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\computeoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\computeoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\computeoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\debounce.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\debounce.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\debounce.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\debounce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\detectoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\detectoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\detectoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\detectoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\expandtohashmap.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\expandtohashmap.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\expandtohashmap.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\expandtohashmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltaxis.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltaxis.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltaxis.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltaxis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltlen.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltlen.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltlen.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getaltlen.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getbaseplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getbaseplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getbaseplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getbaseplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getfreshsideobject.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getfreshsideobject.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getfreshsideobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getfreshsideobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getmainaxisfromplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getmainaxisfromplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getmainaxisfromplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getmainaxisfromplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositeplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositeplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositeplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositeplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositevariationplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositevariationplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositevariationplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getoppositevariationplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getvariation.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getvariation.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\getvariation.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\getvariation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\math.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\math.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\math.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\math.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\mergebyname.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\mergebyname.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\mergebyname.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\mergebyname.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\mergepaddingobject.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\mergepaddingobject.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\mergepaddingobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\mergepaddingobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\ordermodifiers.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\ordermodifiers.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\ordermodifiers.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\ordermodifiers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\recttoclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\recttoclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\recttoclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\recttoclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\uniqueby.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\uniqueby.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\uniqueby.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\uniqueby.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\useragent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\useragent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\useragent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\useragent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\within.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\within.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\esm\\utils\\within.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\esm\\utils\\within.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\enums.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\enums.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\enums.min.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\enums.min.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\enums.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\enums.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-base.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-base.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-base.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-lite.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-lite.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper-lite.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper.min.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper.min.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\dist\\umd\\popper.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\dist\\umd\\popper.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\createpopper.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\createpopper.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\createpopper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\createpopper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\createpopper.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\createpopper.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\createpopper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\createpopper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\contains.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\contains.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\contains.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\contains.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\contains.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\contains.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\contains.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\contains.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getboundingclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getclippingrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcompositerect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getcomputedstyle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getdocumentrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\gethtmlelementscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getlayoutrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodename.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getnodescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getoffsetparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getparentnode.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getviewportrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\getwindowscrollbarx.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\instanceof.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\islayoutviewport.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\isscrollparent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\istableelement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\dom-utils\\listscrollparents.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\enums.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\enums.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\enums.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\enums.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\enums.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\enums.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\enums.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\enums.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\index.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\index.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\applystyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\arrow.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\arrow.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\arrow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\arrow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\arrow.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\arrow.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\arrow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\arrow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\computestyles.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\eventlisteners.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\flip.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\flip.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\flip.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\flip.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\flip.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\flip.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\flip.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\flip.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\hide.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\hide.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\hide.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\hide.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\hide.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\hide.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\hide.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\hide.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\index.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\index.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\index.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\index.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\index.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\index.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\index.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\offset.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\offset.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\offset.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\offset.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\offset.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\offset.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\offset.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\offset.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\popperoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\modifiers\\preventoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-base.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-base.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-base.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-base.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-base.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-base.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-base.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-base.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-lite.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-lite.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-lite.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-lite.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-lite.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper-lite.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper-lite.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\types.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\types.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\types.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\types.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\types.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\types.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\types.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\types.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeautoplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\computeoffsets.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\debounce.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\debounce.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\debounce.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\debounce.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\debounce.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\debounce.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\debounce.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\debounce.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\detectoverflow.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\expandtohashmap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltaxis.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltlen.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltlen.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltlen.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltlen.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltlen.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltlen.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getaltlen.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getaltlen.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getbaseplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getfreshsideobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getmainaxisfromplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositeplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getoppositevariationplacement.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getvariation.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getvariation.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getvariation.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getvariation.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getvariation.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getvariation.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\getvariation.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\getvariation.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\math.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\math.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\math.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\math.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\math.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\math.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\math.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\math.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergebyname.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergebyname.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergebyname.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergebyname.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergebyname.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergebyname.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergebyname.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergebyname.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\mergepaddingobject.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\ordermodifiers.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\recttoclientrect.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\uniqueby.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\uniqueby.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\uniqueby.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\uniqueby.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\uniqueby.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\uniqueby.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\uniqueby.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\uniqueby.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\useragent.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\useragent.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\useragent.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\useragent.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\useragent.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\useragent.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\useragent.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\useragent.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\within.d.ts",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\within.d.ts"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\within.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\within.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\within.js.flow",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\within.js.flow"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\lib\\utils\\within.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\lib\\utils\\within.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\license.md",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\license.md"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\package.json",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\lib\\popperjs\\core\\readme.md",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\core\\readme.md"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Sireed.API.Microsoft.AspNetCore.StaticWebAssets.props",

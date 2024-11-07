@@ -20,9 +20,6 @@ namespace Sireed.API.Controllers
         }
 
 
-
-
-
         // GET: Regions
         public async Task<IActionResult> Index()
         {

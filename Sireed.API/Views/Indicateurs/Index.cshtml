@@ -314,34 +314,49 @@ canvas {
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-left">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Privacy</a>
-            </div>
-            <div class="navbar-right">
-                <a href="#" class="nav-link login-button">Connexion</a>
-            </div>
-            <div class="toggle" id="toggle-btn">&#9776;</div>
+   <nav class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-left">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Privacy</a>
         </div>
+        <div class="navbar-right">
+            <a href="#" class="nav-link login-button">Connexion</a>
+        </div>
+        <div class="toggle" id="toggle-btn">&#9776;</div>
+    </div>
     </nav>
 
+    <div class="navbar-menu" id="navbar-menu">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Privacy</a>
+        <a href="#" class="nav-link login-button">Connexion</a>
+    </div>
+
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        // document.getElementById("toggle-btn").onclick = function () {
+        //     const menu = document.getElementById("navbar-menu");
+        //     menu.classList.toggle("active");
+        // }
+        const toggleBtn = document.getElementById("toggle-btn");
+        const menu = document.getElementById("navbar-menu");
 
-            const toggleBtn = document.getElementById("toggle-btn");
+        toggleBtn.onclick = function () {
+            menu.classList.toggle("active");
+        }
 
-            const navbarContainer = document.querySelector(".navbar-container");
+        function checkScreenSize() {
+            if (window.innerWidth > 768) {
+                // En mode desktop, assurez-vous que le menu est visible et désactivez le toggle
+                menu.classList.remove("active");
+            }
+        }
 
+        // Vérifiez la taille de l'écran au chargement
+        checkScreenSize();
 
-            toggleBtn.addEventListener("click", function () {
-
-                navbarContainer.classList.toggle("active");
-
-            });
-
-        });
+        // Vérifiez la taille de l'écran à chaque redimensionnement de la fenêtre
+        window.onresize = checkScreenSize;
     </script>
 
 

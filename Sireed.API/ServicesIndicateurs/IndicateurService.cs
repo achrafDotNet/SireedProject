@@ -28,11 +28,13 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
             return Indicateurs;
         }
 
-        public Task<int> GetNombre()
+        async Task<List<RegionCountDTO>> IServicesIndicateur.GetNombre()
         {
-            var nombreIndicateur = _repositoryINDICATEUR.GetnombreINdicateurs();
-            return nombreIndicateur;
+            var nmbr = await _repositoryINDICATEUR.GetnombreINdicateurs();
+            return nmbr;
         }
+
+
 
         public Task<List<IndicateurDTO>> CalculateAnnualPercentages(List<IndicateurDTO> indicators, int totalYears, int totalRegions)
         {
@@ -64,6 +66,11 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
             // Filtrer les indicateurs seulement si une année spécifique est fournie
             var indicateursFiltres = annee > 0 ? indicateurs.Where(i => i.Annee == annee) : indicateurs;
 
+            // Calculer le nombre d'indicateurs par région
+            var nombreIndicateursParRegion = indicateursFiltres
+                .GroupBy(i => i.Region.Nom)
+                .ToDictionary(group => group.Key, group => group.Count());
+
             foreach (var indicateur in indicateursFiltres)
             {
                 var valeurCible = ObtenirValeurCible(indicateur); // Méthode pour récupérer la cible
@@ -81,7 +88,8 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
                     TypeDTO = indicateur.Type,
                     UniteDTO = indicateur.Unite,
                     AnneeDTO = indicateur.Annee,
-                    PercentageDTO = pourcentage
+                    PercentageDTO = pourcentage,
+                    NombreIndicDTO = nombreIndicateursParRegion[indicateur.Region.Nom] 
                 });
             }
 
@@ -93,6 +101,8 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
             // Logique pour récupérer la valeur cible (fixe ou dépendante de l'indicateur)
             return 100; // Exemple de valeur cible fixe
         }
+
+        
 
 
         //public Task<List<IndicateurDTO>> CalculateAnnualPercentages(List<IndicateurDTO> indicators, int totalYears, int totalRegions)

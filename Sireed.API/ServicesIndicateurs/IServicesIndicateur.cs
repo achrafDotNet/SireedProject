@@ -12,6 +12,6 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
     {
         Task<List<IndicateurDTO>> GetAsynciNDICATEUR();
         Task<List<IndicateurDTO>> CalculerIndicateursAnnuellement(List<Indicateur> indicateurs, int annee);
-        Task<int> GetNombre();
+        Task<List<RegionCountDTO>> GetNombre();
     }
 }

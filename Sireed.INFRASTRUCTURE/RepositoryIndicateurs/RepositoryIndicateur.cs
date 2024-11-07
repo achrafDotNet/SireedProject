@@ -38,9 +38,17 @@ namespace Sireed.INFRASTRUCTURE.RepositoryIndicateurs
              .ToListAsync();
         }
 
-        public Task<int> GetnombreINdicateurs()
+       async Task<List<RegionCountDTO>> IRepositoryIndicateurs.GetnombreINdicateurs()
         {
-            return _context.indicateurs.CountAsync();
+            var results = await _context.indicateurs
+                .GroupBy(i => i.RegionId)
+                .Select(g => new RegionCountDTO
+                {
+                    Nombre = g.Count()
+                })
+                .ToListAsync();
+
+            return results; // Now returns the List<RegionCountDTO>
         }
     }
 }

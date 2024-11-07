@@ -19,6 +19,8 @@ namespace Sireed.APPLICATION.DTO
         public string UniteDTO { get; set; }
         public int AnneeDTO { get; set; }
 
+        public int NombreIndicDTO { get; set; } // New property for indicator count per region
+
         // existing properties
         public double PercentageDTO { get; set; }
 

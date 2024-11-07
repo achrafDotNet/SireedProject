@@ -813,8 +813,7 @@ canvas {
         }
 
 
-
-
+       
 
     </style>
 </head>
@@ -839,7 +838,7 @@ canvas {
                     <li><a href="#">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/Utilisateurs/Connexion"><span class="glyphicon glyphicon-user"></span>Connexion</a></li>
+                    <li><a href="/Utilisateurs/Connexion"><span class="glyphicon glyphicon-user"></span>&#160 Connexion</a></li>
                 </ul>
             </div>
         </div>
@@ -911,18 +910,29 @@ canvas {
                                         <td>
                                             <a href="#" class="btn btn-light" data-toggle="modal" data-target="#maModal" data-region="@item.RegionNomDTO"><i class="fa-solid fa-map-location-dot"></i></a>
                                             <a href="#" class="btn btn-light">
+
                                                 <div style="margin-bottom: 15px;">
+
                                                     <label>@item.IndicateurNomDTO</label>
+
                                                     <div style="position: relative; height: 5px; width: 50%; background-color: #e0e0e0; border-radius: 5px;">
+
                                                         <div style="height: 100%; width: @item.PercentageDTO%; background-color: #4caf50; border-radius: 5px;"
-                                                             title="Année: @item.AnneeDTO | Région: @item.RegionNomDTO">
-                                                            <div id="nombreIndic">Nombre total d'indicateurs : <span id="nombreValue"></span></div>
+                                                             title="Année: @item.AnneeDTO | Région: @item.RegionNomDTO | Nombre : @item.NombreIndicDTO">
+
                                                             <span style="position: absolute; right: 10px; color:forestgreen;">
+
                                                                 @item.PercentageDTO%
+
+
                                                             </span>
+
                                                         </div>
+
                                                     </div>
+
                                                 </div>
+                                                
                                             </a>
                                         </td>
                                     </tr>
@@ -939,12 +949,37 @@ canvas {
         </div>
     </div>
 
+    <script>
+
+        document.querySelectorAll('.btn-light').forEach(btn => {
+
+            btn.addEventListener('mouseover', function () {
+
+                this.querySelector('.tooltiptext').style.display = 'block';
+
+            });
+
+            btn.addEventListener('mouseout', function () {
+
+                this.querySelector('.tooltiptext').style.display = 'none';
+
+            });
+
+        });
+
+    </script>
 
     <script>
         fetch('/Indicateurs/GetNombreIndic')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('nombreValue').innerText = data;
+
+                var debugTest = document.getElementById('nombreValue');
+
+                console.log(debugTest);
+
+
             })
             .catch(error => console.error('Erreur:', error));
     </script>
@@ -952,7 +987,77 @@ canvas {
     <div style="height:50vh"></div>
 
     <!-- Fenêtre Modale -->
+    <!-- Fenêtre Modale -->
+    <!-- Fenêtre Modale -->
     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="maModalLabel">Données de Population</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row h-100">
+                            <!-- Tableau de données -->
+                            <div class="col-md-6 h-50">
+                                <h6>Tableau de Données</h6>
+                                <table class="table table-bordered h-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Commune</th>
+                                            <th>Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Maaziz (CR)</td>
+                                            <td>11502</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oulmes (CR)</td>
+                                            <td>18786</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tiddas (CR)</td>
+                                            <td>10047</td>
+                                        </tr>
+                                        <!-- Ajouter d'autres lignes si nécessaire -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- Graphique (exemple d'une barre horizontale simple) -->
+                            <div class="col-md-6 h-50">
+                                <h6>Graphique de Population</h6>
+                                <div class="chart-placeholder" style="width: 100%; height: 100%; background-color: lightgray;">
+                                    <p class="text-center">[Graphique de population ici]</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 h-50">
+                            <!-- Carte -->
+                            <div class="col-12 h-100">
+                                <h6>Carte</h6>
+                                <div class="map-placeholder" style="width: 100%; height: 100%; background-color: #e0e0e0;">
+                                    <p class="text-center">[Carte interactive ici]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    @* <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1015,7 +1120,7 @@ canvas {
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
 
 
     <!-- Modal pour afficher le graphique -->

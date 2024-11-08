@@ -4104,7 +4104,8 @@
           "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
           "Microsoft.Extensions.Http": "6.0.0",
-          "Newtonsoft.Json": "13.0.3"
+          "Newtonsoft.Json": "13.0.3",
+          "NuGet.Protocol": "6.9.1"
         },
         "compile": {
           "bin/placeholder/Sireed.IP.dll": {}

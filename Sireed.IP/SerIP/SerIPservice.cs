@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using NuGet.Protocol.Plugins;
 using Sireed.IP.RepÎP;
 using System;
 using System.Collections.Generic;
@@ -15,9 +17,15 @@ namespace Sireed.IP.SerIP
         {
             _repIPrepository = repIPrepository;
         }
+        public void Fixer(HttpContext context) {
+
+           HttpContext httpContext = context;
+        
+        }
         public async Task LogIpAddressAsync()
         {
-            // Récupérer l'IP du visiteur
+
+           // Récupérer l'IP du visiteur
             string ipAddress = _repIPrepository.GetIpAddress();
 
             // Obtenir le pays correspondant à l'IP
@@ -57,9 +65,9 @@ namespace Sireed.IP.SerIP
             // Ajouter une nouvelle entrée
             logData.Add(new { IpAddress = ipAddress, Country = country, Timestamp = DateTime.UtcNow });
 
-            // Sauvegarder les données dans le fichier JSON
-            string jsonData = JsonConvert.SerializeObject(logData, Formatting.Indented);
-            await File.WriteAllTextAsync(filePath, jsonData);
+            //// Sauvegarder les données dans le fichier JSON
+            //string jsonData = JsonConvert.SerializeObject(logData, Formatting.Indented);
+            //await File.WriteAllTextAsync(filePath, jsonData);
             //// Récupérer l'IP du visiteur
             //string ipAddress = _repIPrepository.GetIpAddress();
 

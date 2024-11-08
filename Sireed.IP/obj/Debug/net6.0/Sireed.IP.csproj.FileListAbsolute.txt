@@ -1,0 +1,13 @@
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\bin\Debug\net6.0\Sireed.IP.deps.json
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\bin\Debug\net6.0\Sireed.IP.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\bin\Debug\net6.0\Sireed.IP.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.csproj.AssemblyReference.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.AssemblyInfoInputs.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.AssemblyInfo.cs
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.sourcelink.json
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\refint\Sireed.IP.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\Sireed.IP.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.IP\obj\Debug\net6.0\ref\Sireed.IP.dll

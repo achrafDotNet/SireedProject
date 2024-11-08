@@ -2,9 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
 using Sireed.APPLICATION.ServicesIndicateurs;
 using Sireed.INFRASTRUCTURE.RepositoryIndicateurs;
+using Sireed.IP.Extensions;
 using Newtonsoft.Json;
 using NuGet.Protocol;
 using System.Text.Json;
+using Sireed.IP.RepÎP;
+using Sireed.IP.SerIP;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,8 +19,10 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(buil
 
 builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
 builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
+builder.Services.AddScoped<IRepIPrepository, RepIPrepository>();
+builder.Services.AddScoped<ISerIPservice, SerIPservice>();
 
-
+LicenceSireed.ConfigureServices(builder.Services); // Add Dependecie de IP
 // Add services to the container.
 
 // Add services to the container.

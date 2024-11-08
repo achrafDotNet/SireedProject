@@ -32,26 +32,24 @@ body {
 .nav-link {
     color: #333;
     font-weight: bold;
-    text-decoration: none; /* Enlève les underlines */
     transition: color 0.3s, transform 0.2s;
 }
 
     .nav-link:hover {
-        color: #007BFF;
+        color: #0f4d0f;
         transform: scale(1.1);
     }
 
 .login-button {
-    background: #007BFF;
+    background: #0f4d0f;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
-    text-decoration: none; /* Enlève les underlines */
     transition: background 0.3s, transform 0.2s;
 }
 
     .login-button:hover {
-        background: #0056b3;
+        background: #f4f4f4;
         transform: scale(1.05);
     }
 

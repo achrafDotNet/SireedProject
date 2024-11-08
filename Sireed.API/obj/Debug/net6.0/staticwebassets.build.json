@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DoUs+yW1iZFrCo6DdwUwdFnjxXfVhSrtw8FW5FbGPOE=",
+  "Hash": "QicCK9P01jNfYnqD99JEyh30CGvkJ8qMo+lbwD6nFwc=",
   "Source": "Sireed.API",
   "BasePath": "_content/Sireed.API",
   "Mode": "Default",
@@ -1136,6 +1136,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Rabat_Sale_Kenitra\\bourereg RABAT.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\Rabat_Sale_Kenitra\\logo-footer3.png",
+      "SourceId": "Sireed.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\",
+      "BasePath": "_content/Sireed.API",
+      "RelativePath": "Images/Rabat_Sale_Kenitra/logo-footer3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Rabat_Sale_Kenitra\\logo-footer3.png"
     },
     {
       "Identity": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\Rabat_Sale_Kenitra\\tour-hassan-rabat-maroc1 (1).jpeg",

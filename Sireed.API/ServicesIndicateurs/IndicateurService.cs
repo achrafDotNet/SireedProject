@@ -99,7 +99,7 @@ namespace Sireed.APPLICATION.ServicesIndicateurs
         private float ObtenirValeurCible(Indicateur indicateur)
         {
             // Logique pour récupérer la valeur cible (fixe ou dépendante de l'indicateur)
-            return 100; // Exemple de valeur cible fixe
+            return 200; // Exemple de valeur cible fixe
         }
 
         

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Sireed.API.Models;
 using Sireed.APPLICATION.DTO;
+using Sireed.IP.SerIP;
 using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Web.Mvc;
@@ -11,14 +12,16 @@ namespace Sireed.API.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly ISerIPservice _serIPservice;
+        public HomeController(ILogger<HomeController> logger,ISerIPservice serIPservice)
         {
             _logger = logger;
+            _serIPservice = serIPservice;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            await _serIPservice.LogIpAddressAsync();
             return View();
         }
 

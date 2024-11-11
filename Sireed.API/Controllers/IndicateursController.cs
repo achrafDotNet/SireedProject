@@ -61,12 +61,227 @@ namespace Sireed.API.Controllers
             return View(indicateurDTOs);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetNombreIndic()
+        //[HttpGet]
+        //public async Task<IActionResult> GetNombreIndic()
+        //{
+        //    var nmbrIndic = await _serviceiNDICATEUR.GetNombre();
+        //    return Json(nmbrIndic);
+        //}
+
+        //[HttpGet]
+        //public IActionResult GetPopulationData(string regionNom)
+        //{
+        //    // Fetch population data using a dedicated method
+        //    var populationData = GetPopulationFromDatabase(regionNom);
+
+        //    // Fetch chart data using a dedicated method
+        //    var populationChartData = GetPopulationChartData(regionNom);
+
+        //    return Json(new { populationData, populationChartData });
+        //}
+
+
+
+        // Method to fetch population data from the database
+        //private IEnumerable<object> GetPopulationFromDatabase(string regionNom)
+        //{
+        //    // Retrieve the region based on the provided name
+        //    var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+        //    if (region == null)
+        //    {
+        //        return Enumerable.Empty<object>(); // Return empty if region not found
+        //    }
+
+        //    // Get population data related to the region
+        //    return _context.Actualites
+        //        .Where(a => a.RegionId == region.Id)
+        //        .Select(a => new
+        //        {
+        //            commune = a.Titre, // Adjust according to your data model
+        //            population = a.Description // Adjust according to your data model
+        //        })
+        //        .ToList();
+        //}
+
+        // GET: Regions
+        public async Task<IActionResult> ChartModel(DateTime? startDate, DateTime? endDate)
         {
-            var nmbrIndic = await _serviceiNDICATEUR.GetNombre();
-            return Json(nmbrIndic);
+            var regions = await _context.Regions
+                .Include(r => r.Indicateurs)
+                .ToListAsync();
+
+            if (startDate.HasValue && endDate.HasValue)
+            {
+                foreach (var region in regions)
+                {
+                    region.Indicateurs = region.Indicateurs
+                        .Where(i => i.Annee >= startDate.Value.Year && i.Annee <= endDate.Value.Year)
+                        .ToList();
+                }
+            }
+
+            var regionDTOs = regions.Select(r => new RegionDTO
+            {
+                Id = r.Id,
+                NomDTO = r.Nom,
+                DescriptionDTO = r.Description,
+                SuperficieDTO = r.Superficie,
+                PopulationDTO = r.Population,
+                IndicateursDTOO = r.Indicateurs.Select(i => new IndicateurDTOO  // Assurez-vous que c'est IndicateurDTO
+                {
+                    Id = i.Id,
+                    NomDTO = i.Nom,
+                    ValeurDTO = i.Valeur,
+                    AnneeDTO = i.Annee
+                }).ToList() // Ceci retounera une List<IndicateurDTO>
+            }).ToList(); // Vous pouvez les transformer en liste ici si vous avez besoin d'une liste.
+
+            return View(regionDTOs);
         }
+
+
+
+
+        [HttpGet]
+        public IActionResult GetPopulationData(string regionNom, int year)
+        {
+            // Récupérer les données de population et du graphique
+            var populationData = GetPopulationFromDatabase(regionNom);
+            var populationChartData = GetPopulationChartData(regionNom, year);
+
+            return Json(new { populationData, populationChartData });
+        }
+
+        private IEnumerable<object> GetPopulationFromDatabase(string regionNom)
+        {
+            var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+            if (region == null)
+            {
+                return Enumerable.Empty<object>(); // Vérifiez si la région est trouvée
+            }
+
+            var communes = _context.Communes
+                .Where(c => c.RegionId == region.Id)
+                .Select(c => new
+                {
+                    commune = c.Nom,
+                    population = c.Population
+                })
+                .ToList();
+
+            // Ajoutez un log pour vérifier les données
+            Console.WriteLine($"Found {communes.Count} communes in the region: {regionNom}");
+
+            return communes;
+        }
+
+        private object GetPopulationChartData(string regionNom, int year)
+        {
+            var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+            if (region == null)
+            {
+                return new { labels = Array.Empty<string>(), data = Array.Empty<int>() };
+            }
+
+            var data = _context.Communes
+                .Where(c => c.RegionId == region.Id)
+                .SelectMany(c => _context.indicateurs
+                    .Where(i => i.Annee == year && i.RegionId == region.Id)
+                    .Select(i => new { commune = c.Nom, population = i.Valeur })
+                )
+                .ToList();
+
+            // Vérifiez si les données du graphique sont récupérées
+            Console.WriteLine($"Found {data.Count} data points for year {year}");
+
+            return new
+            {
+                labels = data.Select(d => d.commune).ToArray(),
+                data = data.Select(d => d.population).ToArray()
+            };
+        }
+
+
+
+        //[HttpGet]
+        //public IActionResult GetPopulationData(string regionNom, int year)
+        //{
+        //    // Récupérer les données de population et du graphique
+        //    var populationData = GetPopulationFromDatabase(regionNom);
+        //    var populationChartData = GetPopulationChartData(regionNom, year);
+
+        //    return Json(new { populationData, populationChartData });
+        //}
+
+        //private IEnumerable<object> GetPopulationFromDatabase(string regionNom)
+        //{
+        //    var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+        //    if (region == null)
+        //    {
+        //        return Enumerable.Empty<object>();
+        //    }
+
+        //    // Récupérer les données de population pour chaque commune associée à la région
+        //    return _context.Communes
+        //        .Where(c => c.RegionId == region.Id)
+        //        .Select(c => new
+        //        {
+        //            commune = c.Nom,
+        //            population = c.Population
+        //        })
+        //        .ToList();
+        //}
+        //private object GetPopulationChartData(string regionNom, int year)
+        //{
+        //    var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+        //    if (region == null)
+        //    {
+        //        return new { labels = Array.Empty<string>(), data = Array.Empty<int>() };
+        //    }
+
+        //    var data = _context.Communes
+        //        .Where(c => c.RegionId == region.Id)
+        //        .SelectMany(c => _context.indicateurs
+        //            .Where(i => i.Annee == year && i.RegionId == region.Id)
+        //            .Select(i => new { commune = c.Nom, population = i.Valeur })
+        //        )
+        //        .ToList();
+
+        //    return new
+        //    {
+        //        labels = data.Select(d => d.commune).ToArray(),
+        //        data = data.Select(d => d.population).ToArray()
+        //    };
+        //}
+
+
+
+        //private object GetPopulationChartData(string regionNom)
+        //{
+        //    var region = _context.Regions.FirstOrDefault(r => r.Nom == regionNom);
+        //    if (region == null)
+        //    {
+        //        return new { labels = Array.Empty<string>(), data = Array.Empty<int>() }; // Return empty data if region not found
+        //    }
+
+        //    var data = _context.indicateurs
+        //        .Where(i => i.RegionId == region.Id)
+        //        .GroupBy(i => i.Annee)
+        //        .Select(g => new
+        //        {
+        //            Annee = g.Key,
+        //            Valeur = g.Sum(i => i.Valeur) // Sum values per year
+        //        })
+        //        .ToList();
+
+        //    return new
+        //    {
+        //        labels = data.Select(d => d.Annee.ToString()).ToArray(),
+        //        data = data.Select(d => d.Valeur).ToArray()
+        //    };
+        //}
+
+        // Exemple de méthode pour obtenir les données du graphique
 
         //private async Task<List<Region>> GetTotalRegionsAsync()
 

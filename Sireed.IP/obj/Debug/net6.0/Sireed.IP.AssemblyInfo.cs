@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sireed.IP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ad3af5693a79be630b98e5b20ec9f31137c5b34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96ac69bf614fe749bc1ec826a81dae95c827a7ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sireed.IP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sireed.IP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

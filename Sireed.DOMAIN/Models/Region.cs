@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata;
+﻿using Sireed.DOMAIN.Models;
+using System.Reflection.Metadata;
 
 namespace Sireed.API.Models
 {
@@ -10,6 +11,7 @@ namespace Sireed.API.Models
         public float Superficie { get; set; }
         public int Population { get; set; }
 
+        public ICollection<Commune> Communes { get; set; } = new List<Commune>();
         public ICollection<Indicateur> Indicateurs { get; set; }
         public ICollection<ProjetRecherche> ProjetsRecherche { get; set; }
         public ICollection<Document> Documents { get; set; }

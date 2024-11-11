@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
 
+    <script src="https://js.arcgis.com/4.25/"></script>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css">
+
      <link href="~/css/indicateur/navbar.css" rel="stylesheet" />
  
     <!-- Bootstrap CSS (Version 3.4.1 ou plus récente) -->
@@ -305,9 +308,144 @@ canvas {
                 border: 1px solid #ccc !important;
             }
 
-            /*NAVBAR*/
+            /*ARCGIS*/
+        #mapDiv {
+            height: 500px; /* Ajustez la hauteur de la carte */
+            width: 100%; /* La carte prend toute la largeur disponible */
+        }
 
-      
+      /*Modal Indicateur*/
+        /* Style pour le modal */
+        /* Style pour le modal */
+        .modal-content {
+            background-color: #ffffff;
+            color: #2c3e50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-header {
+            background-color: #27ae60;
+            color: #ffffff;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 20px;
+            font-size: 1.25rem;
+        }
+
+            .modal-header .modal-title {
+                font-weight: bold;
+            }
+
+            .modal-header .close {
+                color: #ffffff;
+                font-size: 1.5rem;
+            }
+
+        .modal-body {
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        .container-fluid {
+            padding: 0 20px;
+        }
+
+        select.form-control {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            border-radius: 8px;
+            border: 1px solid #27ae60;
+            font-size: 1rem;
+            padding: 10px;
+        }
+
+            select.form-control:focus {
+                border-color: #2ecc71;
+                background-color: #ffffff;
+            }
+
+        h3#regionTitle {
+            font-size: 1.5rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #27ae60;
+        }
+
+        .card-header {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.25rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .table th, .table td {
+                padding: 12px;
+                text-align: left;
+            }
+
+            .table th {
+                background-color: #27ae60;
+                color: #ffffff;
+            }
+
+            .table td {
+                background-color: #ecf0f1;
+                color: #2c3e50;
+                border-bottom: 1px solid #27ae60;
+            }
+
+        .table-bordered {
+            border: 1px solid #27ae60;
+        }
+
+            .table-bordered th, .table-bordered td {
+                border-color: #27ae60;
+            }
+
+        canvas#populationChart {
+            width: 100% !important;
+            height: 400px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-footer {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: right;
+        }
+
+            .modal-footer .btn-secondary {
+                background-color: #27ae60;
+                color: #fff;
+                border-radius: 8px;
+                padding: 8px 16px;
+                border: none;
+            }
+
+                .modal-footer .btn-secondary:hover {
+                    background-color: #2ecc71;
+                }
+
 
 
     </style>
@@ -386,7 +524,7 @@ canvas {
         <div class="container">
            @*  <h1>My Portfolio</h1>
             <p>Some text that represents "Me"...</p> *@
-            <img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" style="width:70px">
+            <img src="https://www.mmsp.gov.ma/sites/default/files/fav.png" style="width:80px">
             
         </div>
     </div>
@@ -527,7 +665,7 @@ canvas {
     <!-- Fenêtre Modale -->
     <!-- Fenêtre Modale -->
     <!-- Fenêtre Modale -->
-    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+@*     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
@@ -590,12 +728,13 @@ canvas {
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
 
-
-    
-
-    @* <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+    <!-- populationModal.html -->
+    <!-- Modal -->
+    <!-- Modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -606,48 +745,44 @@ canvas {
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
+                        <!-- Sélecteur de région -->
+                        <select id="regionSelector" class="form-control mb-3">
+                            <option value="Rabat-Salé-Zemmour-Zaër">Rabat-Salé-Zemmour-Zaër</option>
+                            <option value="Tanger-Tétouan-Al Hoceima">Tanger-Tétouan-Al Hoceima</option>
+                            <option value="Fès-Meknès">Fès-Meknès</option>
+                        </select>
+
+                        <h3 id="regionTitle">Statistiques de Population pour</h3>
+
                         <div class="row">
-                            <!-- Tableau de données -->
-                            <div class="col-md-6">
-                                <h6>Tableau de Données</h6>
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Commune</th>
-                                            <th>Population</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Maaziz (CR)</td>
-                                            <td>11502</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Oulmes (CR)</td>
-                                            <td>18786</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiddas (CR)</td>
-                                            <td>10047</td>
-                                        </tr>
-                                        <!-- Ajouter d'autres lignes si nécessaire -->
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- Graphique (exemple d'une barre horizontale simple) -->
-                            <div class="col-md-6">
-                                <h6>Graphique de Population</h6>
-                                <div style="width: 100%; height: 200px; background-color: lightgray;">
-                                    <p class="text-center">[Graphique de population ici]</p>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Détails de Population</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Commune</th>
+                                                    <th>Population</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="populationTableBody">
+                                                <!-- Les données seront insérées ici par JavaScript -->
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-3">
-                            <!-- Carte -->
-                            <div class="col-12">
-                                <h6>Carte</h6>
-                                <div style="width: 100%; height: 300px; background-color: #e0e0e0;">
-                                    <p class="text-center">[Carte interactive ici]</p>
+                            <div class="col-md-8">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Graphique de Population</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <canvas id="populationChart" style="width: 100%; height: 400px;"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -658,108 +793,42 @@ canvas {
                 </div>
             </div>
         </div>
-    </div> *@
+    </div>
 
 
-    <!-- Modal pour afficher le graphique -->
-@*     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalLabel">Détails de l'Indicateur</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <canvas id="chartCanvas" width="400" height="200"></canvas>
-                </div>
-            </div>
-        </div>
-    </div> *@
+    <script>
+        require(["esri/Map", "esri/views/MapView"], function (Map, MapView) {
+            // Créer la carte avec un basemap de type 'streets'
+            var map = new Map({
+                basemap: "streets" // Vous pouvez changer ici le type de basemap (ex. 'topo-vector', 'satellite', etc.)
+            });
+
+            // Créer une vue pour afficher la carte
+            var view = new MapView({
+                container: "mapDiv", // ID de l'élément où la carte sera affichée
+                map: map,
+                center: [-6.84165, 34.020882], // Coordonnées pour centrer sur Rabat-Salé
+                zoom: 12 // Niveau de zoom pour la région de Rabat-Salé
+            });
+        });
+    </script>
 
 
-    
 
-  
+    <style>
+       
+    </style>
+     
     <!-- Footer -->
     <footer class="container-fluid text-center">
-        <img style="margin-top:5px;width:300px" src="https://cloudconvert-files.s3.eu-central-1.amazonaws.com/b85ae106-be7c-4451-8711-e6d2336cd334/logo-footer2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAI2WCZ54772T33JEQ%2F20241108%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20241108T104559Z&X-Amz-Expires=86400&X-Amz-Signature=c7222d54d1d412f79df52e3a2b22ff504485a1bb3e3376a6d401e196568c430c&X-Amz-SignedHeaders=host&response-content-disposition=inline%3B%20filename%3D%22logo-footer2.png%22&response-content-type=image%2Fpng&x-id=GetObject">
+        <img style="margin-top:5px;width:300px" src="/Images/Rabat_Sale_Kenitra/logo-footer3.png">
     </footer>
 
     <!-- Bootstrap and jQuery JS -->
 @*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
 
-            let chart; // Global variable for the chart
-
-            // Function to create the chart with dynamic data
-            function createChart(labels, data) {
-            const ctx = document.getElementById('chartCanvas').getContext('2d');
-
-            if (chart) {
-                chart.destroy(); // Destroy the old chart if it exists
-            }
-
-            chart = new Chart(ctx, {
-                type: 'bar',
-            data: {
-                labels: labels, // Labels (may be years, regions, etc.)
-            datasets: [{
-                label: 'Valeur de l\'indicateur',
-            data: data, // Data values
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
-            borderColor: 'rgba(75, 192, 192, 1)',
-            borderWidth: 1
-                    }]
-                },
-            options: {
-                responsive: true,
-            scales: {
-                y: {
-                beginAtZero: true
-                        }
-                    }
-                }
-            });
-        }
-
-            // Trigger when the modal is shown
-            $('#maModal').on('shown.bs.modal', function (event) {
-            const button = $(event.relatedTarget);
-            const regionNom = button.data('region').trim().toLowerCase(); // Name of the region
-
-            // Fetch data via AJAX
-            $.ajax({
-                url: '/Indicateurs/GetIndicateursData', // Place your action URL here
-            method: 'GET',
-            success: function (data) {
-                console.log("Données récupérées:", data); // Log the complete data
-
-                    const filteredData = data.filter(item => item.RegionNomDTO && item.RegionNomDTO.trim().toLowerCase() === regionNom);
-
-            if (filteredData.length === 0) {
-                console.warn("Aucune donnée trouvée pour la région:", regionNom);
-            return; // Do not continue if no data
-                    }
-
-                    // Prepare labels and values for the chart
-                    const labels = filteredData.map(item => item.AnneeDTO);
-                    const values = filteredData.map(item => item.ValeurDTO);
-
-            // Create the chart with actual data
-            createChart(labels, values);
-                },
-            error: function (err) {
-                console.error("Erreur lors du chargement des données:", err);
-                }
-            });
-        });
-
-
-    </script>
 
 
     <!-- Initialisation de DataTables -->
@@ -793,85 +862,686 @@ canvas {
         });
     </script>
 
-   @*  <script>
-        $(document).ready(function () {
-            $('#example').DataTable({
-                "dom": 'Bfrtip',
-                "paging": true,
-                "autoWidth": true,
-                "buttons": [
-                    {
-                        extend: 'excelHtml5',
-                        text: '<i class="fas fa-file-excel"></i>',
-                        titleAttr: 'Exporter en Excel'
-                    },
-                    {
-                        extend: 'pdfHtml5',
-                        text: '<i class="fas fa-file-pdf"></i>',
-                        titleAttr: 'Exporter en PDF'
-                    },
-                    {
-                        extend: 'print',
-                        text: '<i class="fas fa-print"></i>',
-                        titleAttr: 'Imprimer'
-                    }
-                ]
-            });
-        });
-    </script> *@
-
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 
     <!-- SCRIPT CARTE -->
     <script>
-        // Sélectionner toutes les cartes et leurs boutons d'action
-        document.querySelectorAll('.card').forEach(card => {
-            const collapseBtn = card.querySelector('[data-action="collapse"]');
-            const reloadBtn = card.querySelector('[data-action="reload"]');
-            const expandBtn = card.querySelector('[data-action="expand"]');
-            const closeBtn = card.querySelector('[data-action="close"]');
 
-            // Fonction de réduction de la carte
-            collapseBtn.addEventListener('click', () => {
-                const content = card.querySelector('.card-content');
-                if (content.classList.contains('collapse')) {
-                    content.classList.remove('collapse');
-                    collapseBtn.querySelector('i').innerHTML = '<i class="fa-regular fa-window-minimize"></i>';
-                } else {
-                    content.classList.add('collapse');
-                    collapseBtn.querySelector('i').textContent = '+';
+        $(document).ready(function () {
+            let myChart; // Variable pour le graphique
+
+            // Fonction pour mettre à jour le graphique
+            function updateChart(chartData) {
+                const ctx = document.getElementById('populationChart').getContext('2d');
+
+                // Si un graphique existe, on le détruit pour en créer un nouveau
+                if (myChart) {
+                    myChart.destroy();
                 }
+
+                myChart = new Chart(ctx, {
+                    type: 'bar', // Type de graphique
+                    data: {
+                        labels: chartData.labels,
+                        datasets: [{
+                            label: 'Population (normalisée)',
+                            data: chartData.data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                max: 100 // Limiter l'échelle à 100 pour afficher les proportions
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Fonction pour charger les données à partir de l'API
+            function loadData(selectedRegion) {
+                var year = 2023; // Année par défaut
+
+                // Appel AJAX pour récupérer les données de population
+                $.ajax({
+                    url: '/Indicateurs/GetPopulationData', // URL de l'API
+                    type: 'GET',
+                    data: { regionNom: selectedRegion, year: year },
+                    success: function (response) {
+                        // Mise à jour du tableau de population
+                        $('#populationTableBody').empty(); // Vider le tableau
+
+                        let totalPopulation = 0;
+                        // Calculer la population totale
+                        $.each(response.populationData, function (index, commune) {
+                            totalPopulation += commune.population;
+                        });
+
+                        // Ajouter les données au tableau et préparer les données pour le graphique
+                        let chartLabels = [];
+                        let chartData = [];
+                        $.each(response.populationData, function (index, commune) {
+                            // Ajouter la commune et la population au tableau
+                            $('#populationTableBody').append(
+                                `<tr><td>${commune.commune}</td><td>${commune.population}</td></tr>`
+                            );
+
+                            // Calculer la proportion de chaque population par rapport à la population totale
+                            let normalizedPopulation = (commune.population / totalPopulation) * 100;
+                            chartLabels.push(commune.commune);
+                            chartData.push(normalizedPopulation);
+                        });
+
+                        // Mise à jour du graphique
+                        response.populationChartData = { labels: chartLabels, data: chartData };
+                        updateChart(response.populationChartData);
+                    },
+                    error: function () {
+                        console.error('Erreur lors de la récupération des données');
+                    }
+                });
+            }
+
+            // Quand le modal est ouvert, charger les données pour la région sélectionnée
+            $('#maModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Bouton qui a déclenché le modal
+                var selectedRegion = $('#regionSelector').val(); // Récupérer la région du sélecteur
+                $('#regionTitle').text('Statistiques de Population pour ' + selectedRegion); // Mettre à jour le titre du modal
+                loadData(selectedRegion); // Charger les données pour la région par défaut
             });
 
-            // Fonction de rechargement (simulé avec un spinner temporaire)
-            reloadBtn.addEventListener('click', () => {
-                const spinner = document.createElement('div');
-                spinner.className = 'spinner';
-                spinner.innerHTML = '<i class="fa-duotone fa-solid fa-spinner fa-spin"></i>';
-                card.appendChild(spinner);
-
-                setTimeout(() => {
-                    card.removeChild(spinner); // Supprimer le spinner après 2 secondes
-                }, 2000);
-            });
-
-            // Fonction pour agrandir ou réduire la carte
-            expandBtn.addEventListener('click', () => {
-                if (card.classList.contains('expanded')) {
-                    card.classList.remove('expanded');
-                    expandBtn.querySelector('i').innerHTML = '<i class="fa-duotone fa-solid fa-window-maximize"></i>';
-                } else {
-                    card.classList.add('expanded');
-                    expandBtn.querySelector('i').textContent = '❐';
-                }
-            });
-
-            // Fonction pour fermer la carte
-            closeBtn.addEventListener('click', () => {
-                card.style.display = 'none';
+            // Quand le sélecteur de région change, mettre à jour les données dans le modal
+            $('#regionSelector').change(function () {
+                var selectedRegion = $(this).val(); // Récupérer la région sélectionnée
+                $('#regionTitle').text('Statistiques de Population pour ' + selectedRegion); // Mettre à jour le titre
+                loadData(selectedRegion); // Recharger les données de la nouvelle région
             });
         });
+
+        // $(document).ready(function () {
+        //     let myChart; // Variable pour le graphique
+
+        //     // Fonction pour mettre à jour le graphique
+        //     function updateChart(chartData) {
+        //         const ctx = document.getElementById('populationChart').getContext('2d');
+
+        //         // Si un graphique existe, on le détruit pour en créer un nouveau
+        //         if (myChart) {
+        //             myChart.destroy();
+        //         }
+
+        //         myChart = new Chart(ctx, {
+        //             type: 'bar', // Type de graphique
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: {
+        //                         beginAtZero: true
+        //                     }
+        //                 }
+        //             }
+        //         });
+        //     }
+
+        //     // Fonction pour charger les données à partir de l'API
+        //     function loadData(selectedRegion) {
+        //         var year = 2023; // Année par défaut
+
+        //         // Appel AJAX pour récupérer les données de population
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData', // URL de l'API
+        //             type: 'GET',
+        //             data: { regionNom: selectedRegion, year: year },
+        //             success: function (response) {
+        //                 // Mise à jour du tableau de population
+        //                 $('#populationTableBody').empty(); // Vider le tableau
+
+        //                 // Ajouter les données au tableau
+        //                 $.each(response.populationData, function (index, commune) {
+        //                     $('#populationTableBody').append(
+        //                         `<tr><td>${commune.commune}</td><td>${commune.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Mise à jour du graphique
+        //                 updateChart(response.populationChartData);
+        //             },
+        //             error: function () {
+        //                 console.error('Erreur lors de la récupération des données');
+        //             }
+        //         });
+        //     }
+
+        //     // Quand le modal est ouvert, charger les données pour la région sélectionnée
+        //     $('#maModal').on('show.bs.modal', function (event) {
+        //         var button = $(event.relatedTarget); // Bouton qui a déclenché le modal
+        //         var selectedRegion = $('#regionSelector').val(); // Récupérer la région du sélecteur
+        //         $('#regionTitle').text('Statistiques de Population pour ' + selectedRegion); // Mettre à jour le titre du modal
+        //         loadData(selectedRegion); // Charger les données pour la région par défaut
+        //     });
+
+        //     // Quand le sélecteur de région change, mettre à jour les données dans le modal
+        //     $('#regionSelector').change(function () {
+        //         var selectedRegion = $(this).val(); // Récupérer la région sélectionnée
+        //         $('#regionTitle').text('Statistiques de Population pour ' + selectedRegion); // Mettre à jour le titre
+        //         loadData(selectedRegion); // Recharger les données de la nouvelle région
+        //     });
+        // });
+        // $(document).ready(function () {
+        //     let myChart; // Déclaration de la variable pour le graphique
+
+        //     // Événement de changement pour le sélecteur de région
+        //     $('#regionSelector').change(function () {
+        //         var selectedRegion = $(this).val();
+        //         var year = 2023; // Remplacez par l'année souhaitée
+
+        //         // Appel AJAX pour récupérer les données de population
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData', // Modifiez cette URL
+        //             type: 'GET',
+        //             data: { regionNom: selectedRegion, year: year },
+        //             success: function (response) {
+        //                 // Mise à jour du tableau
+        //                 $('#populationTableBody').empty(); // Vider le tableau
+        //                 $.each(response.populationData, function (index, commune) {
+        //                     $('#populationTableBody').append(
+        //                         `<tr><td>${commune.commune}</td><td>${commune.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Mise à jour du graphique
+        //                 updateChart(response.populationChartData);
+        //             },
+        //             error: function () {
+        //                 console.error('Erreur lors de la récupération des données');
+        //             }
+        //         });
+        //     });
+
+        //     // Fonction pour mettre à jour le graphique
+        //     function updateChart(chartData) {
+        //         const ctx = document.getElementById('populationChart').getContext('2d');
+
+        //         // Si le graphique existe, détruisez-le avant d'en créer un nouveau
+        //         if (myChart) {
+        //             myChart.destroy(); // Détruire l'ancien graphique
+        //         }
+
+        //         myChart = new Chart(ctx, {
+        //             type: 'bar', // Type de graphique
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: {
+        //                         beginAtZero: true
+        //                     }
+        //                 }
+        //             }
+        //         });
+        //     }
+        // });
+
+        // $(document).ready(function () {
+        //     // Fonction appelée lors du changement de sélection
+        //     $('#regionSelector').change(function () {
+        //         var selectedRegion = $(this).val();
+        //         var year = 2023; // Remplacez par l'année souhaitée ou récupérez-la dynamiquement
+
+        //         // Appel AJAX pour récupérer les données de population
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData', // Remplacez par l'URL de votre API
+        //             type: 'GET',
+        //             data: { regionNom: selectedRegion, year: year },
+        //             success: function (response) {
+        //                 // Mettez à jour le tableau avec les données récupérées
+        //                 $('#populationTableBody').empty(); // Vider le tableau avant d'ajouter de nouvelles lignes
+        //                 $.each(response.populationData, function (index, commune) {
+        //                     $('#populationTableBody').append(
+        //                         `<tr><td>${commune.commune}</td><td>${commune.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Mettre à jour le graphique en fonction des données
+        //                 updateChart(response.populationChartData);
+        //             },
+        //             error: function () {
+        //                 console.error('Erreur lors de la récupération des données');
+        //             }
+        //         });
+        //     });
+        // });
+
+        // // Fonction pour mettre à jour le graphique
+        // function updateChart(chartData) {
+        //     var ctx = document.getElementById('populationChart').getContext('2d');
+        //     var myChart = new Chart(ctx, {
+        //         type: 'bar',
+        //         data: {
+        //             labels: chartData.labels,
+        //             datasets: [{
+        //                 label: 'Population',
+        //                 data: chartData.data,
+        //                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                 borderColor: 'rgba(75, 192, 192, 1)',
+        //                 borderWidth: 1
+        //             }]
+        //         },
+        //         options: {
+        //             scales: {
+        //                 y: {
+        //                     beginAtZero: true
+        //                 }
+        //             }
+        //         }
+        //     });
+        // }
+
+
+ 
+
+
+        // $(document).ready(function () {
+        //     // Vérifiez si le graphique existe avant d'essayer de le détruire
+        //     if (window.populationChart && window.populationChart instanceof Chart) {
+        //         window.populationChart.destroy();
+        //     }
+
+        //     // Écoutez les clics sur les boutons de la table
+        //     $('body').on('click', '[data-toggle="modal"]', function () {
+        //         var regionNom = $(this).data('region');
+        //         var selectedYear = $('#yearSelector').val(); // Récupère l'année sélectionnée
+
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData',
+        //             type: 'GET',
+        //             data: { regionNom: regionNom, year: selectedYear },
+        //             success: function (data) {
+        //                 console.log("Data from server:", data); // Vérifiez les données dans la console
+
+        //                 // Vide le tableau avant d'ajouter les nouvelles lignes
+        //                 var tableBody = $('#populationTableBody').empty();
+        //                 data.populationData.forEach(function (item) {
+        //                     tableBody.append(
+        //                         `<tr><td>${item.commune}</td><td>${item.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Rafraîchit le graphique avec les nouvelles données
+        //                 loadPopulationChart(data.populationChartData);
+        //             }
+        //         });
+        //     });
+
+        //     // Fonction pour créer le graphique
+        //     function loadPopulationChart(chartData) {
+        //         // Vérifie que les données ne sont pas vides
+        //         if (!chartData || chartData.labels.length === 0 || chartData.data.length === 0) {
+        //             alert("Pas de données pour afficher le graphique.");
+        //             return;
+        //         }
+
+        //         var ctx = document.getElementById('populationChart').getContext('2d');
+
+        //         // Détruit l'ancien graphique, s'il existe
+        //         if (window.populationChart && window.populationChart instanceof Chart) {
+        //             window.populationChart.destroy();
+        //         }
+
+        //         // Crée un nouveau graphique
+        //         window.populationChart = new Chart(ctx, {
+        //             type: 'bar',
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: { beginAtZero: true }
+        //                 }
+        //             }
+        //         });
+        //     }
+        // });
+
+       
+        // $(document).ready(function () {
+        //     // Écoutez les clics sur les boutons de la table
+        //     $('body').on('click', '[data-toggle="modal"]', function () {
+        //         var regionNom = $(this).data('region');
+        //         var selectedYear = $('#yearSelector').val(); // Récupère l'année sélectionnée
+
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData',
+        //             type: 'GET',
+        //             data: { regionNom: regionNom, year: selectedYear },
+        //             success: function (data) {
+        //                 console.log(data); // Affiche les données reçues dans la console pour déboguer
+
+        //                 // Vide le tableau avant d'ajouter les nouvelles lignes
+        //                 var tableBody = $('#populationTableBody').empty();
+        //                 data.populationData.forEach(function (item) {
+        //                     tableBody.append(
+        //                         `<tr><td>${item.commune}</td><td>${item.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Rafraîchit le graphique avec les nouvelles données
+        //                 loadPopulationChart(data.populationChartData);
+        //             }
+        //         });
+        //     });
+
+        //     // Fonction pour créer le graphique
+        //     function loadPopulationChart(chartData) {
+        //         // Vérifie que les données ne sont pas vides
+        //         if (!chartData || chartData.labels.length === 0 || chartData.data.length === 0) {
+        //             alert("Pas de données pour afficher le graphique.");
+        //             return;
+        //         }
+
+        //         var ctx = document.getElementById('populationChart').getContext('2d');
+        //         if (!ctx) {
+        //             alert("Canvas non trouvé.");
+        //             return;
+        //         }
+
+        //         // Détruit l'ancien graphique, s'il existe
+        //         if (window.populationChart) {
+        //             window.populationChart.destroy();
+        //         }
+
+        //         // Crée un nouveau graphique
+        //         window.populationChart = new Chart(ctx, {
+        //             type: 'bar',
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: { beginAtZero: true }
+        //                 }
+        //             }
+        //         });
+        //     }
+        // });
+
+        // $(document).ready(function () {
+        //     if (window.populationChart) {
+        //         window.populationChart.destroy();
+        //     }
+        //     // Écoutez les clics sur les boutons de la table
+        //     $('body').on('click', '[data-toggle="modal"]', function () {
+        //         var regionNom = $(this).data('region');
+        //         var selectedYear = $('#yearSelector').val(); // Récupère l'année sélectionnée
+
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData',
+        //             type: 'GET',
+        //             data: { regionNom: regionNom, year: selectedYear },
+        //             success: function (data) {
+        //                 console.log(data); // Affiche les données reçues dans la console pour déboguer
+
+        //                 // Vide le tableau avant d'ajouter les nouvelles lignes
+        //                 var tableBody = $('#populationTableBody').empty();
+        //                 data.populationData.forEach(function (item) {
+        //                     tableBody.append(
+        //                         `<tr><td>${item.commune}</td><td>${item.population}</td></tr>`
+        //                     );
+        //                 });
+
+        //                 // Rafraîchit le graphique avec les nouvelles données
+        //                 loadPopulationChart(data.populationChartData);
+        //             }
+        //         });
+        //     });
+
+        //     // Fonction pour créer le graphique
+        //     function loadPopulationChart(chartData) {
+        //         // Vérifie que les données ne sont pas vides
+        //         if (!chartData || chartData.labels.length === 0 || chartData.data.length === 0) {
+        //             alert("Pas de données pour afficher le graphique.");
+        //             return;
+        //         }
+
+        //         var ctx = document.getElementById('populationChart').getContext('2d');
+
+        //         // Détruit l'ancien graphique, s'il existe
+        //         if (window.populationChart) {
+        //             window.populationChart.destroy();
+        //         }
+
+        //         // Crée un nouveau graphique
+        //         window.populationChart = new Chart(ctx, {
+        //             type: 'bar',
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: { beginAtZero: true }
+        //                 }
+        //             }
+        //         });
+        //     }
+        // });
+
+
+      
+        //$(document).ready(function () {
+            // Écoutez les clics sur les boutons de la table
+        //     $('body').on('click', '[data-toggle="modal"]', function () {
+        //         var regionNom = $(this).data('region');
+        //         var selectedYear = $('#yearSelector').val(); // Récupère l'année sélectionnée
+
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData',
+        //             type: 'GET',
+        //             data: { regionNom: regionNom, year: selectedYear },
+        //             success: function (data) {
+        //                 // Vide le tableau avant d'ajouter les nouvelles lignes
+        //                 var tableBody = $('#populationTableBody').empty();
+        //                 data.populationData.forEach(function (item) {
+        //                     tableBody.append(`
+        //                     <tr>
+        //                         <td>${item.commune}</td>
+        //                         <td>${item.population}</td>
+        //                     </tr>
+        //                 `);
+        //                 });
+
+        //                 // Rafraîchit le graphique avec les nouvelles données
+        //                 loadPopulationChart(data.populationChartData);
+        //             }
+        //         });
+        //     });
+
+        //     // Fonction pour créer le graphique
+        //     function loadPopulationChart(chartData) {
+        //         var ctx = document.getElementById('populationChart').getContext('2d');
+
+        //         // Détruit l'ancien graphique, s'il existe, avant de créer un nouveau
+        //         if (window.populationChart) {
+        //             window.populationChart.destroy();
+        //         }
+
+        //         // Crée un nouveau graphique
+        //         window.populationChart = new Chart(ctx, {
+        //             type: 'bar',
+        //             data: {
+        //                 labels: chartData.labels,
+        //                 datasets: [{
+        //                     label: 'Population',
+        //                     data: chartData.data,
+        //                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                     borderColor: 'rgba(75, 192, 192, 1)',
+        //                     borderWidth: 1
+        //                 }]
+        //             },
+        //             options: {
+        //                 scales: {
+        //                     y: { beginAtZero: true }
+        //                 }
+        //             }
+        //         });
+        //     }
+        // });
+
+
+        // $(document).ready(function () {
+        //     // Écoutez les clics sur les boutons de la table
+        //     $('body').on('click', '[data-toggle="modal"]', function () {
+        //         var regionNom = $(this).data('region');
+        //         var selectedYear = $('#yearSelector').val(); // Add a selector for the year
+
+        //         $.ajax({
+        //             url: '/Indicateurs/GetPopulationData',
+        //             type: 'GET',
+        //             data: { regionNom: regionNom, year: selectedYear },
+        //             success: function (data) {
+        //                 var tableBody = $('#populationTableBody').empty();
+        //                 data.populationData.forEach(function (item) {
+        //                     tableBody.append(`
+        //                     <tr>
+        //                         <td>${item.commune}</td>
+        //                         <td>${item.population}</td>
+        //                     </tr>
+        //                 `);
+        //                 });
+
+        //                 loadPopulationChart(data.populationChartData);
+        //             }
+        //         });
+        //     });
+        //     // $('body').on('click', '[data-toggle="modal"]', function () {
+        //     //     var regionNom = $(this).data('region');
+
+        //     //     // Assurez-vous de récupérer les données de votre backend
+        //     //     $.ajax({
+        //     //         url: '/Indicateurs/GetPopulationData', // Changez l'URL selon vos routes
+        //     //         type: 'GET',
+        //     //         data: { regionNom: regionNom },
+        //     //         success: function (data) {
+        //     //             // Remplir le tableau de population dans la modal
+        //     //             var tableBody = $('#populationTableBody').empty();
+        //     //             data.populationData.forEach(function (item) {
+        //     //                 tableBody.append(`
+        //     //                     <tr>
+        //     //                         <td>${item.commune}</td>
+        //     //                         <td>${item.population}</td>
+        //     //                     </tr>
+        //     //                 `);
+        //     //             });
+
+        //     //             // Charger le graphique avec les données
+        //     //             loadPopulationChart(data.populationChartData);
+        //     //         }
+        //     //     });
+        //     // });
+        // });
+
+        // Fonction pour créer le graphique
+        // function loadPopulationChart(chartData) {
+        //     var ctx = document.getElementById('populationChart').getContext('2d');
+        //     var chart = new Chart(ctx, {
+        //         type: 'bar',
+        //         data: {
+        //             labels: chartData.labels,
+        //             datasets: [{
+        //                 label: 'Population',
+        //                 data: chartData.data,
+        //                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
+        //                 borderColor: 'rgba(75, 192, 192, 1)',
+        //                 borderWidth: 1
+        //             }]
+        //         },
+        //         options: {
+        //             scales: {
+        //                 y: { beginAtZero: true }
+        //             }
+        //         }
+        //     });
+        // }
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Action de déploiement
+            $('[data-action="collapse"]').click(function () {
+                let cardContent = $(this).closest('.card-header').parent().find('.card-content');
+                cardContent.slideToggle();
+                $(this).find('i').toggleClass('ft-minus ft-plus');
+            });
+
+            // Action de rechargement
+            $('[data-action="reload"]').click(function () {
+                // Remplacez ceci par votre code pour recharger les données
+                location.reload(); // Par exemple : recharger la page
+            });
+
+            // Action d'agrandissement
+            $('[data-action="expand"]').click(function () {
+                let card = $(this).closest('.card');
+                card.toggleClass('full-screen');
+                if (card.hasClass('full-screen')) {
+                    $(this).find('i').removeClass('ft-maximize').addClass('ft-minimize');
+                    card.find('.card-content').css('height', '100vh'); // Ajuster la hauteur si nécessaire
+                } else {
+                    $(this).find('i').removeClass('ft-minimize').addClass('ft-maximize');
+                    card.find('.card-content').css('height', ''); // Réinitialiser la hauteur
+                }
+            });
+
+            // Action de fermeture
+            $('[data-action="close"]').click(function () {
+                $(this).closest('.card').remove(); // Supprime la carte
+            });
+        });
+
     </script>
 </body>
 </html>

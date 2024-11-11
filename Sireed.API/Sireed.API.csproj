@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Views\Indicateurs\ChartModel.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Indicateurs\ChartModel.html" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.33" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />

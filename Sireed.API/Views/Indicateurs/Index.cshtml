@@ -35,6 +35,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 
+
     <style>
         /* Suppression de la marge par défaut et bordure arrondie de la navbar */
 /*         .navbar {
@@ -46,7 +47,7 @@
         footer {
             background-color: whitesmoke;
             padding: 25px;
-            border-radius:10px;
+            border-radius:15px;
         }
 
         /* Styles personnalisés pour le DataTable */
@@ -348,7 +349,7 @@ canvas {
         }
 
         .container-fluid {
-            padding: 0 20px;
+            padding: 10px 20px;
         }
 
         select.form-control {
@@ -470,7 +471,7 @@ canvas {
     <div class="navbar-menu" id="navbar-menu">
         <a href="#" class="nav-link">Home</a>
         <a href="#" class="nav-link">Privacy</a>
-        <a href="#" class="nav-link login-button">Connexion</a>
+        <a href="Utilisateurs/Connexion" class="nav-link login-button">Connexion</a>
     </div>
    @* <nav class="navbar">
     <div class="navbar-container">
@@ -660,80 +661,609 @@ canvas {
             .catch(error => console.error('Erreur:', error));
     </script>
 
-@*     <div style="height:50vh"></div> *@
+    @*
+        modal
+    *@ 
 
-    <!-- Fenêtre Modale -->
-    <!-- Fenêtre Modale -->
-    <!-- Fenêtre Modale -->
-@*     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="maModalLabel">Données de Population</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+
+@*     <!-- Section 4: Iframe -->
+    <div class="card mb-3">
+        <div class="card-header">
+            <h4 class="card-title">Données Extérieures</h4>
+        </div>
+        <div class="card-body">
+            <iframe src="https://example.com" width="100%" height="300px" frameborder="0" title="Iframe Example"></iframe>
+        </div>
+    </div> *@
+
+  @*   <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+        <div id="app" class="container-fluid mt-3">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h1>Tableau de Bord des Statistiques de Population</h1>
                 </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <div class="row h-100">
-                            <!-- Tableau de données -->
-                            <div class="col-md-6 h-50">
-                                <h6>Tableau de Données</h6>
-                                <table class="table table-bordered h-100">
-                                    <thead>
-                                        <tr>
-                                            <th>Commune</th>
-                                            <th>Population</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Maaziz (CR)</td>
-                                            <td>11502</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Oulmes (CR)</td>
-                                            <td>18786</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiddas (CR)</td>
-                                            <td>10047</td>
-                                        </tr>
-                                        <!-- Ajouter d'autres lignes si nécessaire -->
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- Graphique (exemple d'une barre horizontale simple) -->
-                            <div class="col-md-6 h-50">
-                                <h6>Graphique de Population</h6>
-                                <div class="chart-placeholder" style="width: 100%; height: 100%; background-color: lightgray;">
-                                    <p class="text-center">[Graphique de population ici]</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Sélecteur de Région</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <select id="regionSelector" class="form-select mb-2">
+                                <!-- Options générées dynamiquement -->
+                            </select>
+                            <h4 id="regionTitle">Statistiques de Population pour</h4>
+                            <img id="regionImage" src="" alt="Image de la région" style="max-width: 100%; height: auto; display: none;" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Détails de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Commune</th>
+                                        <th>Population</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="populationTableBody">
+                                    <!-- Lignes générées dynamiquement -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Graphique de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="populationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Données Extérieures</h4>
+                        </div>
+                        <div class="card-body">
+                            <iframe src="/Indicateurs/SigCart" title="Iframe Exemple" style="width:100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // Conteneur principal
+            const app = document.getElementById('app');
+
+            // Données fictives pour démonstration
+            const regions = [
+                {
+                    name: "Rabat-Salé-Zemmour-Zaër",
+                    imgSrc: "https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/carteVisite/Decoupage_administratif.png",
+                    communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }]
+                },
+                {
+                    name: "Tanger-Tétouan-Al Hoceima",
+                    imgSrc: "https://siredd.environnement.gov.ma/Tanger-Tetouan-AlHoceima/Files/carteVisite/Tanger%20-%20Copie.png",
+                    communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }]
+                },
+                {
+                    name: "Fès-Meknès",
+                    imgSrc: "https://siredd.environnement.gov.ma/fes-meknes/Files/carteVisite/Decoupage_administratif.png",
+                    communes: [{ name: "Commune E", population: 4000 }, { name: "Commune F", population: 6000 }]
+                }
+            ];
+
+            // Fonction pour générer les sections dynamiquement
+            function renderApp() {
+                // Remplir le sélecteur de région
+                const regionSelector = document.getElementById('regionSelector');
+                regions.forEach(region => {
+                    const option = document.createElement('option');
+                    option.value = region.name;
+                    option.textContent = region.name;
+                    regionSelector.appendChild(option);
+                });
+
+                // Initialiser le titre, l'image et la table avec les données de la première région
+                const firstRegion = regions[0];
+                document.getElementById('regionTitle').textContent = `Statistiques de Population pour ${firstRegion.name}`;
+                document.getElementById('regionImage').src = firstRegion.imgSrc; // Mettre la source de l'image
+                document.getElementById('regionImage').style.display = 'block'; // Afficher l'image
+                document.getElementById('populationTableBody').innerHTML = generateTableRows(firstRegion.communes);
+                updateChart(firstRegion.communes);
+
+                // Ajouter un événement pour mettre à jour les données lorsque l'utilisateur change de région
+                regionSelector.addEventListener('change', (e) => {
+                    const selectedRegion = regions.find(region => region.name === e.target.value);
+                    document.getElementById('regionTitle').textContent = `Statistiques de Population pour ${selectedRegion.name}`;
+                    document.getElementById('regionImage').src = selectedRegion.imgSrc; // Changer la source de l'image
+                    document.getElementById('regionImage').style.display = 'block'; // Afficher l'image
+                    document.getElementById('populationTableBody').innerHTML = generateTableRows(selectedRegion.communes);
+                    updateChart(selectedRegion.communes);
+                });
+            }
+
+            // Fonction pour générer les lignes du tableau
+            function generateTableRows(communes) {
+                return communes.map(commune => `
+                            <tr>
+                                <td>${commune.name}</td>
+                                <td>${commune.population}</td>
+                            </tr>
+                        `).join('');
+            }
+
+            // Fonction pour mettre à jour le graphique
+            function updateChart(communes) {
+                const labels = communes.map(commune => commune.name);
+                const data = communes.map(commune => commune.population);
+
+                const ctx = document.getElementById('populationChart').getContext('2d');
+                if (window.populationChart) window.populationChart.destroy(); // Détruire l'ancien graphique
+                window.populationChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: 'Population',
+                            data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+            }
+
+            // Générer la page
+            renderApp();
+        </script>
+    </div> *@
+
+    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+        <div id="app" class="container-fluid py-3">
+            <!-- Header Section -->
+            <div class="text-center mb-4">
+                <h1>Tableau de Bord des Statistiques de Population</h1>
+            </div>
+
+            <!-- Content Section -->
+            <div class="row g-4">
+                <!-- Region Selector -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Sélecteur de Région</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <select id="regionSelector" class="form-select mb-3" aria-label="Select a region">
+                                <!-- Dynamic options -->
+                            </select>
+                            <h5 id="regionTitle" class="my-3">Statistiques de Population pour</h5>
+                            <img id="regionImage" src="" alt="Image de la région" class="img-fluid d-none" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Population Details -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Détails de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Commune</th>
+                                        <th>Population</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="populationTableBody">
+                                    <!-- Dynamic rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Population Chart -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Graphique de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="populationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- External Data Section -->
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Données Extérieures</h4>
+                        </div>
+                        <div class="card-body">
+                            <iframe src="/Indicateurs/SigCart" title="Carte des Indicateurs" class="w-100" style="height: 400px;width:400px" aria-label="Map data"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const regions = [
+            {
+                name: "Rabat-Salé-Zemmour-Zaër",
+                imgSrc: "Images/LogoRegions/RabatSaleZemmourZaër.png",
+                communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }]
+            },
+            {
+                name: "Tanger-Tétouan-Al Hoceima",
+                imgSrc: "Images/LogoRegions/TangerTetouanAlHoceima.png",
+                communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }]
+            },
+            {
+                name: "Fès-Meknès",
+                imgSrc: "Images/LogoRegions/FesMeknes.png",
+                communes: [{ name: "Commune E", population: 4000 }, { name: "Commune F", population: 6000 }]
+            }
+        ];
+
+        const regionSelector = document.getElementById('regionSelector');
+        const regionTitle = document.getElementById('regionTitle');
+        const regionImage = document.getElementById('regionImage');
+        const populationTableBody = document.getElementById('populationTableBody');
+        const populationChartCtx = document.getElementById('populationChart').getContext('2d');
+        let populationChart;
+
+        function initializeApp() {
+            regions.forEach(region => {
+                const option = document.createElement('option');
+                option.value = region.name;
+                option.textContent = region.name;
+                regionSelector.appendChild(option);
+            });
+
+            updateRegionData(regions[0]);
+
+            regionSelector.addEventListener('change', () => {
+                const selectedRegion = regions.find(region => region.name === regionSelector.value);
+                updateRegionData(selectedRegion);
+            });
+        }
+
+        function updateRegionData(region) {
+            regionTitle.textContent = `Statistiques de Population pour ${region.name}`;
+            regionImage.src = region.imgSrc;
+            regionImage.classList.remove('d-none');
+
+            populationTableBody.innerHTML = region.communes.map(commune => `
+                    <tr>
+                        <td>${commune.name}</td>
+                        <td>${commune.population}</td>
+                    </tr>
+                `).join('');
+
+            updateChart(region.communes);
+        }
+
+        function updateChart(communes) {
+            const labels = communes.map(commune => commune.name);
+            const data = communes.map(commune => commune.population);
+
+            if (populationChart) populationChart.destroy();
+
+            populationChart = new Chart(populationChartCtx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Population',
+                        data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+
+        initializeApp();
+    </script>
+
+
+
+@* 
+    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+        <div id="app" class="container-fluid mt-3">
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <h1>Tableau de Bord des Statistiques de Population</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Sélecteur de Région</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <select id="regionSelector" class="form-select mb-2">
+                                <!-- Options générées dynamiquement -->
+                            </select>
+                            <h4 id="regionTitle">Statistiques de Population pour</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Détails de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Commune</th>
+                                        <th>Population</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="populationTableBody">
+                                    <!-- Lignes générées dynamiquement -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Graphique de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="populationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-6 col-md-4">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">Données Extérieures</h4>
+                        </div>
+                        <div class="card-body">
+                            <iframe src="/Indicateurs/SigCart" title="Iframe Exemple" style="width:100%"></iframe>
+                        </div>
+                    </div>
+
+                </div>
+                    
+               
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+            // Conteneur principal
+            const app = document.getElementById('app');
+
+            // Données fictives pour démonstration
+            const regions = [
+                { name: "Rabat-Salé-Zemmour-Zaër", communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }] },
+                { name: "Tanger-Tétouan-Al Hoceima", communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }] },
+                { name: "Fès-Meknès", communes: [{ name: "Commune E", population: 4000 }, { name: "Commune F", population: 6000 }] }
+            ];
+
+            // Données fictives pour démonstration
+            const regions = [
+                {
+                    name: "Rabat-Salé-Zemmour-Zaër",
+                    imgSrc: "https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Files/carteVisite/Decoupage_administratif.png",
+                    communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }]
+                },
+                {
+                    name: "Tanger-Tétouan-Al Hoceima",
+                    imgSrc: "https://siredd.environnement.gov.ma/Tanger-Tetouan-AlHoceima/Files/carteVisite/Tanger%20-%20Copie.png",
+                    communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }]
+                },
+                {
+                    name: "Fès-Meknès",
+                    imgSrc: "https://siredd.environnement.gov.ma/fes-meknes/Files/carteVisite/Decoupage_administratif.png",
+                    communes: [{ name: "Commune E", population: 4000 }, { name: "Commune F", population: 6000 }]
+                }
+            ];
+
+
+            // Fonction pour générer les sections dynamiquement
+            function renderApp() {
+                // Remplir le sélecteur de région
+                const regionSelector = document.getElementById('regionSelector');
+                regions.forEach(region => {
+                    const option = document.createElement('option');
+                    option.value = region.name+region.imgSrc;
+                    option.textContent = region.name+region.imgSrc;
+                    regionSelector.appendChild(option);
+                });
+
+                // Initialiser le titre et la table avec les données de la première région
+                document.getElementById('regionTitle').textContent = `Statistiques de Population pour ${regions[0].name}`;
+                document.getElementById('populationTableBody').innerHTML = generateTableRows(regions[0].communes);
+                updateChart(regions[0].communes);
+
+                // Ajouter un événement pour mettre à jour les données lorsque l'utilisateur change de région
+                regionSelector.addEventListener('change', (e) => {
+                    const selectedRegion = regions.find(region => region.name === e.target.value);
+                    document.getElementById('regionTitle').textContent = `Statistiques de Population pour ${selectedRegion.name}`;
+                    document.getElementById('populationTableBody').innerHTML = generateTableRows(selectedRegion.communes);
+                    updateChart(selectedRegion.communes);
+                });
+            }
+
+            // Fonction pour générer les lignes du tableau
+            function generateTableRows(communes) {
+                return communes.map(commune => `
+                            <tr>
+                                <td>${commune.name}</td>
+                                <td>${commune.population}</td>
+                            </tr>
+                        `).join('');
+            }
+
+            // Fonction pour mettre à jour le graphique
+            function updateChart(communes) {
+                const labels = communes.map(commune => commune.name);
+                const data = communes.map(commune => commune.population);
+
+                const ctx = document.getElementById('populationChart').getContext('2d');
+                if (window.populationChart) window.populationChart.destroy(); // Détruire l'ancien graphique
+                window.populationChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels,
+                        datasets: [{
+                            label: 'Population',
+                            data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+            }
+
+            // Générer la page
+            renderApp();
+        </script>
+    </div> *@
+
+
+
+
+
+
+
+
+
+    @* 
+    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="maModalLabel">Données de Population</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+
+                    <!-- Section 1: Sélecteur de région -->
+                    <div class="mb-3">
+                        <select id="regionSelector" class="form-control">
+                            <option value="Rabat-Salé-Zemmour-Zaër">Rabat-Salé-Zemmour-Zaër</option>
+                            <option value="Tanger-Tétouan-Al Hoceima">Tanger-Tétouan-Al Hoceima</option>
+                            <option value="Fès-Meknès">Fès-Meknès</option>
+                        </select>
+                        <h3 id="regionTitle">Statistiques de Population pour</h3>
+                    </div>
+
+                    <!-- Section 2: Détails de Population et Graphique -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Détails de Population</h4>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Commune</th>
+                                                <th>Population</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="populationTableBody">
+                                            <!-- Les données seront insérées ici par JavaScript -->
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3 h-50">
-                            <!-- Carte -->
-                            <div class="col-12 h-100">
-                                <h6>Carte</h6>
-                                <div class="map-placeholder" style="width: 100%; height: 100%; background-color: #e0e0e0;">
-                                    <p class="text-center">[Carte interactive ici]</p>
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Graphique de Population</h4>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="populationChart" style="width: 100%; height: 400px;"></canvas>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+
+                    <!-- Section 3: Iframe -->
+                    <div class="mt-4">
+                        <h4 class="card-title">Données Extérieures</h4>
+                            <iframe src="/Indicateurs/SigCart" width="100%" height="300px" frameborder="0" title="Iframe Example"></iframe>
+                    </div>
+
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
         </div>
-    </div> *@
+    </div>
+</div> *@
 
-    <!-- populationModal.html -->
-    <!-- Modal -->
-    <!-- Modal -->
-    <!-- Modal -->
+
+
+@* 
+
     <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -793,7 +1323,7 @@ canvas {
                 </div>
             </div>
         </div>
-    </div>
+    </div> *@
 
 
     <script>
@@ -820,9 +1350,54 @@ canvas {
     </style>
      
     <!-- Footer -->
-    <footer class="container-fluid text-center">
+@*     <footer class="container-fluid text-center">
         <img style="margin-top:5px;width:300px" src="/Images/Rabat_Sale_Kenitra/logo-footer3.png">
+    </footer> *@
+    <footer class="container-fluid text-center">
+        <div class="logo-container">
+            <span class="logo-siredd">SIREDD</span>
+            <span class="separator">|</span>
+            <div class="description">
+                <span>SYSTEME D'INFORMATION REGIONAL DE</span><br>
+                <span>L'ENVIRONNEMENT ET DU DEVELOPPEMENT DURABLE</span><br>
+                <span class="location">ADMINISTRATION</span>
+            </div>
+        </div>
     </footer>
+
+    <style>
+        /*FOOTER*/
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .logo-siredd {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .separator {
+            margin: 0 10px;
+            color: #4CAF50;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .description {
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .location {
+            font-weight: bold;
+        }
+            
+    </style>
 
     <!-- Bootstrap and jQuery JS -->
 @*     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
@@ -1545,3 +2120,22 @@ canvas {
     </script>
 </body>
 </html>
+
+
+
+@*         private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+    /// Clean up any resources being used.
+    ///
+</summary>
+        ///
+<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        } *@

@@ -78,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaXJlZWRIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/ArcGis.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcQXJjR2lzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -100,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/ListIndicateurs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcTGlzdEluZGljYXRldXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/SigCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcU2lnQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ProjetRecherches/Create.cshtml]

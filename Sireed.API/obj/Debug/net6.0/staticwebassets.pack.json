@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\Images\\Logo Carte MWD.png"
     },
     {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\LogoRegions\\FesMeknes.png",
+      "PackagePath": "staticwebassets\\Images\\LogoRegions\\FesMeknes.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\LogoRegions\\RabatSaleZemmourZaër.png",
+      "PackagePath": "staticwebassets\\Images\\LogoRegions\\RabatSaleZemmourZaër.png"
+    },
+    {
+      "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\LogoRegions\\TangerTetouanAlHoceima.png",
+      "PackagePath": "staticwebassets\\Images\\LogoRegions\\TangerTetouanAlHoceima.png"
+    },
+    {
       "Id": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\wwwroot\\Images\\Rabat_Sale_Kenitra\\1200px-Morocco_-_Rabat_(31387775324) (1).jpeg",
       "PackagePath": "staticwebassets\\Images\\Rabat_Sale_Kenitra\\1200px-Morocco_-_Rabat_(31387775324) (1).jpeg"
     },

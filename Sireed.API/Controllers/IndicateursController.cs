@@ -28,6 +28,15 @@ namespace Sireed.API.Controllers
             _repositoryIndicateurs = repositoryIndicateurs;
         }
 
+        public IActionResult ArcGis()
+        {
+            return View();
+        }
+
+        public IActionResult SigCart()
+        {
+            return View();
+        }
 
         // GET: Indicateurs
         //[HttpGet]

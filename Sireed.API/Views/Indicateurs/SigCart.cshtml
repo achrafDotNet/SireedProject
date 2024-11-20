@@ -1,0 +1,2351 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript">
+
+        var app = {};
+        var dynamicLayerUrl, js_api;
+        app.js_api_path = js_api;
+        app.dynamicLayerUrl = dynamicLayerUrl;
+    </script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/params_sig.js" type="text/javascript"></script>
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/app/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/app/css/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery.unobtrusive-ajax.js" type="text/javascript"></script>
+
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jqPlot/jquery.jqplot.js" type="text/javascript"></script>
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jqPlot/jquery.jqplot.css" rel="stylesheet" type="text/css" />
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jqPlot/plugins/jqplot.barRenderer.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jqPlot/plugins/jqplot.categoryAxisRenderer.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/plugins/jqplot.highlighter.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/plugins/jqplot.cursor.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/plugins/jqplot.pointLabels.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jquery.jqplot.min.css" />
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/plugins/jqplot.categoryAxisRenderer.min.js"></script>
+
+    <link rel="stylesheet" href="/Rabat-Sale-Kenitra/Scripts/jquery-ui.css" />
+
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jquery-ui.js"></script>
+    <link type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/popup/themes/base/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+    <link type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/popup/Styles/window/css/jquery.window.css" rel="stylesheet" />
+    <!-- JavaScript Includes -->
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/popup/styles/window/jquery.window.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.js" type="text/javascript"></script>
+
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.flash.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js" type="text/javascript"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/flexslider.css" type="text/css"
+          media="screen">
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/parallax-slider.css"
+          type="text/css" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/font-awesome-4.0.3/css/font-awesome.min.css"
+          type="text/css" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/main1.css" type="text/css"
+          media="all" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/business-plate.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+
+
+
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/bootslider.css" rel="stylesheet" />
+
+
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/mestyle/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/mestyle/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/mestyle/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/custom/css/mestyle/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.bootstrap.min.css">
+        -->
+
+
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/data-tables/DT_bootstrap.css" rel="stylesheet" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jqvmap/jqvmap/jqvmap.css" media="screen" rel="stylesheet"
+          type="text/css" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/responsive/css/icons.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/gritter/css/jquery.gritter.css" />
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap-daterangepicker/daterangepicker.css" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/chosen-bootstrap/chosen/chosen.css" />
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/uniform/css/uniform.default.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/menu/menuCss.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/uniform/css/uniform.default.css" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/css/costum.css" type="text/css" media="all" />
+
+
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/modernizr.min.js" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GN7KEHNRNX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GN7KEHNRNX');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/library/3.9/3.9/js/esri/css/esri.css" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/app/css/style11.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/library/3.9/3.9/js/dojo/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/library/style.css" />
+
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/css/metro.css" rel="stylesheet">
+
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/colorpicker/css/colorpicker.css" rel="stylesheet"
+          type="text/css" />
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/uniform/css/uniform.default.css" rel="stylesheet"
+          type="text/css" />
+    <style style="">
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+
+        label {
+            font-family: calibri;
+            font-size: small;
+            color: #666666;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .map.container {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .delete-class {
+            border-style: none;
+            background-image: url('../../Sire_MT/images/Delete-icon2.png');
+            background-repeat: no-repeat;
+            background-color: whiteSmoke;
+            width: 40px;
+        }
+
+            .delete-class:hover {
+                border-style: none;
+                background-image: url('../../Sire_MT/images/Delete-icon.png');
+                background-repeat: no-repeat;
+                background-color: whiteSmoke;
+            }
+
+        .add-class {
+            border-style: none;
+            background-image: url('../../Sire_MT/images/add-1-icon.png');
+            background-repeat: no-repeat;
+            background-color: whiteSmoke;
+            width: 40px;
+        }
+
+            .add-class:hover {
+                border-style: none;
+                background-image: url('../../Sire_MT/images/add-2-icon.png');
+                background-repeat: no-repeat;
+                background-color: whiteSmoke;
+            }
+
+        #timeDiv {
+            background: linear-gradient( to bottom, #f8f8f8, rgb(226, 226, 226) ) !important;
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            /* margin: 0 0 0 42px; */
+            position: absolute;
+            margin-left: -15px;
+            /* height: 35px; */
+            /* top: 0px; */
+            /* border: 1px solid #C0C0C0; */
+            opacity: 0.96;
+            background-color: White;
+        }
+
+        #classes_div {
+            opacity: 0.9;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 515px;
+            top: 36px;
+            /* right: 1.5%; */
+            border: 1px solid #C0C0C0;
+            /* opacity: 0.9; */
+            background-color: White;
+            padding: 10px;
+            display: none;
+        }
+
+        #legendPane {
+            opacity: 0.8;
+            border: 1px solid #C0C0C0;
+            z-index: 50;
+            bottom: 19px;
+            position: absolute;
+            width: 300px;
+            height: auto;
+            background-color: #FFFFFF;
+            color: #003399;
+            display: none;
+        }
+
+        #btn_personnaliser, #btn_generer1, #btn_legende, #btn_ok, #btn_fonds_web {
+            background: linear-gradient( to bottom, #ffffff, rgb(191, 191, 192) ) !important;
+            color: #000000;
+            font-size: 14px;
+            font-family: Calibri;
+            border: 1px solid #d9d9d9;
+        }
+
+            #btn_personnaliser:hover, #btn_generer1:hover, #btn_ok:hover, #btn_legende:hover, #btn_fonds_web:hover {
+                background: linear-gradient( to bottom, #ffffff, rgb(191, 191, 192) ) !important;
+                color: #000000;
+                font-size: 14px;
+                font-family: Calibri;
+                border: 1px solid #d9d9d9;
+            }
+
+        #btn_theme, #btn_symbole {
+            background-color: #33CC33;
+            color: #FFFFFF;
+            font-size: small;
+            font-family: Calibri;
+            border: 1px solid #33CC33;
+            border-radius: 2px 2px 2px 2px;
+            -moz-border-radius: 2px 2px 2px 2px;
+            -webkit-border-radius: 2px 2px 2px 2px;
+        }
+
+        .symbol {
+            border-style: none;
+            background-repeat: no-repeat;
+            background-color: whiteSmoke;
+            width: 40px;
+        }
+
+        #lblTime {
+            position: relative;
+            float: left;
+            padding: 4px;
+            font-size: 18px !important;
+            color: #3a3a3a !important;
+            margin: 0 0 0 10px !important;
+            font-weight: normal !important;
+        }
+
+        input#btn_legende, input#btn_fonds_web, input#btn_personnaliser {
+            width: 100%;
+        }
+
+        #timeDiv > table > tbody > tr > td.navbar > li > a {
+            width: auto !important;
+        }
+
+        li.dropdown {
+            width: 330px;
+        }
+
+        ul.dropdown-menu {
+            z-index: 999999;
+        }
+
+        li.dropdown {
+            color: #000;
+            margin-top: 5px;
+            /* float: right; */
+            list-style-type: none;
+        }
+
+        .dropdown-menu {
+            top: 37px !important;
+        }
+
+        li.dropdown a {
+            color: #000;
+        }
+
+        .dropdown.open .dropdown-toggle {
+            color: #000;
+            background: none;
+        }
+
+        .form-actions {
+            padding: 19px 2px 20px !important;
+            width: 100%;
+            height: 400px;
+            overflow: scroll;
+            overflow-x: hidden !important;
+        }
+
+            .form-actions::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            .form-actions::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 5px;
+            }
+
+            .form-actions::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+            }
+
+            /* Track */
+            .form-actions::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            /* Handle */
+            .form-actions::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+                /* Handle on hover */
+                .form-actions::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+
+        .esriSimpleSlider {
+            opacity: 0.8 !important;
+            margin-top: 25px;
+        }
+
+        a.dropdown-toggle {
+            text-decoration: none !important;
+        }
+
+        button.btn.btn-labeled.btn-default {
+            width: 100% !important;
+            text-align: left;
+        }
+
+        .esriBasemapGalleryLabelContainer {
+            height: 3.5em !important;
+        }
+
+
+        /*START style slh*/
+        .dropdown-menu .menu li {
+            border-bottom: 1px solid #ebebeb;
+            margin: 0;
+            padding-top: 7px;
+            line-height: 14px;
+            width: 100%;
+        }
+
+        .dropdown-menu .menu ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .dropdown-menu .menu {
+            -webkit-border-radius: 2px;
+            display: block;
+            float: left;
+            background: #fff;
+            padding: 0 7px;
+            margin-bottom: 0;
+            min-width: 150px;
+        }
+
+
+        b.caret {
+            margin-top: 7px !important;
+        }
+
+        /* End Style SLH */
+        div#mapDiv_zoom_slider {
+            Z-INDEX: 0 !important;
+        }
+
+        i.glyphicon.glyphicon-remove-circle:hover {
+            color: #ff0000;
+        }
+
+        .rs-container {
+            margin: 1px 0px 0px 17px !important;
+        }
+
+        #partlegend {
+            display: block;
+            margin-top: -50px;
+            z-index: 8989;
+            position: relative;
+            width: 108px;
+            margin-left: 2%;
+        }
+    </style>
+
+    <script type="text/javascript" src="lib/proj4js-combined.js"></script>
+
+    <script src="https://js.arcgis.com/3.9/"></script>
+    <script type="text/javascript" src="/Rabat-Sale-Kenitra/Sire_MT/jquery-1.9.1.js"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/ColorConverter.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Sire_MT/main3-9.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/colorpicker/js/colorpicker.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var tblYearsAll;
+        var titre, data, data_year, vueSource, info_col, info_alias, min, max, nbrClasses, colorDe, colorA, classes_chaine;
+        var type_col = 'n';
+        var type_geom = "PG";
+        var symbol = "SOLID";
+        dojo.require("esri.map");
+        dojo.require("esri.dijit.Legend");
+        dojo.ready(init);
+        jQuery.noConflict();
+        jQuery(document).ready(
+
+            function ($) {
+                $('#partlegend').css('display', 'none');
+
+                $("#btn_legende,#btn_legendDiv").click(function () {
+                    $("#legendPane").slideToggle();
+                    $("#legendDiv").css("position", "unset");
+                    $('#partlegend').css('display', 'none');
+                });
+
+                //----------------------------------------------------------------------
+
+                //----------------------------------------------------------------------
+
+                //----------------------------------------------------------------------
+
+                //----------------------------------------------------------------------
+                $("#colorMin,#colorMax,.iColorPicker").ColorPicker({
+                    onSubmit: function (hsb, hex, rgb, el) {
+                        $(el).val(hex);
+                        $(el).css('backgroundColor', '#' + hex);
+                        $(el).css('color', '#' + hex);
+                        $(el).attr('value', hex);
+                        $(el).ColorPickerHide();
+                    },
+                    onBeforeShow: function () {
+                        $(this).ColorPickerSetColor(this.value);
+                    }
+                }).bind('keyup', function () {
+                    $(this).ColorPickerSetColor(this.value);
+                });
+                //----------------------------------------------------------------------
+                $("#btn_theme").click(function () {
+                    var pos = $("#selectedTheme_div").position();
+
+                    // .outerWidth() takes into account border and padding.
+                    var width = $("#selectedTheme_div").outerWidth();
+                    $("#themes_ul").css('width', width + 'px');
+                    $("#themes_ul").css('top', (pos.top + 25) + 'px');
+                    $("#themes_ul").css('left', (pos.left - 25) + 'px');
+                    $("#themes_ul").toggle();
+
+                });
+                //---------------------------------------------------------
+                $("li", $("#themes_ul")).click(function () {
+                    $("#selectedTheme_div").html($(this).html());
+                    var colors = $(this).attr("value").split(',');
+
+                    $("#colorMin").css('backgroundColor', "#" + colors[0]);
+                    $("#colorMin").css('color', "#" + colors[0]);
+                    $("#colorMin").attr('value', colors[0]);
+                    $("#colorMax").attr('value', colors[1]);
+                    $("#colorMax").css('backgroundColor', "#" + colors[1]);
+
+                    $("#colorMax").css('color', "#" + colors[1]);
+                    $("#themes_ul").toggle();
+
+
+                });
+                //----------------------------------------------------------
+                jQuery("#btn_symbole").click(function () {
+                    var pos = jQuery("#selectedSymbole_div").position();
+
+                    // .outerWidth() takes into account border and padding.
+                    var width = jQuery("#selectedSymbole_div").outerWidth();
+                    jQuery("#Symbole_ul").css('width', width + 'px');
+                    jQuery("#Symbole_ul").css('top', (pos.top + 25) + 'px');
+                    jQuery("#Symbole_ul").css('left', (pos.left - 25) + 'px');
+                    jQuery("#Symbole_ul").toggle();
+                    jQuery("li", jQuery("#Symbole_ul")).unbind('click');
+                    jQuery("li", jQuery("#Symbole_ul")).click(function () {
+
+                        jQuery("#selectedSymbole_div").html(jQuery(this).html());
+
+                        symbol = jQuery(this).attr('name');
+
+                        jQuery("#Symbole_ul").toggle();
+
+
+                    });
+
+                });
+
+                //----------------------------------------------------------
+                //
+
+                //---------------------------------------------------------
+                jQuery("li", jQuery("#Symbole_ul")).click(function () {
+                    jQuery("#selectedSymbole_div").html(jQuery(this).html());
+
+                    symbol = jQuery(this).attr('name');
+
+                    jQuery("#Symbole_ul").toggle();
+
+
+                });
+
+                //----------------------------------------------------------
+                $("#radio_interval").click(function (event) {
+                    //alert('ytyty');
+                    if (this.checked) {
+                        $('#txt_interval').attr('disabled', false);
+                        $('#txt_nbr_classes').attr('disabled', true);
+                        return;
+                    }
+                });
+                $("#radio_nbr_classes").click(function (event) {
+                    if (this.checked) {
+                        $('#txt_interval').attr('disabled', true);
+                        $('#txt_nbr_classes').attr('disabled', false);
+                        return;
+                    }
+
+
+                });
+                $("#btn_ok").click(function (event) {
+                    var classes = getClasses();
+                    //loadIndicateurNum(vueSource, titre, info_col, info_alias, classes, data_year, null);
+                    loadAnalyseTh(vueSource, titre, info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+                    $("#classes_div").animate({ width: 'toggle' });
+                });
+
+
+                $("#btn_personnaliser").click(function (event) {
+                    $("#classes_div").slideToggle();
+                });
+
+                $("#personaliserBTN").click(function (event) {
+                    $("#classes_div").slideToggle();
+                });
+
+
+                $("#btn_legendPaneBTN,#btn_legendDiv").click(function () {
+                    $("#legendPane").slideToggle();
+                    $('#partlegend').css('display', 'block');
+                });
+
+
+                $("#btn_fonds_web,#basemapPane,#btnbasemapPane").click(function (event) {
+
+                    $("#basemapPane").slideToggle();
+                });
+
+
+            }
+        );
+
+        function symbol_choice(id_handler) {
+            //alert(id_handler);
+            var pos = jQuery("#" + id_handler).position();
+
+            // .outerWidth() takes into account border and padding.
+            var width = jQuery("#selectedSymbole_div").outerWidth(); //fixe
+            jQuery("#Symbole_ul").css('width', width + 'px');
+            jQuery("#Symbole_ul").css('top', (pos.top) + 'px');
+            jQuery("#Symbole_ul").css('left', (pos.left - width - 30) + 'px');
+            jQuery("#Symbole_ul").toggle();
+            jQuery("li", jQuery("#Symbole_ul")).unbind('click');
+            jQuery("li", jQuery("#Symbole_ul")).click(function () {
+
+                var url_symbol = jQuery(jQuery("img", this)[0]).attr("src").replace(".png", "_min.png");
+
+                jQuery("#" + id_handler).attr('style', "font-size:8pt;text-align:center;width:32px;background-image: url('" + url_symbol + "')");
+                var symbole = jQuery(this).attr('name');
+                jQuery("#" + id_handler).attr("name", symbole);
+                //
+
+                jQuery("#Symbole_ul").toggle();
+
+
+
+            });
+            //
+
+        }
+        function changeSizeBorder(id, size) {
+
+            //
+            //            jQuery("#" + id).css('height', size + 'px');
+            jQuery("#" + id).css('border-width', size + 'px');
+            jQuery("#" + id.replace('Classes_themes2', 'Classes_themes1')).css('border-width', size + 'px');
+            //            jQuery("#" + id).css('-webkit-border-radius', mi_size + 'px');
+            //            jQuery("#" + id).css('-khtml-border-radius', mi_size + 'px');
+            //            jQuery("#" + id).css('-moz-border-radius:', mi_size + 'px');
+            //            jQuery("#" + id).css('border-radius', mi_size + 'px');
+        }
+
+
+        function init() {
+
+
+
+            dojoConfig = { parseOnLoad: true };
+
+            try {
+                require(["esri/map", "esri/config", "dojo/domReady!"], function (Map, esriConfig) {
+                    //configure map animation to be faster
+                    esriConfig.defaults.map.panDuration = 100; // time in milliseconds, default panDuration: 250
+                    esriConfig.defaults.map.panRate = 1; // default panRate: 25
+                    esriConfig.defaults.map.zoomDuration = 100; // default zoomDuration: 500
+                    esriConfig.defaults.map.zoomRate = 1; // default zoomRate: 25
+                });
+            }
+            catch (e) {
+                alert("Msg_Novec_Err: configure map animation to be faster!\n" + e.Message);
+            }
+            if (!app.hasOwnProperty("map")) {
+                app.map = new esri.Map("mapDiv", {
+                    center: [-6.83349609375, 34.025347738147936], zoom: 8, basemap: "satellite"
+                });
+                /* var bounds = new esri.geometry.Extent({
+                "xmin":-7.12,
+                "ymin": 30.20,
+                "xmax": -2.43,
+                "ymax": 34.26,
+                "spatialReference": { "wkid": 4326 }
+
+                });
+                app.map = new esri.Map("mapDiv", { extent:bounds });*/
+            }
+
+            legendDijit = new esri.dijit.Legend({
+                map: app.map,
+            }, "legendDiv");
+            legendDijit.startup();
+            createBasemapGallery("/sousmassa/Sire_MT/");
+
+            jQuery("#txt_titre_carte").keypress(function () {
+                titre_carte = jQuery("#txt_titre_carte").val();
+            });
+        }
+        function loadInitialLayers() {
+
+            //masque--------------------
+            var url = app.dynamicLayerUrl + "/31";
+            var f = new esri.layers.FeatureLayer(url, {
+                mode: esri.layers.FeatureLayer.MODE_ONDEMAND,
+                outFields: ["*"],
+                opacity: 0.9,
+                id: 0
+            });
+            app.map.addLayer(f);
+
+            //-----------------------------------------
+
+            //  parent.load_default_layer();
+
+        }
+
+
+
+        //            jQuery("#50", top.document).trigger("click");
+
+        function mess() {
+            alert('gfgfgfgtf');
+        }
+        function sig1(result) {
+            alert('trtrtr');
+        }
+
+
+
+
+
+        function sig(result) {
+            // alert('trtrtr');
+            //script remove all old Years
+
+            tblYearsAll = Object.values(result.tabX);
+            type_geom = result.type_geom;
+
+            for (i = select_annee.options.length - 1; i >= 0; i--) {
+                select_annee.remove(i);
+            }
+
+            console.log("+++++++++++++++++++++++++++++++++++++++++++++");
+            console.log(result);
+            console.log(result.vueSource);
+            console.log("+++++++++++++++++++++++++++++++++++++++++++++");
+            data = new Array();
+
+            data.push(result.tabX, result.tabSeries, result.tabLibelleLegend);
+
+            console.log("+++++++++++++++++++-------------------++++++++++++++++++++++++++");
+            console.log(data);
+
+            console.log("HNAA");
+            //console.log(top.jQuery('#myModalLabel1').text());
+            console.log("HNAA");
+
+            titre = result.title
+            console.log(">>>>>>>>>>>>wxw");
+            console.log(result)
+
+
+            vueSource = result.vueSource;
+
+            //info_col = result.info_col;
+            //info_alias = result.info_alias;
+            var indexlastYear = result.tabX.length - 1;
+            //alert(indexlastYear)
+            data_year = getValuesAnnee(indexlastYear, data);
+            console.log("ffffffffffffffffffffffffffffffffff");
+            console.log(data_year);
+            console.log("ffffffffffffffffffffffffffffffffff");
+            min = 999999999999;
+            max = -999999999999;
+
+            for (var i = 0; i < data_year.length; i++) {
+                //alert(data_year[i][1]);
+                if (data_year[i][1] != NaN) {
+                    if (data_year[i][1] < min) {
+                        min = data_year[i][1];
+                    }
+                    if (data_year[i][1] >= max) {
+                        max = data_year[i][1];
+                    }
+                }
+            }
+
+            nbrClasses = 4; //default
+            colorDe = "#9bf7fa"; //default
+            colorA = "#099c9c"//default
+
+            var classes = generateclass(min, max, nbrClasses, colorDe, colorA);
+
+            buildClassesTable(classes);
+            classes = getClasses();
+            //loadIndicateurNum(vueSource, titre + "(" + result.tabX[result.tabX.length - 1] + ")", info_col, info_alias, classes, data_year,null,null);
+            // loadAnalyseTh(vueSource, titre, info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+            //--------------------
+
+            /*var test = [];
+            //filtre ="Boulemane";
+            test.push("'"+"Boulemane" +"'");
+            test.push("'" + "Ifrane" + "'");
+            */
+            //---------------------
+            //test = [];
+            //filterSelectCarto.push("'" + "Boulemane" + "'");
+            //filterSelectCarto.push("'" + "Ifrane" + "'");
+            // filterGrapheDetailIND();
+
+            //loadAnalyseTh(vueSource, titre + "(" + result.tabX[result.tabX.length - 1] + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+
+            //select years
+            // jQuery("#select_annee")
+
+            for (var i = 0; i < data[0].length; i++) {
+                if (i == data[0].length - 1) {
+                    jQuery("#select_annee").append("<option selected='true' value='" + i + "'>" + data[0][i] + "</option>");
+                }
+
+                else {
+
+                    jQuery("#select_annee").append("<option value='" + i + "' >" + data[0][i] + "</option>");
+                }
+
+            }
+            //----------------------------------------------
+            jQuery("#select_annee").change(function (event) {
+
+                var indexYear = parseInt(this.value);
+                //alert(indexYear);
+                data_year = getValuesAnnee(indexYear, data);
+                min = 999999999999;
+                max = -999999999999;
+                for (var i = 0; i < data_year.length; i++) {
+                    if (data_year[i][1] < min) {
+                        min = data_year[i][1];
+                    }
+                    if (data_year[i][1] >= max) {
+                        max = data_year[i][1];
+                    }
+                }
+                //alert(min + "   " + max);
+                colorDe = "#" + jQuery("#colorMin").attr('value');
+                colorA = "#" + jQuery("#colorMax").attr('value');
+                // alert(jQuery("#txt_nbr_classes").val())
+                nbrClasses = parseInt(jQuery("#txt_nbr_classes").val());
+                //titre = result.titre
+                var classes = generateclass(min, max, nbrClasses, colorDe, colorA);
+
+                buildClassesTable(classes);
+                classes = getClasses();
+                loadIndicateurNum(vueSource, titre + "(" + jQuery("#select_annee option:selected").text() + ")", info_col, info_alias, classes, data_year, null, null);
+                //loadAnalyseTh(vueSource, titre + "(" + jQuery("#select_annee option:selected").text() + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+                // loadAnalyseTh(vueSource, titre + "(" + result.tabX[result.tabX.length - 1] + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+            });
+            //alert(222)
+            //jQuery("#legendDiv").css("position", "unset");
+            jQuery("#legendPane").slideToggle();
+
+
+        }
+
+
+
+
+
+        //--------------------------------------------------------------------------------------------------------------------------
+        function generer_classes() {
+            //alert(type_geom);
+            //                jQuery.noConflict();
+            colorDe = "#" + jQuery("#colorMin").attr('value');
+            colorA = "#" + jQuery("#colorMax").attr('value');
+            // alert(jQuery("#txt_nbr_classes").val())
+            nbrClasses = parseInt(jQuery("#txt_nbr_classes").val());
+            var classes = generateclass(min, max, nbrClasses, colorDe, colorA);
+            buildClassesTable(classes)
+        }
+        function getClasses(type_col) {
+
+            classes_chaine = "";
+            var classes = new Array();
+            type_col = 'n';
+            var myTable = document.getElementById('table_classes');
+
+            var mytableRows = jQuery(myTable).find("tr");
+            var n = mytableRows.length; //document.getElementById('Classes_themes1_hdf_nbr_classes').value;
+            //alert(n);
+            var sizeBorder = "null";
+            for (var i = 1; i < n; i++) {
+
+                var tds = jQuery(mytableRows[i]).find('td');
+                //var tds = mytableRows[i].getElementsByTagName("td");
+                if (tds.length > 2) {
+
+                    var titre;
+                    var val1;
+                    var val2;
+                    var color;
+                    var border;
+                    var size = "null";
+                    var sizeBorder = "null";
+                    var symbole;
+                    titre = tds[0].getElementsByTagName("INPUT")[0].value;
+                    val1 = tds[1].getElementsByTagName("INPUT")[0].value;
+
+                    // alert(titre);
+                    // alert(val1);
+                    if (type_geom == "PT") {
+                        if (type_col == 'n') {
+                            val2 = tds[2].getElementsByTagName("INPUT")[0].value;
+                            symbole = tds[3].getElementsByTagName("INPUT")[0].name;
+                            color = tds[4].getElementsByTagName("INPUT")[0].value;
+                            size = tds[4].getElementsByTagName("INPUT")[1].value;
+                            border = tds[7].getElementsByTagName("INPUT")[0].value;
+                            sizeBorder = tds[7].getElementsByTagName("INPUT")[1].value;
+                            // alert(sizeBorder);
+                        }
+                        else {
+                            val2 = "null";
+                            symbole = tds[2].getElementsByTagName("INPUT")[0].name;
+                            color = tds[3].getElementsByTagName("INPUT")[0].value;
+                            size = tds[3].getElementsByTagName("INPUT")[1].value;
+                            border = tds[6].getElementsByTagName("INPUT")[0].value;
+                            sizeBorder = tds[6].getElementsByTagName("INPUT")[1].value;
+                            //  alert(sizeBorder);
+                        }
+                    }
+                    else {
+                        if (type_col == 'n') {
+                            val2 = tds[2].getElementsByTagName("INPUT")[0].value;
+                            symbole = tds[3].getElementsByTagName("INPUT")[0].name;
+                            color = tds[4].getElementsByTagName("INPUT")[0].value;
+                            border = tds[5].getElementsByTagName("INPUT")[0].value;
+                            sizeBorder = tds[5].getElementsByTagName("INPUT")[1].value;
+                            // alert(sizeBorder);
+                        }
+                        else {
+                            val2 = "null";
+                            symbole = tds[2].getElementsByTagName("INPUT")[0].name;
+                            color = tds[3].getElementsByTagName("INPUT")[0].value;
+                            border = tds[4].getElementsByTagName("INPUT")[0].value;
+                            sizeBorder = tds[4].getElementsByTagName("INPUT")[1].value;
+                            //  alert(sizeBorder);
+                        }
+                    }
+
+                    if (type_geom == "PL") {
+                        if (type_col == "n") {
+                            val2 = tds[2].getElementsByTagName("INPUT")[0].value;
+                            symbole = tds[3].getElementsByTagName("INPUT")[0].name;
+                            color = tds[4].getElementsByTagName("INPUT")[0].value;
+                            size = tds[4].getElementsByTagName("INPUT")[1].value;
+                            //  alert(symbole);
+                        }
+                        else {
+                            val2 = "null";
+                            symbole = tds[2].getElementsByTagName("INPUT")[0].name;
+                            color = tds[3].getElementsByTagName("INPUT")[0].value;
+                            size = tds[3].getElementsByTagName("INPUT")[1].value;
+                            // alert(symbole);
+                        }
+                    }
+                    classe = new Array();
+                    classe.push(val1, val2, color, titre, size, symbole, border, sizeBorder);
+                    classes_chaine = classes_chaine + "$" + val1 + ";" + val2 + ";" + color.replace("#", "!dieze") + ";" + titre + ";" + size + ";" + symbole + ";" + border + ";" + sizeBorder;
+                    classes.push(classe);
+
+
+                }
+
+            }
+            //                    for (var i = 1; i < n; i++) {
+            //                        alert(classes[i][0] + '\n' + classes[i][1] + '\n' + classes[i][2]);
+            //                    }
+
+            return classes;
+
+        }
+        function buildClassesTable(classes, type_col) {
+
+            type_col = 'n';
+
+            deleteAllRows();
+            var tbody = document.getElementById('table_classes').getElementsByTagName("tbody")[0];
+
+            for (var i = 0; i < classes.length; i++) {
+
+
+                var color = classes[i][2];
+                //alert(color);
+                //              var color2="#"+RGBToHex(Rmax+i*dr,Gmax+i*dg,Bmax+i*db)
+
+                var row = document.createElement("tr")
+                row.setAttribute('class', i);
+                //titre
+                var tdtitre = document.createElement("td");
+                tdtitre.setAttribute('style', 'font-size:8pt;text-align:center;width:100px');
+
+                tdtitre.setAttribute('align', 'center');
+                var txtTitre = document.createElement("INPUT");
+                txtTitre.setAttribute('type', 'text');
+                txtTitre.id = "Classes_themes1_textboxclassttr" + i;
+                txtTitre.setAttribute('style', 'font-size:8pt;text-align:center;width:100px');
+                //alert(val1+" - "+val2);
+                if (type_col == "n")
+                    txtTitre.value = classes[i][0] + " - " + classes[i][1];
+                else
+                    txtTitre.value = classes[i][0];
+                tdtitre.appendChild(txtTitre);
+                //val1
+                var td1 = document.createElement("td");
+                td1.setAttribute('style', 'font-size:8pt;text-align:center;width:90px');
+                td1.setAttribute('align', 'center');
+                var txtval1 = document.createElement("INPUT");
+                txtval1.setAttribute('type', 'text');
+                txtval1.id = "Classes_themes1_textboxclassde" + i;
+                txtval1.setAttribute('style', 'font-size:9pt;text-align:center;width:80px;margin-bottom:0px');
+                txtval1.value = classes[i][0];
+                td1.appendChild(txtval1);
+                //val2
+                var td11 = document.createElement("td");
+                if (type_col == "n") {
+                    td1.setAttribute('style', 'font-size:8pt;text-align:center;width:60px');
+                    txtval1.setAttribute('style', 'font-size:9pt;text-align:center;width:50px;margin-bottom:0px');
+                    td11.setAttribute('style', 'font-size:9pt;text-align:center;width:60px');
+                    td11.setAttribute('align', 'center');
+                    var txtval11 = document.createElement("INPUT");
+                    txtval11.setAttribute('type', 'text');
+                    txtval11.id = "Classes_themes1_textboxclassa" + i;
+                    txtval11.setAttribute('style', 'font-size:9pt;text-align:center;width:50px;margin-bottom:0px');
+                    txtval11.value = classes[i][1];
+                    td11.appendChild(txtval11);
+                }
+
+                //td pour symbol
+
+                var td_symbol = document.createElement("td");
+                td_symbol.setAttribute('style', "font-size:8pt;text-align:center;width:32px;");
+                td_symbol.setAttribute('align', 'center');
+
+
+                var Smbl = document.createElement("INPUT");
+                var url_symbol = jQuery(jQuery("img", "#selectedSymbole_div")[0]).attr("src").replace(".png", "_min.png");
+                Smbl.setAttribute('style', "font-size:8pt;text-align:center;width:32px;background-image: url('" + url_symbol + "')");
+                Smbl.setAttribute('type', 'button');
+                Smbl.setAttribute('id', 'symbol' + i);
+                Smbl.setAttribute('onclick', "symbol_choice('symbol" + i + "')");
+                Smbl.setAttribute('class', 'symbol');
+                Smbl.setAttribute('name', symbol);
+                td_symbol.appendChild(Smbl);
+
+
+
+
+                //-----------color remplissage
+                var td2 = document.createElement("td");
+                td2.setAttribute('style', 'font-size:9pt;text-align:center;width:120px');
+                td2.setAttribute('align', 'center');
+                var txtColor = document.createElement("INPUT");
+                txtColor.setAttribute('type', 'text');
+                txtColor.setAttribute('class', 'iColorPicker');
+                txtColor.id = "Classes_themes1_textboxremplissage" + i;
+                var style = 'font-size:9pt;text-align:center;color:' + color + ';margin-bottom:0px;border-color:' + color + ';';
+                var txtSize = document.createElement("INPUT");
+
+
+                if (type_geom == "PT") {
+                    var size = classes[i][4];
+                    //alert(size);
+                    var mi_size = parseFloat(size / 2);
+                    //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                    style = style + ';width:' + size + 'px;height:' + size + 'px;'
+                        + '-webkit-border-radius:' + mi_size + 'px;'
+                        + '-khtml-border-radius:' + mi_size + 'px;'
+                        + '-moz-border-radius:' + mi_size + 'px;'
+                        + 'border-radius:' + mi_size + 'px;';
+                    txtSize.setAttribute('type', 'number');
+                    txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+                    txtSize.setAttribute('min', '10');
+                    txtSize.setAttribute('value', size);
+                    txtSize.setAttribute('onclick', "changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);");
+                }
+                else
+                    if (type_geom == "PL") {
+                        var size = classes[i][4];
+                        size = parseFloat(size / 10);
+                        var mi_size = parseFloat(size / 2);
+                        //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                        style = style + ';width:150px;height:' + size + 'px;border:none;padding:0px;font-size: 0px;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius:0px;';
+
+                        txtSize.setAttribute('type', 'number');
+                        txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+                        txtSize.setAttribute('min', '1');
+                        txtSize.setAttribute('value', size);
+                        txtSize.setAttribute('onclick', "changeSizeLine('Classes_themes1_textboxremplissage" + i + "',this.value);");
+                    }
+                    else
+                        style = style + ';width:85%;';
+
+                txtColor.setAttribute('style', style); //
+                txtColor.style.background = color;
+                txtColor.value = color;
+
+                if (type_geom == "PT" || type_geom == "PL") {
+                    var tbColor = document.createElement("table");
+                    tbColor.setAttribute('style', 'width:98%;height:98%;');
+                    var trColor = document.createElement("tr");
+                    var tdColor = document.createElement("td");
+                    tdColor.setAttribute('style', 'text-align:center;width:115px;');
+                    tdColor.appendChild(txtColor);
+                    var tdColorS = document.createElement("td");
+                    tdColorS.setAttribute('style', 'text-align:right;width:20px;');
+                    tdColorS.appendChild(txtSize);
+                    trColor.appendChild(tdColor);
+                    trColor.appendChild(tdColorS);
+                    tbColor.appendChild(trColor);
+
+                    td2.appendChild(tbColor);
+                }
+                else
+
+                    td2.appendChild(txtColor);
+
+
+                //-----------color border
+                var tdborder = document.createElement("td");
+                tdborder.setAttribute('style', 'font-size:9pt;text-align:center;width:120px');
+                tdborder.setAttribute('align', 'center');
+
+
+                var txtColorborder = document.createElement("INPUT");
+                txtColorborder.setAttribute('type', 'text');
+                txtColorborder.setAttribute('class', 'iColorPickerBorder');
+
+                txtColorborder.id = "Classes_themes2_textboxremplissage" + i;
+                ////txtColorborder.setAttribute('style', 'font-size:9pt;color:white;text-align:center;width:61%;margin-bottom:0px;border-color:' + color +';');
+                //txtColorborder.style.background = color;
+
+                ////txtColorborder.value = color;
+                ////tdborder.appendChild(txtColorborder);
+
+                var style = 'font-size:9pt;text-align:center;color:white;margin-bottom:0px;border-color:#ffffff';// + color + ';';
+                var txtSize = document.createElement("INPUT");
+                if (type_geom == "PT" || type_geom == "PG") {
+                    var size = classes[i][4];
+                    //alert(size);
+                    var mi_size = parseFloat(size / 5);
+                    //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                    style = style + ';width:5px;height:5px;'
+                        + 'border-width:1px;'
+                        + '-webkit-border-radius:5px;'
+                        + '-khtml-border-radius:5px;'
+                        + '-moz-border-radius:5px;'
+                        + 'border-radius:5px;';
+                    txtSize.setAttribute('type', 'number');
+                    txtSize.setAttribute('style', 'width:30px;margin-left:-1px;');
+                    txtSize.setAttribute('min', '1');
+                    txtSize.setAttribute('value', '1');
+                    txtSize.setAttribute('onclick', "changeSizeBorder('Classes_themes2_textboxremplissage" + i + "',this.value);");
+                }
+
+                else
+                    style = style + ';width:85%;';
+
+                txtColorborder.setAttribute('style', style);
+                //                    txtColorborder.style.background = color;
+                txtColorborder.value = "#ffffff";//color;
+
+                if (type_geom == "PT" || type_geom == "PG") {
+                    var tbColor = document.createElement("table");
+                    tbColor.setAttribute('style', 'width:98%;height:98%;');
+                    var trColor = document.createElement("tr");
+                    var tdColor = document.createElement("td");
+                    tdColor.setAttribute('style', 'text-align:center;width:115px;');
+                    tdColor.appendChild(txtColorborder);
+                    var tdColorS = document.createElement("td");
+                    tdColorS.setAttribute('style', 'text-align:right;width:20px;');
+                    tdColorS.appendChild(txtSize);
+                    trColor.appendChild(tdColor);
+                    trColor.appendChild(tdColorS);
+                    tbColor.appendChild(trColor);
+
+                    tdborder.appendChild(tbColor);
+                }
+                else
+                    tdborder.appendChild(txtColorborder);
+
+
+                //delete
+                var td3 = document.createElement("td");
+                td3.setAttribute('style', 'font-size:8pt;text-align:left;width:20px');
+                td3.setAttribute('align', 'center');
+                var btnDelete = document.createElement("INPUT");
+                btnDelete.setAttribute('type', 'button');
+
+                btnDelete.setAttribute('style', 'width:20px');
+                btnDelete.id = "Classes_themes1_boutton_delete" + i;
+                btnDelete.setAttribute('class', 'delete-class');
+                btnDelete.setAttribute('onclick', "deleteActiveRow('" + i + "')")
+
+                td3.appendChild(btnDelete)
+
+                //add class
+                var td4 = document.createElement("td");
+                td4.setAttribute('style', 'font-size:8pt;text-align:left;width:20px');
+                td4.setAttribute('align', 'center');
+                var btnAdd = document.createElement("INPUT");
+                btnAdd.setAttribute('type', 'button');
+
+                btnAdd.setAttribute('style', 'width:20px');
+                btnAdd.id = "Classes_themes1_boutton_add" + i;
+                btnAdd.setAttribute('class', 'add-class');
+                btnAdd.setAttribute('onclick', "addclass('" + i + "')")
+
+                td4.appendChild(btnAdd);
+
+                row.appendChild(tdtitre);
+                row.appendChild(td1);
+                if (type_col == "n")
+                    row.appendChild(td11);
+
+                row.appendChild(td_symbol);
+                row.appendChild(td2);
+                if (type_geom == "PT" || type_geom == "PG") {
+                    row.appendChild(tdborder);
+                }
+                row.appendChild(td3);
+                row.appendChild(td4);
+
+                tbody.appendChild(row);
+                //ColorPicker
+
+
+            }
+            jQuery.noConflict();
+
+            //------------remplissage
+            jQuery(".iColorPicker").ColorPicker({
+                onSubmit: function (hsb, hex, rgb, el) {
+                    jQuery(el).val('#' + hex);
+                    jQuery(el).css('backgroundColor', '#' + hex);
+                    jQuery(el).css('color', '#' + hex);
+                    jQuery(el).ColorPickerHide();
+                },
+                onBeforeShow: function () {
+                    jQuery(this).ColorPickerSetColor(this.value);
+                }
+            }).bind('keyup', function () {
+                jQuery(this).ColorPickerSetColor(this.value);
+            });
+
+            //------------bordures
+            jQuery(".iColorPickerBorder").ColorPicker({
+                onSubmit: function (hsb, hex, rgb, el) {
+                    jQuery(el).val('#' + hex);
+                    jQuery(el).css('border-color', '#' + hex);
+                    jQuery("#" + jQuery(el).attr('id').replace('Classes_themes2', 'Classes_themes1')).css('border-color', '#' + hex);
+                    jQuery(el).css('color', 'white');
+                    jQuery(el).ColorPickerHide();
+                },
+                onBeforeShow: function () {
+                    jQuery(this).ColorPickerSetColor(this.value);
+                }
+            }).bind('keyup', function () {
+                jQuery(this).ColorPickerSetColor(this.value);
+            });
+            //------------------------
+            if (tbody.getElementsByTagName("tr").length > 0) {
+                try {
+                    document.getElementById("btn_ok").disabled = false;
+                } catch (e) {
+                    return;
+
+                }
+            }
+        }
+        function getRowIndex(classeName) {
+            var rows = jQuery('#table_classes').find("tr");
+
+            var rowCount = rows.length;
+            for (var i = 0; i < rowCount; i++) {
+                if (jQuery(rows[i]).attr('class') == classeName)
+                    return i;
+            }
+
+        }
+        function addclass(index) {
+            var table = document.getElementById('table_classes');
+            var row = document.createElement("tr")
+            var i = table.rows.length;
+            row.setAttribute('class', i);
+            //titre
+            var tdtitre = document.createElement("td");
+            tdtitre.setAttribute('style', 'font-size:8pt;text-align:center;width:100px');
+
+            tdtitre.setAttribute('align', 'center');
+            var txtTitre = document.createElement("INPUT");
+            txtTitre.setAttribute('type', 'text');
+            txtTitre.id = "Classes_themes1_textboxclassttr" + i;
+            txtTitre.setAttribute('style', 'font-size:8pt;text-align:center;width:100px');
+            txtTitre.value = " ? ?";
+            if (type_col == "n")
+                txtTitre.value += " - ? ?";
+            tdtitre.appendChild(txtTitre)
+            //val1
+            var td1 = document.createElement("td");
+            td1.setAttribute('style', 'font-size:8pt;text-align:center;width:90px');
+            td1.setAttribute('align', 'center');
+            var txtval1 = document.createElement("INPUT");
+            txtval1.setAttribute('type', 'text');
+            txtval1.id = "Classes_themes1_textboxclassde" + i;
+            txtval1.setAttribute('style', 'font-size:9pt;text-align:center;width:80px;margin-bottom:0px');
+            txtval1.value = "??";
+            td1.appendChild(txtval1);
+            //val2
+            var td11 = document.createElement("td");
+            if (type_col == "n") {
+                td1.setAttribute('style', 'font-size:8pt;text-align:center;width:60px');
+                txtval1.setAttribute('style', 'font-size:9pt;text-align:center;width:50px;margin-bottom:0px');
+                td11.setAttribute('style', 'font-size:9pt;text-align:center;width:60px');
+                td11.setAttribute('align', 'center');
+                var txtval11 = document.createElement("INPUT");
+                txtval11.setAttribute('type', 'text');
+                txtval11.id = "Classes_themes1_textboxclassa" + i;
+                txtval11.setAttribute('style', 'font-size:9pt;text-align:center;width:50px;margin-bottom:0px');
+                txtval11.value = "? ?";
+                td11.appendChild(txtval11);
+            }
+            //color
+
+            //td pour symbol
+
+            var td_symbol = document.createElement("td");
+            td_symbol.setAttribute('style', "font-size:8pt;text-align:center;width:32px;");
+            td_symbol.setAttribute('align', 'center');
+
+
+            var Smbl = document.createElement("INPUT");
+            var url_symbol = jQuery(jQuery("img", "#selectedSymbole_div")[0]).attr("src").replace(".png", "_min.png");
+            Smbl.setAttribute('style', "font-size:8pt;text-align:center;width:32px;background-image: url('" + url_symbol + "')");
+            Smbl.setAttribute('type', 'button');
+            Smbl.setAttribute('id', 'symbol' + i);
+            Smbl.setAttribute('onclick', "symbol_choice('symbol" + i + "')");
+            Smbl.setAttribute('class', 'symbol');
+            Smbl.setAttribute('name', symbol);
+            //                Smbl.value = symbol;
+
+            //Smbl.value = classes[i][5];
+            td_symbol.appendChild(Smbl);
+
+            //----------------color remplissage
+
+            var td2 = document.createElement("td");
+            td2.setAttribute('style', 'font-size:9pt;text-align:center;width:120px');
+            td2.setAttribute('align', 'center');
+
+
+            var txtColor = document.createElement("INPUT");
+            txtColor.setAttribute('type', 'text');
+            txtColor.setAttribute('class', 'iColorPicker');
+
+            txtColor.id = "Classes_themes1_textboxremplissage" + i;
+            var style = 'font-size:9pt;text-align:center;color:' + color + ';margin-bottom:0px;border-color:' + color + ';';
+            var txtSize = document.createElement("INPUT");
+            if (type_geom == "PT") {
+                var size = 10;
+                //alert(size);
+                var mi_size = parseFloat(size / 2);
+                //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                style = style + ';width:' + size + 'px;height:' + size + 'px;'
+                    + '-webkit-border-radius:' + mi_size + 'px;'
+                    + '-khtml-border-radius:' + mi_size + 'px;'
+                    + '-moz-border-radius:' + mi_size + 'px;'
+                    + 'border-radius:' + mi_size + 'px;';
+                txtSize.setAttribute('type', 'number');
+                txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+                txtSize.setAttribute('min', '10');
+                txtSize.setAttribute('value', size);
+                txtSize.setAttribute('onclick', "changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);");
+            }
+            else
+                if (type_geom == "PL") {
+                    var size = 1;
+                    size = parseFloat(size / 10);
+                    var mi_size = parseFloat(size / 2);
+                    //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                    style = style + ';width:150px;height:' + size + 'px;border:none;padding:0px;font-size: 0px;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius:0px;';
+
+                    txtSize.setAttribute('type', 'number');
+                    txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+                    txtSize.setAttribute('min', '1');
+                    txtSize.setAttribute('value', size);
+                    txtSize.setAttribute('onclick', "changeSizeLine('Classes_themes1_textboxremplissage" + i + "',this.value);");
+                }
+                else
+                    style = style + ';width:85%;';
+
+            txtColor.setAttribute('style', style);
+            txtColor.style.background = color;
+            txtColor.value = color;
+
+
+            if (type_geom == "PT" || type_geom == "PL") {
+                var tbColor = document.createElement("table");
+                tbColor.setAttribute('style', 'width:98%;height:98%;');
+                var trColor = document.createElement("tr");
+                var tdColor = document.createElement("td");
+                tdColor.setAttribute('style', 'text-align:center;width:115px;');
+                tdColor.appendChild(txtColor);
+                var tdColorS = document.createElement("td");
+                tdColorS.setAttribute('style', 'text-align:right;width:20px;');
+                tdColorS.appendChild(txtSize);
+                trColor.appendChild(tdColor);
+                trColor.appendChild(tdColorS);
+                tbColor.appendChild(trColor);
+
+                td2.appendChild(tbColor);
+            }
+            else
+                td2.appendChild(txtColor);
+
+
+            //--------------------color border
+
+            var tdborder = document.createElement("td");
+            tdborder.setAttribute('style', 'font-size:9pt;text-align:center;width:120px');
+            tdborder.setAttribute('align', 'center');
+
+
+            var txtColorborder = document.createElement("INPUT");
+            txtColorborder.setAttribute('type', 'text');
+            txtColorborder.setAttribute('class', 'iColorPickerBorder');
+
+            txtColorborder.id = "Classes_themes2_textboxremplissage" + i;
+            var style = 'font-size:9pt;text-align:center;color:white;margin-bottom:0px;border-color:' + color + ';';
+            var txtSize = document.createElement("INPUT");
+
+            if (type_geom == "PT" || type_geom == "PG") {
+                var size = 10;
+                //alert(size);
+                var mi_size = parseFloat(size / 5);
+                //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+                style = style + ';width:5px;height:5px;'
+                    + 'border-width:1px;'
+                    + '-webkit-border-radius:5px;'
+                    + '-khtml-border-radius:5px;'
+                    + '-moz-border-radius:5px;'
+                    + 'border-radius:5px;';
+                txtSize.setAttribute('type', 'number');
+                txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+                txtSize.setAttribute('min', '1');
+                txtSize.setAttribute('value', '1');
+                txtSize.setAttribute('onclick', "changeSizeBorder('Classes_themes2_textboxremplissage" + i + "',this.value);");
+            }
+            //                    else
+            //                        if (type_geom == "PL") {
+            //                            var size = classes[i][4];
+            //                            size = parseFloat(size / 10);
+            //                            var mi_size = parseFloat(size / 2);
+            //                            //txtSize = "<input type=\"number\"   name=\"stepper1\" min=\"10\" value=" + size + "  style=\"width:50px;\" onchange=\" changeSize('Classes_themes1_textboxremplissage" + i + "',this.value);  \" />";
+            //                            style = style + ';width:150px;height:' + size + 'px;border:none;padding:0px;font-size: 0px;-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius:0px;';
+
+            //                            txtSize.setAttribute('type', 'number');
+            //                            txtSize.setAttribute('style', 'width:50px;margin-left:-1px;');
+            //                            txtSize.setAttribute('min', '1');
+            //                            txtSize.setAttribute('value', size);
+            //                            txtSize.setAttribute('onclick', "changeSizeLine('Classes_themes1_textboxremplissage" + i + "',this.value);");
+            //                        }
+            else
+                style = style + ';width:85%;';
+
+            txtColorborder.setAttribute('style', style);
+            //                    txtColorborder.style.background = color;
+            txtColorborder.value = color;
+
+
+            if (type_geom == "PT" || type_geom == "PG") {
+                var tbColor = document.createElement("table");
+                tbColor.setAttribute('style', 'width:98%;height:98%;');
+                var trColor = document.createElement("tr");
+                var tdColor = document.createElement("td");
+                tdColor.setAttribute('style', 'text-align:center;width:115px;');
+                tdColor.appendChild(txtColorborder);
+                var tdColorS = document.createElement("td");
+                tdColorS.setAttribute('style', 'text-align:right;width:20px;');
+                tdColorS.appendChild(txtSize);
+                trColor.appendChild(tdColor);
+                trColor.appendChild(tdColorS);
+                tbColor.appendChild(trColor);
+
+                tdborder.appendChild(tbColor);
+            }
+            else
+                tdborder.appendChild(txtColorborder);
+
+            //delete
+            var td3 = document.createElement("td");
+            td3.setAttribute('style', 'font-size:8pt;text-align:left;width:20px');
+            td3.setAttribute('align', 'center');
+            var btnDelete = document.createElement("INPUT");
+            btnDelete.setAttribute('type', 'button');
+
+            btnDelete.setAttribute('style', 'width:20px');
+            btnDelete.id = "Classes_themes1_boutton_delete" + i;
+            btnDelete.setAttribute('class', 'delete-class');
+            btnDelete.setAttribute('onclick', "deleteActiveRow('" + i + "')")
+
+            td3.appendChild(btnDelete)
+
+            //add class
+            var td4 = document.createElement("td");
+            td4.setAttribute('style', 'font-size:8pt;text-align:left;width:20px');
+            td4.setAttribute('align', 'center');
+            var btnAdd = document.createElement("INPUT");
+            btnAdd.setAttribute('type', 'button');
+
+            btnAdd.setAttribute('style', 'width:20px');
+            btnAdd.id = "Classes_themes1_boutton_add" + i;
+            btnAdd.setAttribute('class', 'add-class');
+            var idx = getRowIndex(index);
+            btnAdd.setAttribute('onclick', "addclass('" + i + "')")
+
+            td4.appendChild(btnAdd);
+
+            row.appendChild(tdtitre);
+            row.appendChild(td1);
+            if (type_col == "n") {
+                row.appendChild(td11);
+            }
+            row.appendChild(td_symbol);
+            row.appendChild(td2);
+            if (type_geom == "PT" || type_geom == "PG") {
+                row.appendChild(tdborder);
+            }
+            row.appendChild(td3);
+            row.appendChild(td4);
+
+
+
+            //     if (index == (i - 1))
+            //         tbody.appendChild(row);
+            //     else {
+            //jQuery.noConflict();
+            //alert(idx);
+            jQuery('#table_classes > tbody > tr').eq(idx - 1).after(row);
+            //     }
+
+            //jQuery.noConflict();
+            //----------------Backround
+            jQuery(".iColorPicker").ColorPicker({
+                onSubmit: function (hsb, hex, rgb, el) {
+                    jQuery(el).val('#' + hex);
+                    jQuery(el).css('backgroundColor', '#' + hex);
+                    jQuery(el).css('color', '#' + hex);
+                    jQuery(el).ColorPickerHide();
+                },
+                onBeforeShow: function () {
+                    jQuery(this).ColorPickerSetColor(this.value);
+                }
+            }).bind('keyup', function () {
+                jQuery(this).ColorPickerSetColor(this.value);
+            });
+            //------------bordures
+            jQuery(".iColorPickerBorder").ColorPicker({
+                onSubmit: function (hsb, hex, rgb, el) {
+                    jQuery(el).val('#' + hex);
+                    jQuery(el).css('border-color', '#' + hex);
+                    jQuery(el).css('color', 'white');
+                    jQuery(el).ColorPickerHide();
+                },
+                onBeforeShow: function () {
+                    jQuery(this).ColorPickerSetColor(this.value);
+                }
+            }).bind('keyup', function () {
+                jQuery(this).ColorPickerSetColor(this.value);
+            });
+            //------------------------
+
+
+        }
+        function deleteActiveRow(row_class) {
+
+            var table = document.getElementById('table_classes');
+            //table.deleteRow(1);
+            //alert(row_class);
+            var rowCount = table.rows.length;
+            if (rowCount == 2) {
+                return;
+            }
+            for (var i = 0; i < rowCount; i++) {
+                var row = table.rows[i];
+
+                if (row.className == row_class) {
+                    table.deleteRow(i);
+                    rowCount--;
+                    i--;
+                }
+            }
+            var tbody = table.getElementsByTagName("tbody")[0];
+            // alert(tbody.getElementsByTagName("tr").length)
+            if (tbody.getElementsByTagName("tr").length == 0) {
+                try {
+                    document.getElementById("btn_ok").disabled = true;
+                } catch (e) {
+                    return;
+
+                }
+            }
+
+
+        }
+        function deleteAllRows() {
+            var table = document.getElementById('table_classes');
+            var rowCount = table.rows.length;
+            for (var i = 1; i < rowCount; i++) {
+                table.deleteRow(i);
+                rowCount--;
+                i--;
+            }
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+    <title>sigTB</title>
+</head>
+<body id="screenALlIframe">
+
+
+    <div class="container">
+
+
+
+
+        <div class="row">
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+                <div id="timeDiv">
+                    <div class="yearssigtb" style="float: left; margin-top: 6px; visibility:hidden; display:none;">
+                        <label id="lblTime" style="display: inline-block;">
+                            Année:
+                        </label>
+                        <select id="select_annee" class="textbox" data-placeholder="Année" tabindex="1" style="width: 80px;"></select>
+                    </div>
+                    <div class="optionsigdb" style="float: left; margin-top: 6px;">
+                        <ul>
+                            <li class="dropdown">
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    <span class="txt">Personnaliser </span>
+
+
+                                    <b class="caret"></b>
+                                </a>-->
+                                <button onclick="" id="btn_personnaliser" type="button">
+                                    Modifier les classes
+                                </button>
+                                <button onclick="" id="btn_fonds_web" type="button">
+                                    Arrière plan
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li class="menu">
+                                        <ul>
+
+
+                                            <li>
+                                                <button onclick="" id="btn_legende" type="button" class="btn btn-labeled btn-default">
+                                                    <span class="btn-label"><i style="font-size: small;" class="glyphicon glyphicon-chevron-right"></i></span>
+                                                    Légende
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button onclick="" id="btn_personnaliser" type="button" class="btn btn-labeled btn-default">
+                                                    <span class="btn-label"><i style="font-size: small;" class="glyphicon glyphicon-chevron-right"></i></span>
+                                                    Modifier les classes
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button onclick="" id="btn_fonds_web" type="button" class="btn btn-labeled btn-default">
+                                                    <span class="btn-label"><i style="font-size: small;" class="glyphicon glyphicon-chevron-right"></i></span>
+                                                    Arrière plan
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!--
+                                        <div class="">
+                                            <a id="bt" href="#" class="tip" title="Plein écran" style="margin-top: 10px; float: left; font-size: 20px; color: #727272;margin-left:35%;">
+                                                <span class="glyphicon glyphicon-fullscreen">
+                                                </span>
+                                            </a>
+                                        </div>
+                    -->
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="AllDivIframeSlider" style="border: 1px solid #C0C0C0; width: 100%; height: 99%; margin: auto; /* position: relative; */ top: 36px;">
+        <div id="titreGeo"></div>
+        <div id="mapDiv" style="width: 100%; height: 100%;" data-dojo-type="dijit/layout/ContentPane">
+        </div>
+        <!-- Div Years My code -->
+
+        <div class="col-lg-12 col-xs-12 col-centered" id="sliderDivYears" style="float: left; margin: -141px 0px 0px 7px; background-color: #0000004f; padding: 10px 2px 10px 0px; color: whiteSmoke; width: 98%; border-radius: 5px;">
+
+            <input type="text" id="slider" class="slider" />
+        </div>
+        <!-- Div End Years My code -->
+
+    </div>
+    <div id="classes_div">
+
+        <div>
+            <button onclick="" id="personaliserBTN" type="button" style="float:right;background: transparent !important;border: none;">
+                <span class="btn-label" style="background: transparent !important;border: none;">
+                    <i style="font-size: 17px;" class="glyphicon glyphicon-remove-circle"></i>
+                </span>
+            </button>
+
+            <table>
+                <tr>
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <label class="control-label">
+                            Theme:
+                        </label>
+                    </td>
+                    <td style="width: 40px;"></td>
+                    <td>
+                        <div id="selectedTheme_div" style="border: 1px solid #C0C0C0; width: 180px;">
+                            <img src="/Rabat-Sale-Kenitra/Content/assets/img/theme1.png" />
+                        </div>
+                        <ul id="themes_ul" style="border: 1px solid #C0C0C0; display: none; position: absolute;
+                            background-color: White; list-style: none;">
+                            <li value="9bf7fa,099c9c">
+                                <img src="/Rabat-Sale-Kenitra/Content/assets/img/theme1.png" />
+                            </li>
+                            <li value="5cfa0d,2b7804">
+                                <img src="/Rabat-Sale-Kenitra/Content/assets/img/theme2.png" />
+                            </li>
+                            <li value="f7f0ed,bf3d06">
+                                <img src="/Rabat-Sale-Kenitra/Content/assets/img/theme3.png" />
+                            </li>
+                        </ul>
+                    </td>
+                    <td style="width: 40px;">
+                        <input id="btn_theme" type="button" value="..." />
+                    </td>
+                </tr>
+                <tr>
+
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <label class="control-label">
+                            Symbole:
+                        </label>
+                    </td>
+                    <td style="width: 40px;"></td>
+                    <td class="symbol">
+                        <div id="selectedSymbole_div" style="border: 1px solid #C0C0C0; width: 180px;">
+
+                            <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/PG_SOLID.png" />
+
+                        </div>
+                        <ul id="Symbole_ul" style="border: 1px solid #C0C0C0; display: none; position: absolute;
+                                    background-color: White; list-style: none" class="symbol">
+
+
+                            <li name="SOLID" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/PG_SOLID.png" />
+                            </li>
+                            <li name="HORIZONTAL" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/HORIZONTAL.png" />
+                            </li>
+                            <li name="VERTICAL" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/VERTICAL.png" />
+                            </li>
+                            <li name="CROSS" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/CROSS_PG.png" />
+                            </li>
+                            <li name="DIAGONALCROSS" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/DIAGONAL_CROSS.png" />
+                            </li>
+                            <li name="FORWARD_DIAGONAL" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/FORWARD_DIAGONAL.png" />
+                            </li>
+                            <li name="BACKWARD_DIAGONAL" class="imgPG">
+                                <img src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/img/BACKWARD_DIAGONAL.png" />
+                            </li>
+
+
+                        </ul>
+                    </td>
+                    <td style="width: 40px;">
+                        <input id="btn_symbole" type="button" value="..." />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding-top: 20px;">
+            <table>
+                <tr>
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <label class="control-label" style="font-family: Calibri; font-size: small">
+                            Couleur Min:
+                        </label>
+                    </td>
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <input type="text" id="colorMin" class="colorpicker-default m-wrap" value="9bf7fa"
+                               style="width: 122px; color: #9bf7fa; background-color: #9bf7fa">
+                    </td>
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <label class="control-label" style="font-family: Calibri; font-size: small">
+                            Couleur Max:
+                        </label>
+                    </td>
+                    <td style="width: 20px;"></td>
+                    <td>
+                        <input type="text" id="colorMax" class="colorpicker-default m-wrap" value="099c9c"
+                               style="width: 122px; color: #099c9c; background-color: #099c9c">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="padding: 20px 20px 0px 20px;">
+            <table>
+                <tbody>
+                    <tr>
+                        <td style="border-right-style: solid; border-right-width: 1px; border-right-color: #C0C0C0;
+                            padding-right: 20px; vertical-align: middle;">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="radio_nbr_classes" type="radio" name="optionsRadios1" checked="checked">
+                                    Nombre de Classes :
+                                    <input type="number" id="txt_nbr_classes" name="stepper1" min="2" value="4" style="width: 100px;" />
+                                </div>
+                            </div>
+                        </td>
+                        <td style="width: 20px"></td>
+                        <td>
+                            <div class="control-group" style="vertical-align: middle;">
+                                <div class="controls">
+                                    <input id="radio_interval" type="radio" name="optionsRadios1" value="option1">
+                                    Interval :
+                                    <input id="txt_interval" type="text" style="width: 100px;" onkeypress="validate(event)"
+                                           disabled="disabled" />
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+
+            <button id="btn_generer1" class=" pull-right" style="padding-right: 20px;
+        padding-left: 20px; font-size: 17px;" onclick="generer_classes()">
+                Générer
+            </button>
+        </div>
+        <div class="form-actions" style="margin-top: 30px; height: 240px; overflow-y: scroll">
+            <div id="ShowRes" style="" class="">
+                <table id="table_classes" class="table table-bordered table-hover ">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label>
+                                    Classes
+                                </label>
+                            </th>
+                            <th id="header_interval" colspan="2">
+                                <label>
+                                    Interval
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                    Symbole
+                                </label>
+                            </th>
+
+
+                            <th>
+                                <label>
+                                    Couleur <br />de <br />remplissage
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                    Couleur des lignes
+                                </label>
+                            </th>
+
+
+
+
+
+                            <th>
+                                <label>
+                                </label>
+                            </th>
+                            <th>
+                                <label>
+                                </label>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <button class=" pull-right" id="btn_ok" disabled="disabled">
+            OK
+        </button>
+    </div>
+
+    <div id="legendPane" data-dojo-type="dijit/layout/ContentPane">
+        <button onclick="" id="btn_legendPaneBTN" type="button" style="float:right;background: transparent !important;border: none;">
+            <span class="btn-label" style="background: transparent !important;border: none;">
+                <i style="font-size: 17px;" class="glyphicon glyphicon-remove-circle"></i>
+            </span>
+        </button>
+        <div id="legendDiv" style="color: #003399 ; position : none !important;">
+        </div>
+    </div>
+    <div id="basemapPane" data-dojo-type="dijit/layout/ContentPane" style="border: 1px solid #666666;
+        z-index: 1; top: 40px; right: 20px; width: 380px; height: auto; position: absolute;
+        background-color: #FFFFFF; opacity: 0.8; display: none">
+        <span style="width: 100%; float: left;">
+            <button onclick="" id="btn_basemapPane" type="button" style="float:right;background: transparent !important;border: none;">
+                <span class="btn-label" style="background: transparent !important;border: none;">
+                    <i style="font-size: 17px;" class="glyphicon glyphicon-remove-circle"></i>
+                </span>
+            </button>
+        </span>
+        <div id="basemapGallery">
+        </div>
+    </div>
+    <div id="ApplicationsPane" data-dojo-type="dijit/layout/ContentPane" style="border: 1px solid #666666;
+        z-index: 50; top: 36px; right: 20px; width: 380px; height: 250px; position: absolute;
+        background-color: #FFFFFF; opacity: 0.8; display: none">
+        <div id="ApplicationsGallery">
+        </div>
+    </div>
+
+    <div id="partlegend">
+        <button style="opacity:0.82;" onclick="" id="btn_legende" type="button" class="btn btn-labeled btn-default">
+            <span class="btn-label"><i style="font-size: small;" class="glyphicon glyphicon-chevron-right"></i></span>
+            Légende
+        </button>
+    </div>
+
+    <!-- Style botton SLH detail indecateur-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js1"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="http://localhost:48280/Content/responsive/css/bootstrap/bootstrap.min.css">
+
+
+
+
+    <link rel="stylesheet" href="http://localhost:48280/Content/responsive/css/main.css">
+
+    <style>
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+        .navbar {
+            position: absolute !important;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+
+        #legendDiv {
+            position: unset !important;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Code Start Barre Years     -->
+    <style>
+        /* * {
+                            box-sizing: border-box;
+                        }
+                        body {
+                            font-family: Arial, Helvetica, sans-serif;
+                            margin: 0;
+                            padding: 0 0 50px;
+                            color: #333;
+                            font-size: 14px;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                        pre {
+                            padding: 20px 20px 0 0;
+                            background: #f9f9f9;
+                            border: 1px solid #f2f2f2;
+                            margin-bottom: 30px;
+                            line-height: 2em;
+                        }
+                        .top {
+                            background-color: #333;
+                            border-bottom: 3px solid #00b3bc;
+                            color: #fff;
+                            padding: 20px;
+                        }
+                        .top h1 {
+                            font-size: 20px;
+                            text-align: center;
+                        }
+                    .container {
+                        width: 80%;
+                        margin: 70px auto;
+                    }
+
+                    .slider-container {
+                        width: 90%;
+                        max-width: 500px;
+                        margin: 0 auto 50px;
+                    }
+
+                    .config {
+                        border: 1px solid #f2f2f2;
+                        margin-bottom: 30px;
+                        line-height: 1.7em;
+                    }
+
+                        .config table {
+                            border-collapse: collapse;
+                            width: 100%;
+                        }
+
+                            .config table td {
+                                padding: 10px;
+                                border-bottom: 1px solid #f2f2f2;
+                            }
+
+                            .config table tr:nth-child(even) td {
+                                background-color: #f9f9f9;
+                            }
+
+                    .mb {
+                        margin-bottom: 15px;
+                    }
+
+                    .label {
+                        font-weight: bold;
+                        white-space: nowrap;
+                    }
+
+                    .download {
+                        margin-bottom: 20px;
+                    }
+
+                        .download a {
+                            text-decoration: none;
+                            color: #00969b;
+                            font-size: 16px;
+                        }*/
+
+        .row-centered {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .col-centered {
+            display: block;
+            float: none;
+        }
+
+        .pos {
+            position: relative;
+            top: 240px;
+        }
+
+        .rs-tooltip {
+            min-width: 46px !important;
+        }
+    </style>
+    <link href="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/css/stylesgtb.css" rel="stylesheet">
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/rSlider.js" type="text/javascript"></script>
+
+
+
+
+
+
+    <script>
+
+        var initSliderDetailInd, slider;
+        var tblYearsAllValeur = [];
+
+        (function () {
+            'use strict';
+
+            initSliderDetailInd = function (tblannee) {
+
+
+                tblYearsAllValeur = [];
+                for (var i = 0; i < tblYearsAll.length; i++) {
+                    tblYearsAllValeur.push(tblYearsAll[i]);
+                }
+                console.log("tblYearsAll");
+                console.log(tblYearsAll);
+                if (slider) {
+                    slider.destroy();
+                }
+
+
+                slider = new rSlider({
+                    target: '#slider',
+                    //values: [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
+                    values: tblYearsAllValeur,//tblYearsAll,
+                    set: ["" + tblYearsAllValeur[tblYearsAllValeur.length - 1] + ""],
+                    onChange: function (values) {
+                        console.log(tblYearsAllValeur.indexOf(values));
+
+
+
+                        var indexYear = tblYearsAllValeur.indexOf(values);
+
+                        //alert(indexYear);
+                        data_year = getValuesAnnee(indexYear, data);
+
+                        min = 999999999999;
+                        max = -999999999999;
+                        for (var i = 0; i < data_year.length; i++) {
+                            if (data_year[i][1] < min) {
+                                min = data_year[i][1];
+                            }
+                            if (data_year[i][1] >= max) {
+                                max = data_year[i][1];
+                            }
+                        }
+                        //alert(min + "   " + max);
+                        colorDe = "#" + jQuery("#colorMin").attr('value');
+                        colorA = "#" + jQuery("#colorMax").attr('value');
+                        // alert(jQuery("#txt_nbr_classes").val())
+                        nbrClasses = parseInt(jQuery("#txt_nbr_classes").val());
+                        //titre = result.titre
+                        var classes = generateclass(min, max, nbrClasses, colorDe, colorA);
+                        console.log(classes)
+                        buildClassesTable(classes);
+                        classes = getClasses();
+                        //                            loadIndicateurNum(vueSource, titre + "(" + jQuery("#select_annee option:selected").text() + ")", info_col, info_alias, classes, data_year, null, null);
+                        //loadAnalyseTh(vueSource, titre + "(" + jQuery("#select_annee option:selected").text() + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+                        //loadAnalyseTh(vueSource, titre + "(" + result.tabX[result.tabX.length - 1] + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+
+                        // loadAnalyseTh(vueSource, titre + "(" + jQuery("#select_annee option:selected").text() + ")", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+                        //loadAnalyseTh(vueSource, "aa", info_col, info_alias, classes, data_year, null, 'n', 'PG', null, null, symbol);
+                        //alert(type_geom);
+                        loadAnalyseTh(vueSource, titre, info_col, info_alias, classes, data_year, null, 'n', type_geom, null, null, symbol);
+                    }
+                });
+            };
+            window.onload = initSliderDetailInd;
+        })();
+
+
+    </script>
+    <!-- Code End Barre Years -->
+
+    <script>
+
+        // $(window).resize(function () {
+        //console.log(window.width);
+
+        // $("#mapDiv_root").attr('style', 'height: 560px !important; width: 650px !important;     border: none;');
+        //$("#frm_sigtb  body > div:nth-child(2)").css('style', 'width: 108% !important');
+        // $("#frm_sigtb .dj_webkit dj_chrome dj_contentbox").css('style', 'width: 900px !important');
+
+        //  $("#frm_sigtb").attr('style', 'width: 100% !important');
+        //  $("#frm_sigtb").attr('style', 'height: 560px !important; width: 650px !important;     border: none;');
+        //$("#frm_sigtb").width(window.width/2.5);
+        //  $("iframe").height($(window).height());
+        // $("iframe").width($(window).width());
+        // });
+
+
+
+
+    </script>
+
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/data-tables/DT_bootstrap.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/breakpoints/breakpoints.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jqvmap/jqvmap/jquery.vmap.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jqvmap/jqvmap/maps/jquery.vmap.world.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jquery-slimscroll/jquery-ui-1.9.2.custom.min.js"
+            type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery.blockui.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/fullcalendar/fullcalendar/fullcalendar.min.js"
+            type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/chosen-bootstrap/chosen/chosen.jquery.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/fullcalendar/fullcalendar/fullcalendar.min.js"
+            type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/flot/jquery.flot.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/flot/jquery.flot.resize.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/gritter/js/jquery.gritter.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery.pulsate.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap-daterangepicker/date.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/fullcalendar/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/flot/jquery.flot.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/flot/jquery.flot.resize.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/gritter/js/jquery.gritter.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/jquery.pulsate.min.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap-daterangepicker/date.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/app.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/Aller.font.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/cufon-yui.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Content/assets/js/app.js" type="text/javascript"></script>
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/main.js"></script>
+
+    <script src='https://siredd.environnement.gov.ma/Content/assets/js/dependent-selects.js'></script>
+
+    <script src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://siredd.environnement.gov.ma/Rabat-Sale-Kenitra/Scripts/wow.min.js"></script>
+    <script type="text/javascript" language="javascript">
+        var pp_window;
+        function close_pp() {
+            pp_window.close();
+        };
+        function popup1(url_, w, h, title_) {
+            pp_window = $.window({
+                title: title_,
+                url: url_,
+                width: w,
+                height: h,
+                maxWidth: -1,
+                maxHeight: -1,
+                resizable: true,
+                showModal: true,
+                onClose: function () {
+                }
+            });
+        };
+        function lienClicked(id) {
+            alert("id= " + id);
+            $('#menuLayout li a').removeClass("lienClick");
+            $('#' + id + '').addClass("lienClick");
+
+        };
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            // initiate layout and plugins
+            App.init();
+        });
+
+        /*********** Menu ***********\
+        /* Mobile */
+        $('#menu-wrap').prepend('<div id="menu-trigger">Menu</div>');
+        $("#menu-trigger").on("click", function () {
+            $("#menu").slideToggle();
+        });
+
+        // iPad
+        var isiPad = navigator.userAgent.match(/iPad/i) != null;
+        if (isiPad) $('#menu ul').addClass('no-transition');
+
+        $(".dropdown").hover(
+            function () {
+                $('.dropdown-menu', this).stop(true, true).fadeIn();
+            },
+            function () {
+                $('.dropdown-menu', this).stop(true, true).fadeOut();
+            });
+    </script>
+    <script>
+
+        var url = window.location.href;
+        $('.menu ul li').each(function () {
+            url.match($('a', this).attr('href')) && $(this).addClass('active');
+        });
+
+
+
+
+        /*
+        $(window).bind("resize", function () {
+            // Change the width of the div
+            //$("#yourdiv").width(600);
+
+            if (window.width < 800) {
+                $('.dcartevisite').css({ 'position': 'relative !important', 'width': '20%', 'margin-bottom': '50px' }),
+                $('.logosiredd').css({ 'margin-top': '63px' }),
+
+
+            } else {
+                $('.dcartevisite').css({ 'position': 'absolute !important', 'width': '158px', 'margin-bottom': '0px' }),
+                $('.logosiredd').css({ 'margin-top': '35px' })
+            }
+
+        });
+        */
+    </script>
+
+</body>
+</html>

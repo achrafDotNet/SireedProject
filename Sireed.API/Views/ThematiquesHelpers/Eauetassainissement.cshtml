@@ -1,0 +1,241 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation des Graphiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .chart-section {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 20px;
+          background-color: #f9f9f9;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .chart-title {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        canvas {
+          max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"></h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Section 1 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Indice global de qualité des eaux souterraines</div>
+                    <canvas id="chart1"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title"> Part des eaux usées épurées (Proportion des eaux usées traitée) </div>
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">
+                        Part des eaux usées réutilisées après épuration
+                    </div>
+                    <canvas id="chart3"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Taux de raccordement au réseau d'assainissement </div>
+                    <canvas id="chart4"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">
+                        Indice global de qualité des eaux de surface
+                    </div>
+                    <canvas id="chart5"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">
+                        Nombre total de STEPs fonctionnelles
+                    </div>
+                    <canvas id="chart6"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Example1 Chart.js setup for the first chart
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        new Chart(ctx1, {
+          type: 'line',
+          data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+            datasets: [{
+              label: 'Qualité des eaux',
+              data: [65, 59, 80, 81, 56],
+              backgroundColor: 'rgba(75, 192, 192, 0.2)',
+              borderColor: 'rgba(75, 192, 192, 1)',
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            plugins: {
+              legend: {
+                display: true,
+              },
+            },
+          }
+        });
+
+        // Example2 Chart.js setup for the first chart
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Qualité des eaux',
+                    data: [65, 59, 80, 81, 56],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                },
+            }
+        });
+
+        // Example1 Chart.js setup for the first chart
+        const ctx3 = document.getElementById('chart3').getContext('2d');
+        new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Qualité des eaux',
+                    data: [65, 59, 80, 81, 56],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                },
+            }
+        });
+
+
+        // Example1 Chart.js setup for the first chart
+        const ctx4 = document.getElementById('chart4').getContext('2d');
+        new Chart(ctx4, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Qualité des eaux',
+                    data: [65, 59, 80, 81, 56],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                },
+            }
+        });
+
+        // Example1 Chart.js setup for the first chart
+        const ctx5 = document.getElementById('chart5').getContext('2d');
+        new Chart(ctx5, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Qualité des eaux',
+                    data: [65, 59, 80, 81, 56],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                },
+            }
+        });
+
+
+        // Example1 Chart.js setup for the first chart
+        const ctx6 = document.getElementById('chart6').getContext('2d');
+        new Chart(ctx6, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    label: 'Qualité des eaux',
+                    data: [65, 59, 80, 81, 56],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                    },
+                },
+            }
+        });
+
+
+    </script>
+</body>
+</html>

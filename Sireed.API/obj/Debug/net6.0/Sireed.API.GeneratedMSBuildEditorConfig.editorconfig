@@ -110,6 +110,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcU2lnQ2FydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/TableDeBord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcVGFibGVEZUJvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ProjetRecherches/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamV0UmVjaGVyY2hlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -156,6 +160,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Agricultureetindustrie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXEFncmljdWx0dXJlZXRpbmR1c3RyaWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Air.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXEFpci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Dechets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXERlY2hldHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Eauetassainissement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXEVhdWV0YXNzYWluaXNzZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Littoraletbiodiversite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXExpdHRvcmFsZXRiaW9kaXZlcnNpdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Populationeteducationenvironnementale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzXFBvcHVsYXRpb25ldGVkdWNhdGlvbmVudmlyb25uZW1lbnRhbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Utilisateurs/Connexion.cshtml]

@@ -19,6 +19,46 @@ namespace Sireed.API.Controllers
             _context = context;
         }
 
+        [HttpGet]
+        public IActionResult GetRegions()
+        {
+            var regions = new[]
+            {
+                new
+                {
+                    name = "Rabat-Salé-Zemmour-Zaër",
+                    imgSrc = "https://mairiederabat.ma/assets/images/footer/Group%2059.jpg",
+                    communes = new[]
+                    {
+                        new { name = "Commune A", population = 5000 },
+                        new { name = "Commune B", population = 8000 }
+                    }
+                },
+                new
+                {
+                    name = "Tanger-Tétouan-Al Hoceima",
+                    imgSrc = "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/8d/fc/e9.jpg",
+                    communes = new[]
+                    {
+                        new { name = "Commune C", population = 7000 },
+                        new { name = "Commune D", population = 9000 }
+                    }
+                },
+                new
+                {
+                    name = "Fès-Meknès",
+                    imgSrc = "Images/LogoRegions/FesMeknes.png",
+                    communes = new[]
+                    {
+                        new { name = "Commune E", population = 4000 },
+                        new { name = "Commune F", population = 6000 }
+                    }
+                }
+            };
+
+            return Ok(regions);
+        }
+
 
         // GET: Regions
         public async Task<IActionResult> Index()

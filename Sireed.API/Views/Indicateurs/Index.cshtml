@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://diplomatie.ma/themes/custom/diplomatie/favicon.ico" />
     <title>@ViewData["Title"]</title>
 
     <script src="https://js.arcgis.com/4.25/"></script>
@@ -861,7 +862,7 @@ canvas {
                                 <!-- Dynamic options -->
                             </select>
                             <h5 id="regionTitle" class="my-3">Statistiques de Population pour</h5>
-                            <img id="regionImage" src="" alt="Image de la région" class="img-fluid d-none" />
+                            <img id="regionImage" alt="Image de la région" class="img-fluid d-none" style="width:100px" />
                         </div>
                     </div>
                 </div>
@@ -918,16 +919,177 @@ canvas {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <div class="modal fade" id="maModal" tabindex="-1" aria-labelledby="maModalLabel" aria-hidden="true">
+        <div id="app" class="container-fluid py-3">
+            <!-- Header Section -->
+            <div class="text-center mb-4">
+                <h1>Tableau de Bord des Statistiques de Population</h1>
+            </div>
+
+            <!-- Content Section -->
+            <div class="row g-4">
+                <!-- Region Selector -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Sélecteur de Région</h4>
+                        </div>
+                        <div class="card-body text-center">
+                            <select id="regionSelector" class="form-select mb-3" aria-label="Select a region">
+                                <!-- Dynamic options -->
+                            </select>
+                            <h5 id="regionTitle" class="my-3">Statistiques de Population pour</h5>
+                            <img id="regionImage" alt="Image de la région" class="img-fluid d-none" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Population Details -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Détails de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Commune</th>
+                                        <th>Population</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="populationTableBody">
+                                    <!-- Dynamic rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Population Chart -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4 class="card-title">Graphique de Population</h4>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="populationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        const RabatSaleKen = 'https://mairiederabat.ma/assets/images/footer/Group%2059.jpg';
+
+        const TangerTetouaneHoceima = 'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/8d/fc/e9.jpg'
+
         const regions = [
             {
                 name: "Rabat-Salé-Zemmour-Zaër",
-                imgSrc: "C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\wwwroot\Images\LogoRegions\RabatSaleZemmourZaër.png",
+                imgSrc: RabatSaleKen,
                 communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }]
             },
             {
                 name: "Tanger-Tétouan-Al Hoceima",
-                imgSrc: "Images/LogoRegions/TangerTetouanAlHoceima.png",
+                imgSrc: TangerTetouaneHoceima,
+                communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }]
+            },
+            {
+                name: "Fès-Meknès",
+                imgSrc: "Images/LogoRegions/FesMeknes.png",
+                communes: [{ name: "Commune E", population: 4000 }, { name: "Commune F", population: 6000 }]
+            }
+        ];
+
+        const regionSelector = document.getElementById('regionSelector');
+        const regionTitle = document.getElementById('regionTitle');
+        const regionImage = document.getElementById('regionImage');
+        const populationTableBody = document.getElementById('populationTableBody');
+        const populationChartCtx = document.getElementById('populationChart').getContext('2d');
+        let populationChart;
+
+        function initializeApp() {
+            regions.forEach(region => {
+                const option = document.createElement('option');
+                option.value = region.name;
+                option.textContent = region.name;
+                regionSelector.appendChild(option);
+            });
+
+            updateRegionData(regions[0]);
+
+            regionSelector.addEventListener('change', () => {
+                const selectedRegion = regions.find(region => region.name === regionSelector.value);
+                if (selectedRegion) {
+                    updateRegionData(selectedRegion);
+                }
+            });
+        }
+
+        function updateRegionData(region) {
+            regionTitle.textContent = `Statistiques de Population pour ${region.name}`;
+            regionImage.src = `${region.imgSrc}?t=${new Date().getTime()}`; // Cache-busting
+            regionImage.alt = `Image de ${region.name}`;
+            regionImage.classList.remove('d-none');
+
+            populationTableBody.innerHTML = region.communes.map(commune => `
+                    <tr>
+                        <td>${commune.name}</td>
+                        <td>${commune.population}</td>
+                    </tr>
+                `).join('');
+
+            updateChart(region.communes);
+        }
+
+        function updateChart(communes) {
+            const labels = communes.map(commune => commune.name);
+            const data = communes.map(commune => commune.population);
+
+            if (populationChart) populationChart.destroy();
+
+            populationChart = new Chart(populationChartCtx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [{
+                        label: 'Population',
+                        data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+
+        initializeApp();
+    </script>
+
+@*     <script>
+
+        let RabatSaleKen = 'https://mairiederabat.ma/assets/images/footer/Group%2059.jpg';
+
+        const regions = [
+            {
+                name: "Rabat-Salé-Zemmour-Zaër",
+                imgSrc: RabatSaleKen,
+                communes: [{ name: "Commune A", population: 5000 }, { name: "Commune B", population: 8000 }]
+            },
+            {
+                name: "Tanger-Tétouan-Al Hoceima",
+                imgSrc: "https://images.weserv.nl/?url=https://content.r9cdn.net/rimg/dimg/7b/84/f712afca-city-12211-165b0527cd7.jpg",
                 communes: [{ name: "Commune C", population: 7000 }, { name: "Commune D", population: 9000 }]
             },
             {
@@ -1005,7 +1167,7 @@ canvas {
 
         initializeApp();
     </script>
-
+ *@
 
 
 @* 

@@ -11,6 +11,18 @@ using Sireed.IP.SerIP;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Ajouter CORS pour permettre les appels depuis votre frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages(); // Add Razor Pages services.
@@ -35,6 +47,9 @@ builder.Services.AddControllersWithViews() // Configure Controllers with Views
 
 var app = builder.Build();
 
+// Utiliser CORS
+app.UseCors("AllowAll");
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -42,6 +57,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+app.MapControllers();
 
 app.UseHttpsRedirection();
 

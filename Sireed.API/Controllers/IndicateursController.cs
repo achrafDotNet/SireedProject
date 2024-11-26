@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using Sireed.API.Data;
 using Sireed.API.Models;
 using Sireed.APPLICATION.DTO;
 using Sireed.APPLICATION.ServicesIndicateurs;
 using Sireed.INFRASTRUCTURE.RepositoryIndicateurs;
+
+
 
 namespace Sireed.API.Controllers
 {
@@ -26,6 +29,11 @@ namespace Sireed.API.Controllers
             _context = context;
             _serviceiNDICATEUR = indicateurService;
             _repositoryIndicateurs = repositoryIndicateurs;
+        }
+
+        public IActionResult TableDeBord()
+        {
+            return View();
         }
 
         public IActionResult ArcGis()

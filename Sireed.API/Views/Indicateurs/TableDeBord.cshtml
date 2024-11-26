@@ -1,0 +1,141 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://diplomatie.ma/themes/custom/diplomatie/favicon.ico" />
+    <title>Tableau De Bord</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        #logo {
+            max-height: 50px;
+        }
+
+        .list-group-item.selected {
+            background-color: #007bff;
+            color: white;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #e9ecef;
+        }
+
+        .hero {
+            background-color: #32cd32;
+            color: white;
+            padding: 2px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+        }
+
+            .btn-custom:hover {
+                background-color: #218838;
+            }
+
+        .content-full-width {
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 15px;
+            color:darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-primary me-2" id="home-btn">Home</button>
+                <button class="btn btn-outline-primary" id="privacy-btn">Privacy</button>
+            </div>
+            <div class="mx-auto">
+                <img src="https://via.placeholder.com/150" alt="Logo" class="img-fluid" id="logo">
+            </div>
+            <div>
+                <button class="btn btn-custom" id="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="hero text-center">
+        @*     <h1>Bienvenue sur Mon Site</h1>
+            <p>Explorez notre menu pour en savoir plus.</p> *@
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>THEMATIQUES</h2>
+                <ul class="list-group" id="menu">
+@*                     <li class="list-group-item" data-content="Contenu de l'élément 1">Déchets</li>
+                    <li class="list-group-item" data-content="Contenu de l'élément 2">Eau et assainissement</li>
+                    <li class="list-group-item" data-content="Contenu de l'élément 3">Agriculture et industrie</li>
+                    <li class="list-group-item" data-content="Contenu de l'élément 4">Population et éducation environnementale</li>
+                    <li class="list-group-item" data-content="Contenu de l'élément 5">Air</li> *@
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Dechets">Déchets</li>
+                    <li class="list-group-item" data-url="/ThematiquesHelpers/Eauetassainissement">Eau et assainissement</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/AgricultureIndustrie">Agriculture et industrie</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/PopulationEducation">Population et éducation environnementale</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Air">Air</li>
+                </ul>
+
+                </>
+            </div>
+
+            <div class="col-md-8">
+                <div id="content" class="content-full-width mt-4">
+                    <h3>Veuillez sélectionner un élément pour voir le contenu ici.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 Mon Site. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu li').click(function () {
+                $('#menu li').removeClass('selected');
+                $(this).addClass('selected');
+
+                var contentUrl = $(this).data('url');
+                if (contentUrl) {
+                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:500px; border:none;"></iframe>');
+                } else {
+                    $('#content').html('<h3>Vous avez sélectionné :</h3><p>' + $(this).data('content') + '</p>');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

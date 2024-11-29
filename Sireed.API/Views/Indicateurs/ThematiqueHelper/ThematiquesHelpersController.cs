@@ -1,14 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
 {
     public class ThematiquesHelpersController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
+        public IActionResult Index() => View();
         public IActionResult Dechets()
         {
             return View();
@@ -19,10 +16,8 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
             return View();
         }
 
-        public IActionResult Littoraletbiodiversite()
-        {
-            return View();
-        }
+        public IActionResult Littoraletbiodiversite() => View();
+     
         public IActionResult Agricultureetindustrie()
         {
             return View();

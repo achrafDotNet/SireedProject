@@ -12,9 +12,9 @@
     <title>Tableau De Bord</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        #logo {
+        /* #logo {
             max-height: 50px;
-        }
+        } */
 
         .list-group-item.selected {
             background-color: #007bff;
@@ -60,6 +60,11 @@
             border-radius: 15px;
             color:darkgreen;
         }
+
+        #logo {
+            max-width: 50%; /* Assurez-vous que le logo s'ajuste à l'espace */
+            height: auto; /* Conserver les proportions du logo */
+        }
     </style>
 </head>
 
@@ -72,7 +77,7 @@
                 <button class="btn btn-outline-primary" id="privacy-btn">Privacy</button>
             </div>
             <div class="mx-auto">
-                <img src="https://via.placeholder.com/150" alt="Logo" class="img-fluid" id="logo">
+                <img src="https://diplomatie.ma/sites/default/files/inline-images/logo-1_0.gif" alt="Logo" class="img-fluid" id="logo">
             </div>
             <div>
                 <button class="btn btn-custom" id="login-btn">Login</button>

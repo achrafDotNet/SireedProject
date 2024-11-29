@@ -8,6 +8,7 @@ using NuGet.Protocol;
 using System.Text.Json;
 using Sireed.IP.RepÎP;
 using Sireed.IP.SerIP;
+using Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,7 @@ builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
 builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
 builder.Services.AddScoped<IRepIPrepository, RepIPrepository>();
 builder.Services.AddScoped<ISerIPservice, SerIPservice>();
+
 
 LicenceSireed.ConfigureServices(builder.Services); // Add Dependecie de IP
 // Add services to the container.

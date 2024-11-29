@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Sireed.APPLICATION.DTO.RegionDTO>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation Solar Terminator</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .land {
+            fill: #ccc;
+            stroke: #333;
+        }
+        .terminator {
+            stroke: red;
+            stroke-width: 2;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualisation de la Région</h1>
+    <svg width="800" height="600"></svg>
+
+    <script>
+        const width = 800;
+        const height = 600;
+
+        // Projection de la carte
+        const projection = d3.geoMercator()
+            .center([-6.5, 31.5]) // Centre sur le Maroc
+            .scale(100000)
+            .translate([width / 2, height / 2]);
+
+        const path = d3.geoPath().projection(projection);
+
+        // Charger la carte du Maroc (GeoJSON)
+        d3.json('GeoJson/maroc.geojson')
+            .then(geoData => {
+                const svg = d3.select("svg");
+
+                // Ajouter la carte à l'SVG
+                svg.append("g")
+                    .selectAll("path")
+                    .data(geoData.features)
+                    .enter().append("path")
+                    .attr("class", "land")
+                    .attr("d", path);
+
+                // Dessiner le Solar Terminator
+                drawTerminator(svg);
+            })
+            .catch(error => {
+                console.error("Erreur lors du chargement du GeoJSON: ", error);
+            });
+
+        // Dessiner le Solar Terminator pour le Maroc
+        function drawTerminator(svg) {
+            const terminatorCoordinates = [];
+
+            // Coordonnées simulées pour le terminator
+            for (let lat = 36; lat >= 30; lat -= 0.1) {
+                const lon = -5; // Longitude indicative
+                terminatorCoordinates.push([lon, lat]);
+            }
+
+            const lineFunction = d3.line()
+                .x(d => projection([d[0], d[1]])[0])
+                .y(d => projection([d[0], d[1]])[1]);
+
+            svg.append("path")
+                .datum(terminatorCoordinates)
+                .attr("class", "terminator")
+                .attr("d", lineFunction);
+        }
+    </script>
+</body>
+</html>

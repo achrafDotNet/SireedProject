@@ -7,9 +7,15 @@ namespace Sireed.API.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options):base(options) 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-          
+         
+            
+    
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Server=DESKTOP-KL9QJ5S;Database=SireedMVCV2;Trusted_Connection=True;");
         }
         public DbSet<Actualite> Actualites { get; set; }
         public DbSet<Utilisateur> Utilisateurs { get; set; }
@@ -19,6 +25,7 @@ namespace Sireed.API.Data
         public DbSet<Region> Regions { get; set; }
         public DbSet<ProjetRecherche> ProjetRecherches { get; set; }
         public DbSet<Commune> Communes { get; set; }
+        public DbSet<Thematique> Thematiques { get; set; }
         
     }
 }

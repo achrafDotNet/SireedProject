@@ -10,6 +10,7 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\appsettings.json
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\libman.json
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Logs\ip_log.json
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.API.staticwebassets.runtime.json
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.API.exe
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.API.deps.json
@@ -273,8 +274,10 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.APPLICATION.dll
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.DOMAIN.dll
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.IP.dll
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.APPLICATION.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.INFRASTRUCTURE.pdb
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.IP.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.DOMAIN.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\staticwebassets.development.json
@@ -292,6 +295,3 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\ref\Sireed.API.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.IP.dll
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Sireed.IP.pdb
-C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Logs\ip_log.json

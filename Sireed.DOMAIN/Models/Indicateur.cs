@@ -1,4 +1,6 @@
-﻿namespace Sireed.API.Models
+﻿using Sireed.DOMAIN.Models;
+
+namespace Sireed.API.Models
 {
     public class Indicateur
     {
@@ -12,5 +14,8 @@
 
         public int RegionId { get; set; }
         public Region Region { get; set; }
+
+        public int ThematiqueId { get; set; }
+        public Thematique Thematique { get; set; }
     }
 }

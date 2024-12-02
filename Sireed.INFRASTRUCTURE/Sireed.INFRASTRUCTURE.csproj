@@ -15,6 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Sireed.APPLICATION\Sireed.APPLICATION.csproj" />
     <ProjectReference Include="..\Sireed.DOMAIN\Sireed.DOMAIN.csproj" />
+    <ProjectReference Include="..\Sireed.IP\Sireed.IP.csproj" />
   </ItemGroup>
 
   <ItemGroup>

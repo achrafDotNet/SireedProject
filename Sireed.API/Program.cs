@@ -9,6 +9,8 @@ using System.Text.Json;
 using Sireed.IP.RepÎP;
 using Sireed.IP.SerIP;
 using Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards;
+using Sireed.API.Extensions;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,10 +32,14 @@ builder.Services.AddRazorPages(); // Add Razor Pages services.
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Db")));
 
 
-builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
-builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
-builder.Services.AddScoped<IRepIPrepository, RepIPrepository>();
-builder.Services.AddScoped<ISerIPservice, SerIPservice>();
+//builder.Services.AddScoped<IRepositoryIndicateurs, RepositoryIndicateur>();
+//builder.Services.AddScoped<IServicesIndicateur, IndicateurService>();
+//builder.Services.AddScoped<IRepIPrepository, RepIPrepository>();
+//builder.Services.AddScoped<ISerIPservice, SerIPservice>();
+//builder.Services.AddScoped<INavigation, RNavigation>();
+
+
+ServiceCollectionExtensions.AddAllServices(builder.Services);
 
 
 LicenceSireed.ConfigureServices(builder.Services); // Add Dependecie de IP

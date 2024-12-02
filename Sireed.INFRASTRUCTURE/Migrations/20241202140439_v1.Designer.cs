@@ -12,8 +12,8 @@ using Sireed.API.Data;
 namespace Sireed.INFRASTRUCTURE.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241111085029_v7")]
-    partial class v7
+    [Migration("20241202140439_v1")]
+    partial class v1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -108,6 +108,9 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                     b.Property<int>("RegionId")
                         .HasColumnType("int");
 
+                    b.Property<int>("ThematiqueId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -122,6 +125,8 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("RegionId");
+
+                    b.HasIndex("ThematiqueId");
 
                     b.ToTable("indicateurs");
                 });
@@ -266,6 +271,43 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                     b.ToTable("Communes");
                 });
 
+            modelBuilder.Entity("Sireed.DOMAIN.Models.Thematique", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AgricultureEtindustrie")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Air")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Dechets")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EauEtassainissement")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LittoralEtbiodiversité")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PopulationEtEducationEnvironnementale")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Thematiques");
+                });
+
             modelBuilder.Entity("Sireed.API.Models.Actualite", b =>
                 {
                     b.HasOne("Sireed.API.Models.Region", "Region")
@@ -296,7 +338,15 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Sireed.DOMAIN.Models.Thematique", "Thematique")
+                        .WithMany("Indicateurs")
+                        .HasForeignKey("ThematiqueId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Region");
+
+                    b.Navigation("Thematique");
                 });
 
             modelBuilder.Entity("Sireed.API.Models.Partenaire", b =>
@@ -345,6 +395,11 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                     b.Navigation("Partenaires");
 
                     b.Navigation("ProjetsRecherche");
+                });
+
+            modelBuilder.Entity("Sireed.DOMAIN.Models.Thematique", b =>
+                {
+                    b.Navigation("Indicateurs");
                 });
 #pragma warning restore 612, 618
         }

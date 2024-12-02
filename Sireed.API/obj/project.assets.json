@@ -4087,7 +4087,8 @@
           "Microsoft.EntityFrameworkCore.Relational": "6.0.33",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.33",
           "Sireed.APPLICATION": "1.0.0",
-          "Sireed.DOMAIN": "1.0.0"
+          "Sireed.DOMAIN": "1.0.0",
+          "Sireed.IP": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Sireed.INFRASTRUCTURE.dll": {}

@@ -26,6 +26,24 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Thematiques",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Dechets = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EauEtassainissement = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    LittoralEtbiodiversité = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AgricultureEtindustrie = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PopulationEtEducationEnvironnementale = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Air = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Thematiques", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Utilisateurs",
                 columns: table => new
                 {
@@ -64,6 +82,27 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Communes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nom = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Population = table.Column<int>(type: "int", nullable: false),
+                    RegionId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Communes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Communes_Regions_RegionId",
+                        column: x => x.RegionId,
+                        principalTable: "Regions",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Documents",
                 columns: table => new
                 {
@@ -80,31 +119,6 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                     table.PrimaryKey("PK_Documents", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Documents_Regions_RegionId",
-                        column: x => x.RegionId,
-                        principalTable: "Regions",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "indicateurs",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nom = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Valeur = table.Column<float>(type: "real", nullable: false),
-                    Annee = table.Column<int>(type: "int", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Unite = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RegionId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_indicateurs", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_indicateurs_Regions_RegionId",
                         column: x => x.RegionId,
                         principalTable: "Regions",
                         principalColumn: "Id",
@@ -155,9 +169,46 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "indicateurs",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nom = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Valeur = table.Column<float>(type: "real", nullable: false),
+                    Annee = table.Column<int>(type: "int", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Unite = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RegionId = table.Column<int>(type: "int", nullable: false),
+                    ThematiqueId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_indicateurs", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_indicateurs_Regions_RegionId",
+                        column: x => x.RegionId,
+                        principalTable: "Regions",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_indicateurs_Thematiques_ThematiqueId",
+                        column: x => x.ThematiqueId,
+                        principalTable: "Thematiques",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Actualites_RegionId",
                 table: "Actualites",
+                column: "RegionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Communes_RegionId",
+                table: "Communes",
                 column: "RegionId");
 
             migrationBuilder.CreateIndex(
@@ -169,6 +220,11 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                 name: "IX_indicateurs_RegionId",
                 table: "indicateurs",
                 column: "RegionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_indicateurs_ThematiqueId",
+                table: "indicateurs",
+                column: "ThematiqueId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Partenaires_RegionId",
@@ -187,6 +243,9 @@ namespace Sireed.INFRASTRUCTURE.Migrations
                 name: "Actualites");
 
             migrationBuilder.DropTable(
+                name: "Communes");
+
+            migrationBuilder.DropTable(
                 name: "Documents");
 
             migrationBuilder.DropTable(
@@ -200,6 +259,9 @@ namespace Sireed.INFRASTRUCTURE.Migrations
 
             migrationBuilder.DropTable(
                 name: "Utilisateurs");
+
+            migrationBuilder.DropTable(
+                name: "Thematiques");
 
             migrationBuilder.DropTable(
                 name: "Regions");

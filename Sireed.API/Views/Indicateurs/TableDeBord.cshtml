@@ -1,4 +1,6 @@
-﻿@{
+﻿@model IEnumerable<Sireed.APPLICATION.DTO.ThematiqueDTO>
+
+@{
     Layout = null;
 }
 
@@ -65,6 +67,10 @@
             max-width: 50%; /* Assurez-vous que le logo s'ajuste à l'espace */
             height: auto; /* Conserver les proportions du logo */
         }
+
+        .my-box {
+            padding: 25px; /* Espace à l'intérieur de l'élément */
+        }
     </style>
 </head>
 
@@ -99,7 +105,7 @@
                     <li class="list-group-item" data-content="Contenu de l'élément 3">Agriculture et industrie</li>
                     <li class="list-group-item" data-content="Contenu de l'élément 4">Population et éducation environnementale</li>
                     <li class="list-group-item" data-content="Contenu de l'élément 5">Air</li> *@
-                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Dechets">Déchets</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Dechets">@Html.DisplayNameFor(model => model.DechetsDTO)</li>
                     <li class="list-group-item" data-url="/ThematiquesHelpers/Eauetassainissement">Eau et assainissement</li>
                         <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/AgricultureIndustrie">Agriculture et industrie</li>
                         <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/PopulationEducation">Population et éducation environnementale</li>
@@ -116,6 +122,9 @@
             </div>
         </div>
     </div>
+
+    <div class="my-box">Contenu avec un espacement intérieur.</div>
+
 
     <footer class="footer mt-auto py-3">
         <div class="container text-center">
@@ -134,7 +143,7 @@
 
                 var contentUrl = $(this).data('url');
                 if (contentUrl) {
-                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:500px; border:none;"></iframe>');
+                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:600px; border:none;"></iframe>');
                 } else {
                     $('#content').html('<h3>Vous avez sélectionné :</h3><p>' + $(this).data('content') + '</p>');
                 }

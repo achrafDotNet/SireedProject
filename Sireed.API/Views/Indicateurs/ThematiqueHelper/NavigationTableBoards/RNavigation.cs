@@ -1,43 +1,33 @@
-﻿namespace Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards
+﻿
+using Microsoft.EntityFrameworkCore;
+using Sireed.API.Data;
+using Sireed.APPLICATION.DTO;
+using Sireed.DOMAIN.Models;
+
+namespace Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards
 {
     public class RNavigation : INavigation
     {
-
-        private readonly ThematiquesHelpersController _thematiques;
-        public RNavigation(ThematiquesHelpersController thematiques) {
+        private readonly AppDbContext _appDbContext;
+        public RNavigation(AppDbContext appDbContext) {
         
-            _thematiques = thematiques;
+            _appDbContext = appDbContext;
         
         }
 
-        public void Agricultureetindustrie()
+        public Task GetAllThematiques(ThematiqueDTO thematique)
         {
-            _thematiques.Agricultureetindustrie();
+            var TMA = new Thematique()
+            {
+                Dechets = thematique.DechetsDTO,
+                EauEtassainissement = thematique.EauEtassainissementDTO, 
+                LittoralEtbiodiversité = thematique.LittoralEtbiodiversitéDTO,
+                AgricultureEtindustrie = thematique.AgricultureEtindustrieDTO,
+                PopulationEtEducationEnvironnementale = thematique.PopulationEtEducationEnvironnementaleDTO,
+                Air = thematique.AirDTO
+            };
+            return Task.FromResult(TMA);
         }
 
-        public void Air()
-        {
-            _thematiques.Air();
-        }
-
-        public void Dechets()
-        {
-            _thematiques.Dechets();
-        }
-
-        public void Eauetassainissement()
-        {
-            _thematiques.Eauetassainissement();
-        }
-
-        public void Littoraletbiodiversite()
-        {
-            _thematiques.Littoraletbiodiversite();
-        }
-
-        public void Populationeteducationenvironnementale()
-        {
-            _thematiques.Populationeteducationenvironnementale();
-        }
     }
 }

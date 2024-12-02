@@ -1,12 +1,10 @@
-﻿namespace Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards
+﻿using Sireed.APPLICATION.DTO;
+
+namespace Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards
 {
     public interface INavigation
     {
-        void Dechets();
-        void Eauetassainissement();
-        void Littoraletbiodiversite();
-        void Agricultureetindustrie();
-        void Populationeteducationenvironnementale();
-        void Air();
+        Task GetAllThematiques(ThematiqueDTO thematique);
+        
     }
 }

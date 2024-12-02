@@ -1,0 +1,47 @@
+﻿<div class="filter-container">
+    <label for="filter">Filtrer par :</label>
+    <select id="filter">
+        <option value="">Tous</option>
+        <option value="Population">Population</option>
+        <option value="Industrie">Industrie</option>
+        <option value="Transport">Transport</option>
+    </select>
+</div>
+<div id="map"></div>
+
+<script>
+    // Ajouter votre clé d'accès Mapbox
+    mapboxgl.accessToken = 'pk.eyJ1IjoibmF2ZWVucmFtdTEzMDMiLCJhIjoiY2prdjRhajhpMDg2bjNxb2JkYmp3NWtzbyJ9.BEvnlrDKLXSHGRoLfWto0g';
+
+    // Charger les données de la région depuis le contrôleur
+    fetch('/Map/Index')
+        .then(response => response.json())
+        .then(data => {
+            // Initialiser la carte
+            const map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-6.832, 34.033], // Coordonnées centrales de Rabat
+                zoom: 8
+            });
+
+            // Ajouter les limites de la région
+            const bounds = new mapboxgl.LngLatBounds();
+            data.Bounds.forEach(coord => bounds.extend([coord.lng, coord.lat]));
+            map.fitBounds(bounds);
+
+            // Ajouter des marqueurs
+            data.Bounds.forEach(coord => {
+                new mapboxgl.Marker().setLngLat([coord.lng, coord.lat]).addTo(map);
+            });
+
+            // Gestion du filtre
+            const filterSelect = document.getElementById('filter');
+            filterSelect.addEventListener('change', () => {
+                const filterValue = filterSelect.value;
+                console.log(`Filtrage appliqué : ${filterValue}`);
+                // Vous pouvez personnaliser le filtre ici
+            });
+        })
+        .catch(err => console.error('Erreur lors du chargement des données:', err));
+</script>

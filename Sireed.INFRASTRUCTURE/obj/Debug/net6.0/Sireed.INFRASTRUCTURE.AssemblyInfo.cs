@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sireed.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48225f33580fa61b280e91906a007b1b8d709fad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6fb28e05ba3a07da4dec7011da5ed415de93677f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sireed.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sireed.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

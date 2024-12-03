@@ -17,17 +17,22 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards
 
         public Task GetAllThematiques(ThematiqueDTO thematique)
         {
-            var TMA = new Thematique()
-            {
-                Dechets = thematique.DechetsDTO,
-                EauEtassainissement = thematique.EauEtassainissementDTO, 
-                LittoralEtbiodiversité = thematique.LittoralEtbiodiversitéDTO,
-                AgricultureEtindustrie = thematique.AgricultureEtindustrieDTO,
-                PopulationEtEducationEnvironnementale = thematique.PopulationEtEducationEnvironnementaleDTO,
-                Air = thematique.AirDTO
-            };
-            return Task.FromResult(TMA);
+            throw new NotImplementedException();
         }
+
+        //public Task GetAllThematiques(ThematiqueDTO thematique)
+        //{
+        //    //var TMA = new Thematique()
+        //    //{
+        //    //    Dechets = thematique.DechetsDTO,
+        //    //    EauEtassainissement = thematique.EauEtassainissementDTO, 
+        //    //    LittoralEtbiodiversité = thematique.LittoralEtbiodiversitéDTO,
+        //    //    AgricultureEtindustrie = thematique.AgricultureEtindustrieDTO,
+        //    //    PopulationEtEducationEnvironnementale = thematique.PopulationEtEducationEnvironnementaleDTO,
+        //    //    Air = thematique.AirDTO
+        //    //};
+        //    //return Task.FromResult(TMA);
+        //}
 
     }
 }

@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "ContainingType": "Sireed.API.Controllers.MapController",
+    "Method": "Index",
+    "RelativePath": "api/Map",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sireed.API.Controllers.MapController",
+    "Method": "GetRegionData",
+    "RelativePath": "api/Map/region-data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

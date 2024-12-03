@@ -53,6 +53,7 @@ builder.Services.AddControllersWithViews() // Configure Controllers with Views
     });
 
 
+
 var app = builder.Build();
 
 // Utiliser CORS
@@ -79,6 +80,6 @@ app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=SireedHome}/{id?}");
+pattern: "{controller=Home}/{action=SireedHome}/{id?}");
 
 app.Run();

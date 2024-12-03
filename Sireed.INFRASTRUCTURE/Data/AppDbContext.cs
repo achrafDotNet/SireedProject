@@ -26,6 +26,7 @@ namespace Sireed.API.Data
         public DbSet<ProjetRecherche> ProjetRecherches { get; set; }
         public DbSet<Commune> Communes { get; set; }
         public DbSet<Thematique> Thematiques { get; set; }
+        public DbSet<DescriptionThematique> descriptionThematiques { get; set; } 
         
     }
 }

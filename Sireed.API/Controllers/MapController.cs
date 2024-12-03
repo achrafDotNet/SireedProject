@@ -1,14 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Web.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Sireed.API.Controllers
 {
-    public class MapController : Microsoft.AspNetCore.Mvc.Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class MapController : Controller
     {
-        public MapController()
-        {
-                
-        }
+
+        [HttpGet("region-data")]
         public IActionResult GetRegionData()
         {
             var regionData = new
@@ -24,6 +24,13 @@ namespace Sireed.API.Controllers
 
             // Retourner les données au format JSON
             return Ok(regionData);
+        }
+
+        [HttpGet]
+        public IActionResult Index() {
+        
+             return View();
+        
         }
     }
 }

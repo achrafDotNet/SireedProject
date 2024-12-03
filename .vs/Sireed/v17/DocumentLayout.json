@@ -378,21 +378,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20241203100851_addThametique.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
-              "RelativeDocumentMoniker": "Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
-              "RelativeToolTip": "Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAgwDAAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T10:08:53.541Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -440,9 +427,22 @@
               "RelativeDocumentMoniker": "Sireed.API\\Views\\Indicateurs\\TableDeBord.cshtml",
               "ToolTip": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.API\\Views\\Indicateurs\\TableDeBord.cshtml",
               "RelativeToolTip": "Sireed.API\\Views\\Indicateurs\\TableDeBord.cshtml",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAYwIQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwIQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-25T10:40:51.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20241203100851_addThametique.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
+              "RelativeDocumentMoniker": "Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\SIreedProject\\SIREED PROJECT\\SIREED PROJECT\\Sireed\\Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
+              "RelativeToolTip": "Sireed.INFRASTRUCTURE\\Migrations\\20241203100851_addThametique.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T10:08:53.541Z",
               "EditorCaption": ""
             },
             {

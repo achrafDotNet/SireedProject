@@ -2,6 +2,208 @@
     Layout = null;
 }
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation des Graphiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f8fa;
+            font-family: 'Poppins', sans-serif;
+            color: #343a40;
+        }
+
+        .chart-section {
+            border-radius: 12px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+            .chart-section:hover {
+                transform: scale(1.02);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+        .chart-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #007bff;
+        }
+
+        canvas {
+            max-width: 100%;
+            height: 300px; /* Hauteur des graphiques ajustée pour plus de clarté */
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        /* Disposition en grille de 3 colonnes */
+        .row-cols-md-3 .col {
+            margin-bottom: 30px;
+        }
+
+        /* Améliorations des boutons */
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+            .btn-custom:hover {
+                background-color: #0056b3;
+            }
+
+        .btn-home, .btn-privacy {
+            background-color: #ff8c00;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-home:hover, .btn-privacy:hover {
+                background-color: #e07b00;
+            }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Section 1 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Indice global de qualité des eaux souterraines</div>
+                    <canvas id="chart1"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Proportion des eaux usées traitées : (PTAR)</div>
+                    <canvas id="chart2"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Part des eaux usées réutilisées après épuration</div>
+                    <canvas id="chart3"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Taux de raccordement au réseau d'assainissement</div>
+                    <canvas id="chart4"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Indice global de qualité des eaux de surface</div>
+                    <canvas id="chart5"></canvas>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="col">
+                <div class="chart-section">
+                    <div class="chart-title">Nombre total de STEPs fonctionnelles</div>
+                    <canvas id="chart6"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Configuration des graphiques
+        const createChart = (ctx, title, data) => {
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Avr', 'Mai'],
+                    datasets: [{
+                        label: title,
+                        data: data,
+                        backgroundColor: 'rgba(75, 192, 192, 0.4)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        borderWidth: 2,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                        },
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        };
+
+        // Data pour les différents graphiques
+        const dataSets = [
+            [65, 59, 80, 81, 56],
+            [80, 70, 90, 60, 80],
+            [55, 60, 70, 40, 90],
+            [70, 35, 75, 85, 55],
+            [90, 75, 60, 90, 80],
+            [60, 65, 80, 70, 60]
+        ];
+
+        const ctxIds = ['chart1', 'chart2', 'chart3', 'chart4', 'chart5', 'chart6'];
+        for (let i = 0; i < ctxIds.length; i++) {
+            const ctx = document.getElementById(ctxIds[i]).getContext('2d');
+            createChart(ctx, 'Qualité des eaux', dataSets[i]);
+        }
+    </script>
+</body>
+</html>
+
+
+@* <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +219,7 @@
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .chart-title {
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: bold;
           margin-bottom: 10px;
         }
@@ -32,6 +234,8 @@
     </style>
 </head>
 <body>
+
+
     <div class="container mt-5">
         <h1 class="text-center mb-4"></h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -243,4 +447,4 @@
 
     </script>
 </body>
-</html>
+</html> *@

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
@@ -332,6 +333,16 @@ namespace Sireed.API.Controllers
         //    return Ok( await _context.Regions.CountAsync());
         //}
 
+        //public void OnGet(ActionExecutingContext context)
+        //{
+        //    var controller = context.RouteData.Values["controller"]?.ToString();
+        //    var action = context.RouteData.Values["action"]?.ToString();
+
+        //    if (controller == "Home" && action == "Index")
+        //    {
+        //        context.HttpContext.Items["CustomMessage"] = "Message spécifique pour Home Index";
+        //    }
+        //}
 
 
         [HttpGet]

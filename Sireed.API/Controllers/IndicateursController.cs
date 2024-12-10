@@ -9,11 +9,14 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
+using Polly;
 using Sireed.API.Data;
 using Sireed.API.Models;
+using Sireed.API.RegionsDuMaroc;
 using Sireed.APPLICATION.DTO;
 using Sireed.APPLICATION.ServicesIndicateurs;
 using Sireed.INFRASTRUCTURE.RepositoryIndicateurs;
+using static Sireed.API.RegionsDuMaroc.RegionURL;
 
 
 
@@ -32,10 +35,32 @@ namespace Sireed.API.Controllers
             _repositoryIndicateurs = repositoryIndicateurs;
         }
 
-        public IActionResult TableDeBord()
+        public async Task<IActionResult> TableDeBord()
         {
-            return View();
+            var isValid = await RabatSaleKenitra(); // Attendre le résultat de la méthode asynchrone.
+
+            if (isValid)
+            {
+                return View(); // Si la condition est remplie, retourner la vue.
+            }
+
+            return NotFound("La page demandée n'existe pas dans ce contexte."); // Sinon, retourner une réponse NotFound.
         }
+
+        public async Task<bool> RabatSaleKenitra()
+        {
+            var controller = RouteData.Values["controller"]?.ToString();
+            var action = RouteData.Values["action"]?.ToString();
+
+            // Vérifiez si le contrôleur et l'action correspondent aux valeurs attendues.
+            if (controller == "Indicateurs" && action == "TableDeBord")
+            {
+                return true;
+            }
+
+            return false;
+        }
+
 
         public IActionResult ArcGis()
         {

@@ -295,3 +295,6 @@ C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Siree
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.pdb
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\Sireed.API.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\obj\Debug\net6.0\ref\Sireed.API.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Polly.dll
+C:\Users\Lenovo\Desktop\SIreedProject\SIREED PROJECT\SIREED PROJECT\Sireed\Sireed.API\bin\Debug\net6.0\Polly.Core.dll

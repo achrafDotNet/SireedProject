@@ -18,7 +18,12 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
             return View(_navigation.GetAllThematiques(thematiqueDTO));
 
         }
-     
+
+        public IActionResult ThematiqueBord()
+        {
+            return View();
+        }
+
         public IActionResult Index() => View();
         public IActionResult Dechets()
         {
@@ -45,9 +50,6 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
             return View();
         }
 
-        public IActionResult ThematiqueBord()
-        {
-            return View();
-        }
+       
     }
 }

@@ -44,5 +44,10 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
         {
             return View();
         }
+
+        public IActionResult ThematiqueBord()
+        {
+            return View();
+        }
     }
 }

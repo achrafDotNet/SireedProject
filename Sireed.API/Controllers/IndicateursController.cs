@@ -61,6 +61,11 @@ namespace Sireed.API.Controllers
             return false;
         }
 
+        public IActionResult TableDeBordOriental()
+        {
+            return View();
+        }
+
 
         public IActionResult ArcGis()
         {

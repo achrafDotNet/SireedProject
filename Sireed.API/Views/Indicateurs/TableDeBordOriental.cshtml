@@ -1,0 +1,586 @@
+﻿@model IEnumerable<Sireed.APPLICATION.DTO.ThematiqueDTO>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://diplomatie.ma/themes/custom/diplomatie/favicon.ico" />
+    <title>Tableau De Bord</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        h2 {
+            color: #343a40;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            color: #6c757d;
+        }
+
+        .hero {
+            background-color: #f5f5f5;
+            color: white;
+            padding: 4px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-custom:hover {
+                background-color: #28a745;
+            }
+
+        .content-full-width {
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 15px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+            .content-full-width:hover {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+        #logo {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .navbar {
+            padding: 10px 30px;
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 5px 0;
+        }
+
+            .list-group-item:hover {
+                background-color: #198754;
+                color: white;
+            }
+
+            .list-group-item.selected {
+                background-color: #198754;
+                color: white;
+            }
+
+        .my-box {
+            padding: 3px;
+            margin-top: 3px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-home,
+        .btn-privacy {
+            background-color: #ff8c00;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-home:hover,
+            .btn-privacy:hover {
+                background-color: #e07b00;
+            }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SIREDD</a>
+            <div class="mx-auto">
+                <img src="https://diplomatie.ma/sites/default/files/inline-images/logo-1_0.gif" alt="Logo" class="img-fluid" id="logo" style="width:80px">
+            </div>
+            <button class="btn btn-outline-light d-lg-none" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-none d-lg-block">
+                        <button class="btn-custom">
+                            <i class="fas fa-user"></i> Connexion
+                        </button>
+                    </li>
+                </ul>
+                <div class="mt-2 mt-lg-0">
+                    <button class="btn-custom d-lg-none">
+                        <i class="fas fa-user"></i> Connexion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>THEMATIQUES</h2>
+                <ul class="list-group" id="menu">
+                    <li class="list-group-item" data-url="/ThematiquesHelpersOriental/ThematiqueBord">Thematiques du Region</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Dechets">Déchets</li>
+                    <li class="list-group-item" data-url="/ThematiquesHelpers/Eauetassainissement">Eau et assainissement</li>
+                    <li class="list-group-item" data-url="/ThematiquesHelpers/AgricultureIndustrie">Agriculture et industrie</li>
+                    <li class="list-group-item" data-url="/ThematiquesHelpers/PopulationEducation">Population et éducation environnementale</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Air">Air</li>
+                </ul>
+            </div>
+
+            <div class="col-md-8">
+                <div id="content" class="content-full-width mt-4">
+                    <h3>Veuillez sélectionner un élément pour voir le contenu ici.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-box" spellcheck="true"></div>
+
+    <footer>
+        <span>&copy; 2024 SIREDD. Tous droits réservés.</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu li').click(function () {
+                $('#menu li').removeClass('selected');
+                $(this).addClass('selected');
+
+                var contentUrl = $(this).data('url');
+                if (contentUrl) {
+                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:600px; border:none;"></iframe>');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+@* <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://diplomatie.ma/themes/custom/diplomatie/favicon.ico" />
+    <title>Tableau De Bord</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* #logo {
+            max-height: 50px;
+        } */
+
+        .list-group-item.selected {
+            background-color: #198754;
+            color: white;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        footer {
+            margin-top: 20px;
+            background-color: #e9ecef;
+        }
+
+        .hero {
+            background-color: #32cd32;
+            color: white;
+            padding: 2px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .btn-custom {
+            background-color: #28a745;
+            color: white;
+        }
+
+            .btn-custom:hover {
+                background-color: #218838;
+            }
+
+        .content-full-width {
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 15px;
+            color:darkgreen;
+        }
+
+        #logo {
+            max-width: 50%; /* Assurez-vous que le logo s'ajuste à l'espace */
+            height: auto; /* Conserver les proportions du logo */
+        }
+
+        .my-box {
+            padding: 25px; /* Espace à l'intérieur de l'élément */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-primary me-2" id="home-btn">Home</button>
+                <button class="btn btn-outline-primary" id="privacy-btn">Privacy</button>
+            </div>
+            <div class="mx-auto">
+                <img src="https://diplomatie.ma/sites/default/files/inline-images/logo-1_0.gif" alt="Logo" class="img-fluid" id="logo">
+            </div>
+            <div>
+                <button class="btn btn-custom" id="login-btn">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="hero text-center">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>THEMATIQUES</h2>
+                <ul class="list-group" id="menu">
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Dechets">Déchets</li>
+                    <li class="list-group-item" data-url="/ThematiquesHelpers/Eauetassainissement">Eau et assainissement</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/AgricultureIndustrie">Agriculture et industrie</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/PopulationEducation">Population et éducation environnementale</li>
+                        <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Air">Air</li>
+                </ul>
+
+                </>
+            </div>
+
+
+            <div class="col-md-8">
+                <div id="content" class="content-full-width mt-4">
+                    <h3>Veuillez sélectionner un élément pour voir le contenu ici.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-box">Contenu avec un espacement intérieur.</div>
+
+
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 𝗦𝗜𝗥𝗘𝗗𝗗. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu li').click(function () {
+                $('#menu li').removeClass('selected');
+                $(this).addClass('selected');
+
+                var contentUrl = $(this).data('url');
+                if (contentUrl) {
+                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:600px; border:none;"></iframe>');
+                } else {
+                    $('#content').html('<h3>Vous avez sélectionné :</h3><p>' + $(this).data('content') + '</p>');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> *@
+
+
+
+@* <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://diplomatie.ma/themes/custom/diplomatie/favicon.ico" />
+    <title>Tableau De Bord</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+
+        h2 {
+            color: #343a40;
+            font-weight: 600;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            padding: 10px;
+            text-align: center;
+            color: #6c757d;
+        }
+
+        .hero {
+            background-color: #f5f5f5;
+            color: white;
+            padding: 4px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .btn-custom {
+            background-color: #1c7ed6;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none; /* Pas de bordure */
+
+            cursor: pointer; /* Curseur au survol */
+
+            transition: background-color 0.3s ease; /* Transition douce */
+
+            display: flex; /* Aligne l'icône et le texte */
+
+            align-items: center; /* Centre verticalement */
+        }
+
+
+            .btn-custom:hover {
+                background-color: #28a745; /* Couleur verte au survol */
+            }
+
+
+            .btn-custom i {
+                margin-right: 5px; /* Espacement entre l'icône et le texte */
+            }
+
+        .btn-custom {
+            background-color: transparent;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 600;
+            border: none; /* Ajoutez cette ligne si vous ne voulez pas de bordure */
+            cursor: pointer; /* Change le curseur au survol */
+            transition: background-color 0.3s ease; /* Ajoute une transition douce */
+        }
+
+            .btn-custom:hover {
+                background-color: #28a745; /* Couleur verte au survol */
+            }
+
+
+        /* .btn-custom:hover {
+                    background-color: #155fa2;
+                }
+         */
+        .content-full-width {
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 15px;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+            .content-full-width:hover {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+
+        #logo {
+            max-width: 40%;
+            height: auto;
+        }
+
+        .navbar {
+            padding: 10px 30px;
+            background-color: #343a40;
+        }
+
+        .navbar-brand {
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 5px 0;
+        }
+
+            .list-group-item:hover {
+                background-color: #198754;
+                color: white;
+            }
+
+            .list-group-item.selected {
+                background-color: #198754;
+                color: white;
+            }
+
+        .my-box {
+            padding: 3px;
+            margin-top: 3px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-home, .btn-privacy {
+            background-color: #ff8c00;
+            border: none;
+            padding: 8px 16px;
+            font-size: 14px;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn-home:hover, .btn-privacy:hover {
+                background-color: #e07b00;
+            }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">SIREDD</a>
+            <div class="mx-auto">
+                <img src="https://diplomatie.ma/sites/default/files/inline-images/logo-1_0.gif" alt="Logo" class="img-fluid" id="logo">
+
+            </div>
+            <div>
+                <button class="btn-custom">
+                    <i class="fa-duotone fa-solid fa-user"></i>  Connexion
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <h2>THEMATIQUES</h2>
+                <ul class="list-group" id="menu">
+                    <li class="list-group-item" data-url="">Déchets</li>
+                    <li class="list-group-item" data-url="frameTest.html">Eau et Assainissement</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/AgricultureIndustrie">Agriculture et Industrie</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/PopulationEducation">Population et Education Environnementale</li>
+                    <li class="list-group-item" data-url="/ThematiqueHelper/ThematiquesHelpers/Air">Air</li>
+                </ul>
+            </div>
+
+            <div class="col-md-8">
+                <div id="content" class="content-full-width mt-4">
+                    <h3>Veuillez sélectionner un élément pour voir le contenu ici.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-box" spellcheck="true">Contenu avec un espacement intérieur.</div>
+
+    <footer>
+        <span>&copy; 2024 SIREDD. Tous droits réservés.</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#menu li').click(function () {
+                $('#menu li').removeClass('selected');
+                $(this).addClass('selected');
+
+                var contentUrl = $(this).data('url');
+                if (contentUrl) {
+                    $('#content').html('<iframe src="' + contentUrl + '" style="width:100%; height:600px; border:none;"></iframe>');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html> *@

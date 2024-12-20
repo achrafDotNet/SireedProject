@@ -1,0 +1,112 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* styles.css */
+        body {
+            /*background-image: url('images/rabat_sale_kenitra/backgroundrabatsalekeni.jpg'); */ /* Rempla
+                background-size: cover; /* Pour couvrir entire surface du body */
+            background-repeat: no-repeat; /* Évite que l'image se répète */
+            font-family: 'Arial', sans-serif; /* Police moderne */
+            filter: drop-shadow(10);
+            border-radius: 15px;
+        }
+
+
+        .container {
+            max-width: 900px; /* Largeur maximale */
+            padding: 25px; /* Espacement intérieur */
+        }
+
+        .card {
+            background-color: #ffffff; /* Couleur de fond de la carte */
+            border-radius: 12px; /* Coins arrondis */
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Ombre douce */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transition pour effet au survol */
+        }
+
+            .card:hover {
+                transform: translateY(-8px); /* Légère élévation au survol */
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Ombre plus profonde au survol */
+            }
+
+        .card-title {
+            color: #155724; /* Couleur du titre */
+            font-weight: bold; /* Gras pour le titre */
+            margin-bottom: 10px; /* Espacement sous le titre */
+        }
+
+        .card-text {
+            color: #343a40; /* Couleur du texte */
+            margin-bottom: 10px; /* Espacement sous chaque paragraphe */
+            line-height: 1.6; /* Hauteur de ligne pour lisibilité */
+        }
+
+        .card-img-left {
+            border-radius: 12px 0 0 12px; /* Coins arrondis à gauche pour l'image */
+            object-fit: cover; /* Maintenir les proportions de l'image */
+        }
+
+        .text-muted {
+            color: #6c757d; /* Couleur pour le texte en léger */
+        }
+
+        .icon {
+            color: #155724; /* Couleur des icônes */
+            margin-right: 10px; /* Espacement à droite des icônes */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card d-flex flex-row">
+            <img src="~/images/oriental/decoupage_administratif.png" alt="Image de profil" class="card-img-left" style="width: 150px; height: 150px;">
+            <div class="card-body">
+                <h5 class="card-title">Carte visite de la région</h5>
+                <p class="card-text">
+                    l'Est du Maroc, la Région de l'Oriental s'étend sur 82 820 km2, soit 11,6% du territoire national. C'est une Région triplement frontalière avec :
+                    l'Algérie à l'Est, avec une frontière de 550 km depuis la station balnéaire de Saïdia, au Nord jusqu'à Figuig au Sud
+                    l'Espagne, par le fait de l'enclave occupée de la ville de Melilla jouxtant la ville de Nador
+                    les pays du Sud de l'Europe, avec une façade maritime de 200 km sur la Méditerranée.
+                </p>
+                <p class="card-text">
+                    La région revêt une importance stratégique, autant par sa position géographique que pour son potentiel économique: elle constitue l'interface incontournable pour conforter le Maroc dans sa position géostratégique de carrefour entre l'Europe, le Grand Maghreb et le monde méditerranéen.
+                </p>
+                <p class="card-text"><small class="text-muted">Préfectures et provinces :</small></p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Rabat: 118 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Salé: 672 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Skhirate-Témara: 485 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Khémisset: 8 305 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Kénitra: 3 052 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Sidi-Kacem: 3 113 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Sidi-Slimane: 1 825 km²</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

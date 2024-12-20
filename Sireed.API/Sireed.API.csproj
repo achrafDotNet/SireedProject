@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\ThematiquesHelpers\ThematiquesHelpersOriental\**" />
+    <Content Remove="Views\ThematiquesHelpers\ThematiquesHelpersOriental\**" />
+    <EmbeddedResource Remove="Views\ThematiquesHelpers\ThematiquesHelpersOriental\**" />
+    <None Remove="Views\ThematiquesHelpers\ThematiquesHelpersOriental\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\Indicateurs\ChartModel.html" />
   </ItemGroup>
 

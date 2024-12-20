@@ -74,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Home/Oriental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxPcmllbnRhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -116,6 +120,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/TableDeBord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcVGFibGVEZUJvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Indicateurs/TableDeBordOriental.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5kaWNhdGV1cnNcVGFibGVEZUJvcmRPcmllbnRhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Map/GetRegionData.cshtml]
@@ -172,6 +180,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Agricultureetindustrie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcQWdyaWN1bHR1cmVldGluZHVzdHJpZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Air.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcQWlyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Dechets.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcRGVjaGV0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Eauetassainissement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcRWF1ZXRhc3NhaW5pc3NlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Littoraletbiodiversite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcTGl0dG9yYWxldGJpb2RpdmVyc2l0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/Populationeteducationenvironnementale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcUG9wdWxhdGlvbmV0ZWR1Y2F0aW9uZW52aXJvbm5lbWVudGFsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpersOriental/ThematiqueBord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhlbWF0aXF1ZXNIZWxwZXJzT3JpZW50YWxcVGhlbWF0aXF1ZUJvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Lenovo/Desktop/SIreedProject/SIREED PROJECT/SIREED PROJECT/Sireed/Sireed.API/Views/ThematiquesHelpers/Agricultureetindustrie.cshtml]

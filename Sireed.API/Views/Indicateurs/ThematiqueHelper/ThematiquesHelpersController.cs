@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Sireed.API.Views.Indicateurs.ThematiqueHelper.NavigationTableBoards;
 using Sireed.APPLICATION.DTO;
@@ -23,7 +24,9 @@ namespace Sireed.API.Views.Indicateurs.ThematiqueHelper
         {
             return View();
         }
+        
 
+       
         public IActionResult Index() => View();
         public IActionResult Dechets()
         {

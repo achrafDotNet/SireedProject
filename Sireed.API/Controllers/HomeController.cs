@@ -25,12 +25,17 @@ namespace Sireed.API.Controllers
             return View();
         }
 
-        //public IActionResult Map()
-        //{
-        //    return View();
-        //}
-        // Simulating election results
-        public IActionResult Map()
+        public IActionResult Oriental()
+        {
+             return View();
+        }
+
+		//public IActionResult Map()
+		//{
+		//    return View();
+		//}
+		// Simulating election results
+		public IActionResult Map()
         {
             var electionResults = new List<ElectionResult>
     {

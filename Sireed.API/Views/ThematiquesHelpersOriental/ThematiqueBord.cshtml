@@ -11,6 +11,236 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        body {
+            background-color: #f8f9fa; /* Couleur de fond douce */
+            font-family: 'Arial', sans-serif;
+            padding: 20px; /* Espacement général */
+        }
+
+        .container {
+            max-width: 900px; /* Largeur maximale */
+            padding: 20px;
+            background-color: #fff; /* Fond blanc pour le conteneur */
+            border-radius: 10px; /* Coins arrondis pour le conteneur */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        }
+
+        .card {
+            border-radius: 10px; /* Coins arrondis pour les cartes */
+            transition: transform 0.2s, box-shadow 0.2s; /* Transition pour effet au survol */
+        }
+
+            .card:hover {
+                transform: translateY(-5px); /* Légère élévation au survol */
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Ombre plus profonde */
+            }
+
+        .card-title {
+            color: #155724; /* Couleur du titre */
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #343a40; /* Couleur du texte */
+            line-height: 1.6; /* Hauteur de ligne pour lisibilité */
+        }
+
+        .card-img-left {
+            border-radius: 10px 0 0 10px; /* Coins arrondis à gauche pour l'image */
+            object-fit: cover;
+        }
+
+        .text-muted {
+            color: #6c757d; /* Couleur pour le texte en léger */
+        }
+
+        .icon {
+            color: #155724; /* Couleur des icônes */
+            margin-right: 5px; /* Espacement à droite des icônes */
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px; /* Espacement entre la carte et les graphiques */
+        }
+
+        .col-md-2 {
+            flex: 0 0 15%; /* Réduire la largeur des cartes */
+            margin: 5px;
+            text-align: center;
+            font-size: 0.9em; /* Réduire la taille de la police */
+        }
+
+        h6 {
+            color: #444 !important;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h4 {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: 5px auto;
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #e6e6e6;
+            stroke-width: 3;
+        }
+
+        .circle_1, .circle_2, .circle_3, .circle_4, .circle_5 {
+            fill: none;
+            stroke-width: 3;
+            transition: stroke-dasharray 0.5s ease;
+        }
+
+        .circle_1 {
+            stroke: #f39c12;
+        }
+
+        .circle_2 {
+            stroke: #e74c3c;
+        }
+
+        .circle_3 {
+            stroke: #3498db;
+        }
+
+        .circle_4 {
+            stroke: #2ecc71;
+        }
+
+        .circle_5 {
+            stroke: #9b59b6;
+        }
+
+        .percentage_1, .percentage_2, .percentage_3, .percentage_4, .percentage_5 {
+            fill: #444;
+            font-size: 8px;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card d-flex flex-row">
+            <img src="~/images/oriental/decoupage_administratif.png" alt="Image de profil" class="card-img-left" style="width: 150px; height: 150px;">
+            <div class="card-body">
+                <h5 class="card-title">Carte visite de la région</h5>
+                <p class="card-text">
+                    L'Est du Maroc, la Région de l'Oriental s'étend sur 82 820 km², soit 11,6% du territoire national. C'est une région triplement frontalière avec :
+                    <ul>
+                        <li>Algérie à l'Est (550 km)</li>
+                        <li>Espagne via Melilla</li>
+                        <li>Façade maritime de 200 km sur la Méditerranée</li>
+                    </ul>
+                </p>
+                <p class="card-text">
+                    La région revêt une importance stratégique, tant par sa position géographique que pour son potentiel économique, consolidant le Maroc comme carrefour entre l'Europe et le monde méditerranéen.
+                </p>
+               @*  <p class="card-text"><small class="text-muted">Préfectures et provinces :</small></p> *@
+                @* <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Rabat: 118 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Salé: 672 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Skhirate-Témara: 485 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Khémisset: 8 305 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Kénitra: 3 052 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Sidi-Kacem: 3 113 km²</small>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Sidi-Slimane: 1 825 km²</small>
+                    </li>
+                </ul> *@
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <h6 id="i_1">Taux d'activité</h6>
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle_1" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage_1">45</text>
+                </svg>
+                <span style="color: #777;">2017</span>
+                <h4 id="u_1">%</h4>
+            </div>
+            <div class="col-md-2">
+                <h6 id="i_2">Taux d'analphabétisation</h6>
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle_2" stroke-dasharray="33, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage_2">33</text>
+                </svg>
+                <span style="color: #777;">2014</span>
+                <h4 id="u_2">%</h4>
+            </div>
+            <div class="col-md-2">
+                <h6 id="i_3">Taux d'urbanisation</h6>
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle_3" stroke-dasharray="63, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage_3">63</text>
+                </svg>
+                <span style="color: #777;">2014</span>
+                <h4 id="u_3">%</h4>
+            </div>
+            <div class="col-md-2">
+                <h6 id="i_4">Lits pour 1000 hab.</h6>
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle_4" stroke-dasharray="69, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage_4">69</text>
+                </svg>
+                <span style="color: #777;">2018</span>
+                <h4 id="u_4">lits</h4>
+            </div>
+            <div class="col-md-2">
+                <h6 id="i_5">Établissements sanitaires</h6>
+                <svg viewBox="0 0 36 36" class="circular-chart">
+                    <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <path class="circle_5" stroke-dasharray="37, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                    <text x="18" y="20.35" class="percentage_5">37</text>
+                </svg>
+                <span style="color: #777;">2019</span>
+                <h4 id="u_5"></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+@* @{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Visite</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
         /* styles.css */
         body {
             /*background-image: url('images/rabat_sale_kenitra/backgroundrabatsalekeni.jpg'); */ /* Rempla
@@ -64,6 +294,80 @@
             color: #155724; /* Couleur des icônes */
             margin-right: 10px; /* Espacement à droite des icônes */
         }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: auto;
+            clear: both;
+        }
+
+        .col-md-2 {
+            flex: 0 0 15%; /* Réduire la largeur des cartes */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            background: white;
+            margin: 5px;
+            border-radius: 5px;
+            padding: 8px; /* Réduire le rembourrage */
+            text-align: center;
+            font-size: 0.9em; /* Réduire la taille de la police */
+        }
+
+        h6 {
+            color: #444 !important;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        h4 {
+            margin-top: 8px;
+            font-size: 12px;
+        }
+
+        .circular-chart {
+            display: block;
+            margin: 5px auto;
+        }
+
+        .circle-bg {
+            fill: none;
+            stroke: #e6e6e6;
+            stroke-width: 3;
+        }
+
+        .circle_1, .circle_2, .circle_3, .circle_4, .circle_5 {
+            fill: none;
+            stroke-width: 3;
+            transition: stroke-dasharray 0.5s ease;
+        }
+
+        .circle_1 {
+            stroke: #f39c12;
+        }
+
+        .circle_2 {
+            stroke: #e74c3c;
+        }
+
+        .circle_3 {
+            stroke: #3498db;
+        }
+
+        .circle_4 {
+            stroke: #2ecc71;
+        }
+
+        .circle_5 {
+            stroke: #9b59b6;
+        }
+
+        .percentage_1, .percentage_2, .percentage_3, .percentage_4, .percentage_5 {
+            fill: #444;
+            font-size: 8px;
+            text-anchor: middle;
+        }
     </style>
 </head>
 <body>
@@ -82,7 +386,7 @@
                     La région revêt une importance stratégique, autant par sa position géographique que pour son potentiel économique: elle constitue l'interface incontournable pour conforter le Maroc dans sa position géostratégique de carrefour entre l'Europe, le Grand Maghreb et le monde méditerranéen.
                 </p>
                 <p class="card-text"><small class="text-muted">Préfectures et provinces :</small></p>
-                <ul class="list-unstyled">
+               @*  <ul class="list-unstyled">
                     <li>
                         <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Rabat: 118 km²</small>
                     </li>
@@ -104,9 +408,63 @@
                     <li>
                         <i class="fas fa-map-marker-alt icon"></i><small class="text-muted">Sidi-Slimane: 1 825 km²</small>
                     </li>
-                </ul>
+                </ul> 
+               
             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <h6 id="i_1">Taux d'activité</h6>
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="circle_1" stroke-dasharray="45, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <text x="18" y="20.35" class="percentage_1">45</text>
+            </svg>
+            <span style="color: #777;">2017</span>
+            <h4 id="u_1">%</h4>
+        </div>
+        <div class="col-md-2">
+            <h6 id="i_2">Taux d'analphabétisation</h6>
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="circle_2" stroke-dasharray="33, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <text x="18" y="20.35" class="percentage_2">33</text>
+            </svg>
+            <span style="color: #777;">2014</span>
+            <h4 id="u_2">%</h4>
+        </div>
+        <div class="col-md-2">
+            <h6 id="i_3">Taux d'urbanisation</h6>
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="circle_3" stroke-dasharray="63, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <text x="18" y="20.35" class="percentage_3">63</text>
+            </svg>
+            <span style="color: #777;">2014</span>
+            <h4 id="u_3">%</h4>
+        </div>
+        <div class="col-md-2">
+            <h6 id="i_4">Lits pour 1000 hab.</h6>
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="circle_4" stroke-dasharray="69, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <text x="18" y="20.35" class="percentage_4">69</text>
+            </svg>
+            <span style="color: #777;">2018</span>
+            <h4 id="u_4">lits</h4>
+        </div>
+        <div class="col-md-2">
+            <h6 id="i_5">Établissements sanitaires</h6>
+            <svg viewBox="0 0 36 36" class="circular-chart">
+                <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="circle_5" stroke-dasharray="37, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <text x="18" y="20.35" class="percentage_5">37</text>
+            </svg>
+            <span style="color: #777;">2019</span>
+            <h4 id="u_5"></h4>
         </div>
     </div>
 </body>
 </html>
+ *@
